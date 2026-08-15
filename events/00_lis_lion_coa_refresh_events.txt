@@ -1,0 +1,60 @@
+﻿# Le Lis et le Lion — Rafraîchissement différé des blasons dynamiques
+#
+# Constat : update_dynamic_coa appelé pendant la mise en place de la partie
+# (relecture d'historique / on_game_start_after_lobby) est correctement exécuté,
+# mais une passe interne du moteur qui assigne les blasons par défaut se produit
+# APRÈS cet appel et écrase silencieusement le résultat pour les titres dont
+# l'état "dynamique" correspond à la situation de départ (aucune date-seuil
+# franchie EN DIRECT pendant que le jeu tourne) :
+#   - d_brittany_dreux (1221–1312.8.27) : état initial du titre, jamais franchi
+#     en direct pour aucun bookmark (le plus ancien démarre en 1307).
+#   - k_england_france_lal (>=1337.10.1) : sur le bookmark bm_guerre_cent_ans_1337
+#     (start_date = 1337.11.1), la date-seuil est déjà écoulée AU chargement,
+#     donc jamais franchie en direct non plus.
+#
+# À l'inverse, d_brittany_dreux_2 et k_sicily_barcelona fonctionnent de manière
+# fiable car leur bascule est franchie EN DIRECT pendant la simulation (le
+# calendrier atteint la date-seuil alors que le moteur tourne déjà normalement),
+# contexte dans lequel la passe interne de reset n'intervient plus.
+#
+# Correctif : un évènement caché, différé de quelques jours après le chargement
+# complet (donc en conditions "en direct"), qui reforce update_dynamic_coa. Ceci
+# est différent de la tentative précédente ("events = {}" ajouté au champ events
+# d'un on_action, qui ne s'était pas déclenché automatiquement) : ici l'évènement
+# est appelé via trigger_event depuis lis_lion_on_game_start_after_lobby, qui lui
+# fonctionne déjà de manière confirmée (crowns, gouvernements, tributaires).
+
+namespace = lis_lion_coa
+
+# d_brittany : reforce la bascule dreux / dreux_2 selon la date courante.
+lis_lion_coa.0001 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { exists = title:d_brittany.holder }
+			title:d_brittany = { update_dynamic_coa = yes }
+		}
+	}
+}
+
+# k_england : reforce la bascule vers k_england_france_lal, UNIQUEMENT si la
+# date-seuil est déjà écoulée. Sans ce garde-fou, l'appel à update_dynamic_coa
+# est exécuté même quand aucun item ne correspond (parties commençant avant
+# 1337.10.1, ex. bookmark 1307) — et le blason retombe alors sur un mauvais
+# défaut au lieu de rester sur les trois lions (confirmé empiriquement).
+lis_lion_coa.0002 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				exists = title:k_england.holder
+				current_date >= 1337.10.1
+			}
+			title:k_england = { update_dynamic_coa = yes }
+		}
+	}
+}

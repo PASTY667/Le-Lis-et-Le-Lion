@@ -1,0 +1,1059 @@
+# Le Lis et le Lion — Forçage coiffure/barbe pour personnages scriptés
+#
+# Pourquoi ce fichier existe :
+# Meme quand un personnage historique a des genes hairstyles=/beards= bien
+# definis dans sa DNA (common/dna_data), le moteur peut choisir un autre
+# gabarit au rendu si aucun poids n'est explicitement force pour CE
+# personnage precis. La methode officielle (wiki de modding CK3, section
+# "Hairstyles and beards for scripted characters") consiste a ajouter un
+# modifier = { add = 200 exists = character:<id> this = character:<id> }
+# sous l'entree du gabarit voulu, normalement DANS les fichiers vanilla
+# gfx/portraits/portrait_modifiers/99_hairstyles_scripted_characters.txt
+# et 99_beards_scripted_characters.txt.
+#
+# On evite volontairement de recreer un fichier au meme chemin que ces
+# fichiers vanilla : un fichier de mod avec le meme chemin relatif
+# remplace entierement le fichier vanilla correspondant, ce qui effacerait
+# les forcages que Paradox a deja mis en place pour ses propres
+# personnages scriptes (Charlemagne, etc.). A la place, ce fichier cree
+# ses propres groupes de modificateurs (noms uniques, prefixes lis_lion_),
+# qui n'entrent jamais en collision avec du contenu vanilla ou un autre
+# mod, et qui ne s'appliquent qu'aux 4 personnages vises via exists/this.
+#
+# ATTENTION (corrige par rapport a la version precedente) :
+# - Karl/Charles IV = personnage custom 462614 (nom "Wenzel"/"Karl" dans
+#   house_luxemburg), PAS 69466 : verifie dans 00_lis_lion_portraits_dna.txt.
+# - Barbe de Karl = fp2_beards_straight (celle presente dans sa DNA reelle),
+#   pas no_beard.
+# - Un groupe de premier niveau et son template enfant ne doivent pas porter
+#   le meme nom : corrige ci-dessous.
+#
+# Si un template n'est pas reconnu par le jeu, error.log indiquera le nom
+# exact — plus qu'a corriger.
+
+lis_lion_scripted_hairstyle_fix = {
+	usage = game
+	selection_behavior = max
+	priority = 2
+
+	lis_lion_karl_hair_fix = { # Charles IV / "Karl" (462614)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				accessory = male_hair_western_05
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:462614
+				this = character:462614
+			}
+		}
+	}
+
+	lis_lion_philippe_vi_hair_fix = { # Philippe VI de Valois (455500)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = ep3_byzantine_hairstyle
+				accessory = m_hair_ep3_byzantine_04
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:455500
+				this = character:455500
+			}
+		}
+	}
+
+	lis_lion_philippe_iv_hair_fix = { # Philippe IV le Bel (455526)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = fp2_hairstyles_iberian_christian_wavy
+				accessory = male_hair_fp2_iberian_christian_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:455526
+				this = character:455526
+			}
+		}
+	}
+
+	lis_lion_edward_iii_hair_fix = { # Édouard III Plantagenêt (454500)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = sp4_western_hairstyles
+				accessory = m_hair_sp4_western_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:454500
+				this = character:454500
+			}
+		}
+	}
+
+	lis_lion_casimir_iii_hair_fix = { # Casimir III le Grand (471500)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = fp2_hairstyles_iberian_muslim_wavy
+				accessory = male_hair_fp2_iberian_muslim_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:471500
+				this = character:471500
+			}
+		}
+	}
+
+	lis_lion_karl_von_wilhesm_hair_fix = { # Karl von Wilhesm (91500115)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = sp4_western_hairstyles
+				accessory = m_hair_sp4_western_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:91500115
+				this = character:91500115
+			}
+		}
+	}
+
+	lis_lion_hedwige_de_suede_hair_fix = { # Hedwige de Suède (91500120)
+		# CORRIGÉ : template mis à jour (nouvel export ruler designer, 08/2026) — sp4_western_hairstyles,
+		# accessory f_hair_sp4_western_01, remplace l'ancien northern_hairstyles_curly en attente.
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = sp4_western_hairstyles
+				accessory = f_hair_sp4_western_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:91500120
+				this = character:91500120
+			}
+		}
+	}
+
+	lis_lion_gediminas_of_lithuania_hair_fix = { # Gediminas de Lituanie (473500)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = northern_hairstyles_straight
+				accessory = male_beard_indian_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:473500
+				this = character:473500
+			}
+		}
+	}
+
+	lis_lion_olga_of_lithuania_hair_fix = { # Olga de Lituanie (473502)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				value = 1.0 # TODO : ID exact (accessory=) manquant, en attente de l'export ruler designer
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:473502
+				this = character:473502
+			}
+		}
+	}
+
+	lis_lion_dante_alighieri_hair_fix = { # Dante Alighieri (214091)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = western_hairstyles_straight
+				template = male_hair_western_09
+				value = 1.0 # TODO : ID exact (accessory=) manquant, en attente de l'export ruler designer
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:214091
+				this = character:214091
+			}
+		}
+	}
+
+	lis_lion_edouard_i_angleterre_hair_fix = { # Édouard Ier d'Angleterre (454520)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				value = 1.0 # TODO : ID exact (accessory=) manquant, en attente de l'export ruler designer
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:454520
+				this = character:454520
+			}
+		}
+	}
+
+	lis_lion_edouard_ii_angleterre_hair_fix = { # Édouard II d'Angleterre (454510)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = sp4_western_hairstyles
+				accessory = m_hair_sp4_western_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:454510
+				this = character:454510
+			}
+		}
+	}
+
+	lis_lion_godesti_billung_hair_fix = { # Godesti Billung (91500102)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				value = 1.0 # TODO : ID exact (accessory=) manquant, en attente de l'export ruler designer
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:91500102
+				this = character:91500102
+			}
+		}
+	}
+
+	lis_lion_helen_saxe_lauenbourg_hair_fix = { # Helen de Saxe-Lauenbourg (170011)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_straight
+				value = 1.0 # TODO : ID exact (accessory=) manquant, en attente de l'export ruler designer
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:170011
+				this = character:170011
+			}
+		}
+	}
+
+	lis_lion_henri_von_wilhesm_hair_fix = { # Henri von Wilhesm (91500119)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				value = 1.0 # TODO : ID exact (accessory=) manquant, en attente de l'export ruler designer
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:91500119
+				this = character:91500119
+			}
+		}
+	}
+
+	lis_lion_isabelle_de_france_hair_fix = { # Isabelle de France (455525)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				accessory = female_hair_western_04
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:455525
+				this = character:455525
+			}
+		}
+	}
+
+	lis_lion_jeanne_ii_navarre_hair_fix = { # Jeanne II de Navarre (455835)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				value = 1.0 # TODO : ID exact (accessory=) manquant, en attente de l'export ruler designer
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:455835
+				this = character:455835
+			}
+		}
+	}
+
+	lis_lion_otto_von_wilhesm_hair_fix = { # Otto von Wilhesm (91500113)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = ep2_hairstyles_western
+				accessory = male_hair_northern_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:91500113
+				this = character:91500113
+			}
+		}
+	}
+	lis_lion_jeanne_bourgogne_hair_fix = { # Jeanne de Bourgogne (455532)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				accessory = female_hair_western_04
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:455532
+				this = character:455532
+			}
+		}
+	}
+
+	lis_lion_bernard_von_wilhesm_hair_fix = { # Bernard von Wilhesm (91500114)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				accessory = male_hair_western_08
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:91500114
+				this = character:91500114
+			}
+		}
+	}
+
+	lis_lion_edouard_woodstock_hair_fix = { # Édouard de Woodstock, le Prince Noir (454501)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				accessory = male_hair_western_08
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:454501
+				this = character:454501
+			}
+		}
+	}
+
+	lis_lion_louis_de_baviere_hair_fix = { # Louis IV de Bavière (462740)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				accessory = male_hair_byzantine_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:462740
+				this = character:462740
+			}
+		}
+	}
+
+	lis_lion_jean_aveugle_hair_fix = { # Jean l'Aveugle de Bohême (462610)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				accessory = male_hair_western_08
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:462610
+				this = character:462610
+			}
+		}
+	}
+
+	lis_lion_jean_ii_de_france_hair_fix = { # Jean II le Bon (455502)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = sp4_western_hairstyles
+				accessory = m_hair_sp4_western_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:455502
+				this = character:455502
+			}
+		}
+	}
+
+	lis_lion_jutte_de_boheme_hair_fix = { # Jutte de Bohême (462600)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				accessory = female_hair_western_08
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:462600
+				this = character:462600
+			}
+		}
+	}
+
+	lis_lion_albert_ii_hair_fix = { # Albert II de Habsbourg, duc d'Autriche (462020)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = ep3_byzantine_hairstyle
+				template = m_hair_ep3_byzantine_02
+				value = 1.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:462020
+				this = character:462020
+			}
+		}
+	}
+
+	lis_lion_charles_i_anjou_hongrie_hair_fix = { # Charles Ier d'Anjou (Caroberto), roi de Hongrie (469500)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = sp4_western_hairstyles
+				accessory = m_hair_sp4_western_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:469500
+				this = character:469500
+			}
+		}
+	}
+
+	lis_lion_louis_i_hongrie_hair_fix = { # Louis Ier de Hongrie (469510)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = fp2_hairstyles_iberian_muslim_curly_common
+				accessory = male_hair_fp2_iberian_muslim_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:469510
+				this = character:469510
+			}
+		}
+	}
+
+	lis_lion_robert_the_bruce_hair_fix = { # Robert the Bruce, roi d'Écosse (453501)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = sp4_western_hairstyles
+				accessory = m_hair_sp4_western_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:453501
+				this = character:453501
+			}
+		}
+	}
+
+}
+
+lis_lion_scripted_beard_fix = {
+	usage = game
+	selection_behavior = max
+	priority = 2
+
+	lis_lion_karl_beard_fix = { # Charles IV / "Karl" (462614)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = fp2_beards_curly
+				accessory = male_beard_fp2_iberian_christian_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:462614
+				this = character:462614
+			}
+		}
+	}
+
+	lis_lion_philippe_vi_beard_fix = { # Philippe VI de Valois (455500) — imberbe
+		# CORRIGE : il a bien un gene beards=no_beard dans sa DNA, ce commentaire etait errone.
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				value = 1.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:455500
+				this = character:455500
+			}
+		}
+	}
+
+	lis_lion_philippe_iv_beard_fix = { # Philippe IV le Bel (455526) — imberbe
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				value = 0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:455526
+				this = character:455526
+			}
+		}
+	}
+
+	lis_lion_edward_iii_beard_fix = { # Édouard III Plantagenêt (454500)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = fp3_turkic_beards_straight
+				accessory = m_beard_fp3_iranian_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:454500
+				this = character:454500
+			}
+		}
+	}
+
+	lis_lion_casimir_iii_beard_fix = { # Casimir III le Grand (471500)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = fp2_beards_straight
+				value = 1.0 # TODO : ID exact (accessory=) manquant, en attente de l'export ruler designer
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:471500
+				this = character:471500
+			}
+		}
+	}
+
+	lis_lion_karl_von_wilhesm_beard_fix = { # Karl von Wilhesm (91500115)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				value = 0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:91500115
+				this = character:91500115
+			}
+		}
+	}
+
+	# Hedwige de Suède (91500120) : personnage feminin, pas de forcage barbe (les femmes ne portent pas de barbe en jeu).
+
+	lis_lion_gediminas_of_lithuania_beard_fix = { # Gediminas de Lituanie (473500)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = fp3_iranian_beards_straight
+				accessory = male_beard_indian_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:473500
+				this = character:473500
+			}
+		}
+	}
+
+	# Olga de Lituanie (473502) : personnage feminin, pas de forcage barbe (les femmes ne portent pas de barbe en jeu).
+
+	lis_lion_dante_alighieri_beard_fix = { # Dante Alighieri (214091)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				value = 0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:214091
+				this = character:214091
+			}
+		}
+	}
+
+	lis_lion_edouard_i_angleterre_beard_fix = { # Édouard Ier d'Angleterre (454520)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = western_beards_straight
+				value = 1.0 # TODO : ID exact (accessory=) manquant, en attente de l'export ruler designer
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:454520
+				this = character:454520
+			}
+		}
+	}
+
+	lis_lion_edouard_ii_angleterre_beard_fix = { # Édouard II d'Angleterre (454510)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = sp3_beards_straight
+				accessory = m_beard_sp3_western_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:454510
+				this = character:454510
+			}
+		}
+	}
+
+	# Godesti Billung (91500102) : personnage feminin, pas de forcage barbe (les femmes ne portent pas de barbe en jeu).
+
+	# Helen de Saxe-Lauenbourg (170011) : personnage feminin, pas de forcage barbe (les femmes ne portent pas de barbe en jeu).
+
+	lis_lion_henri_von_wilhesm_beard_fix = { # Henri von Wilhesm (91500119)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = western_beards_straight
+				value = 1.0 # TODO : ID exact (accessory=) manquant, en attente de l'export ruler designer
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:91500119
+				this = character:91500119
+			}
+		}
+	}
+
+	# Isabelle de France (455525) : personnage feminin, pas de forcage barbe (les femmes ne portent pas de barbe en jeu).
+
+	# Jeanne II de Navarre (455835) : personnage feminin, pas de forcage barbe (les femmes ne portent pas de barbe en jeu).
+
+	lis_lion_otto_von_wilhesm_beard_fix = { # Otto von Wilhesm (91500113)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = ep3_beards_curly
+				accessory = m_beard_ep3_byzantine_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:91500113
+				this = character:91500113
+			}
+		}
+	}
+	lis_lion_bernard_von_wilhesm_beard_fix = { # Bernard von Wilhesm (91500114)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = western_beards_straight
+				accessory = male_beard_western_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:91500114
+				this = character:91500114
+			}
+		}
+	}
+
+	lis_lion_edouard_woodstock_beard_fix = { # Édouard de Woodstock, le Prince Noir (454501)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = ep2_beards
+				accessory = m_beard_ep2_western_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:454501
+				this = character:454501
+			}
+		}
+	}
+
+	lis_lion_louis_de_baviere_beard_fix = { # Louis IV de Bavière (462740) — imberbe
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				value = 0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:462740
+				this = character:462740
+			}
+		}
+	}
+
+	lis_lion_jean_aveugle_beard_fix = { # Jean l'Aveugle de Bohême (462610)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = western_beards_straight
+				accessory = male_beard_mena_04
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:462610
+				this = character:462610
+			}
+		}
+	}
+
+	lis_lion_jean_ii_de_france_beard_fix = { # Jean II le Bon (455502)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = tgp_chinese_beards
+				accessory = m_beard_tgp_chinese_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:455502
+				this = character:455502
+			}
+		}
+	}
+
+	lis_lion_albert_ii_beard_fix = { # Albert II de Habsbourg, duc d'Autriche (462020) — imberbe
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				value = 1.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:462020
+				this = character:462020
+			}
+		}
+	}
+
+	lis_lion_charles_i_anjou_hongrie_beard_fix = { # Charles Ier d'Anjou (Caroberto), roi de Hongrie (469500) — imberbe
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				value = 1.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:469500
+				this = character:469500
+			}
+		}
+	}
+
+	lis_lion_louis_i_hongrie_beard_fix = { # Louis Ier de Hongrie (469510) — imberbe
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				value = 1.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:469510
+				this = character:469510
+			}
+		}
+	}
+
+	lis_lion_robert_the_bruce_beard_fix = { # Robert the Bruce, roi d'Écosse (453501)
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = fp2_beards_straight
+				accessory = male_beard_fp2_iberian_muslim_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:453501
+				this = character:453501
+			}
+		}
+	}
+
+}

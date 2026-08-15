@@ -1,0 +1,59 @@
+﻿# Le Lis et le Lion — Emblèmes custom pour l'éditeur de blasons (COA designer)
+# Catégorie "lal" (Le Lis et le Lion), affichée via localization/*/coa_designer_l_*.yml
+#
+# Format officiel (cf. gfx/coat_of_arms/colored_emblems/50_coa_designer_emblems.txt vanilla) :
+#   filename.dds = { colors = <0-3> category = <string> }
+#
+# Le nombre de couleurs a été déterminé par inspection visuelle de chaque texture
+# (correspondance aux couleurs de référence du moteur : bleu 0x000084 = couleur 1,
+# vert 0x00FF94 = couleur 2, magenta 0xFF0084 = couleur 3). Pour une vérification plus
+# fiable, la commande console "count_unique_emblem_colors" peut regénérer ces valeurs.
+
+ce_lal_hre_sceptre_wappen.dds = { colors = 1 category = lal }
+lal_arrow5_wappen.dds = { colors = 3 category = lal }
+lal_bull_head_fur2_wappen.dds = { colors = 3 category = lal }
+lal_crown2_wappen.dds = { colors = 3 category = lal }
+lal_eagle01_01.dds = { colors = 3 category = lal }
+lal_eagle18_boned_wappen.dds = { colors = 3 category = lal }
+lal_eagle_german2.dds = { colors = 2 category = lal }
+lal_fleur_scepter_wappen.dds = { colors = 1 category = lal }
+lal_hre_double_headed_eagle1.dds = { colors = 2 category = lal }
+lal_sheep_banner_wappen.dds = { colors = 3 category = lal }
+lal_wolf2_wappen.dds = { colors = 2 category = lal }
+
+# Nouveaux emblèmes baltiques / lituaniens (ajout v21)
+lal_castle_door.dds = { colors = 3 category = lal }
+lal_castle_tartu.dds = { colors = 2 category = lal }
+lal_castle_wall02.dds = { colors = 2 category = lal }
+lal_dork_vilnius.dds = { colors = 3 category = lal }
+lal_eagle_laanemaa.dds = { colors = 2 category = lal }
+lal_lithuanian_pahonia.dds = { colors = 3 category = lal }
+lal_saint_belarus.dds = { colors = 3 category = lal }
+
+# Nouveaux emblèmes (ajout v22)
+lal_copenhagen_castle.dds = { colors = 3 category = lal }
+lal_cross_parnu.dds       = { colors = 3 category = lal }
+lal_griffon.dds           = { colors = 3 category = lal }
+lal_panther_pskov.dds     = { colors = 3 category = lal }
+lal_riourikovitchi.dds    = { colors = 1 category = lal }
+lal_venice_lion.dds       = { colors = 3 category = lal }
+lal_sicily_aigle_hohenstaufen.dds       = { colors = 2 category = lal }
+lal_castel_riga.dds       = { colors = 3 category = lal }
+
+# Nouveaux emblèmes (ajout v24 — Ruthénie / Lausitz)
+lal_lion_vladimir.dds  = { colors = 2 category = lal }
+lal_wall_lausitz.dds   = { colors = 1 category = lal }
+lal_kiev_02.dds        = { colors = 3 category = lal }
+lal_kiev_01.dds        = { colors = 3 category = lal }
+lal_angel_belarus.dds  = { colors = 3 category = lal }
+
+# Nouveaux emblèmes (ajout v23_3_12)
+lal_cephalonia_lion.dds    = { colors = 3 category = lal }
+lal_eagle_eastern.dds      = { colors = 3 category = lal }
+lal_england_lion.dds       = { colors = 3 category = lal }
+lal_griffin_scania.dds     = { colors = 3 category = lal }
+lal_key_of_St_Peter.dds    = { colors = 3 category = lal }
+lal_trinacria.dds          = { colors = 3 category = lal }
+lal_della_scala.dds        = { colors = 1 category = lal }
+lal_imperial_seal_yuan.dds = { colors = 1 category = lal }
+lal_montfort_bretagne.dds  = { colors = 2 category = lal }
