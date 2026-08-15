@@ -1,0 +1,14 @@
+# Le Lis et le Lion — Papauté d'Avignon (1309)
+#
+# À partir du 1309.1.1, la capitale de jure de k_papal_state devient c_venaissin
+# (au lieu de c_roma), reflétant le transfert de la papauté à Avignon sous
+# Clément V. set_capital_county est l'effet utilisé ailleurs dans le mod pour ce
+# genre de changement (voir d_west_franconia -> c_mainz, 00_lis_lion_de_jure_misc.txt).
+
+k_papal_state = {
+	1309.1.1 = {
+		effect = {
+			set_capital_county = title:c_venaissin
+		}
+	}
+}

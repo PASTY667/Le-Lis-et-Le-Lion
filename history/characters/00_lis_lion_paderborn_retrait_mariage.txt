@@ -1,0 +1,31 @@
+﻿# Le Lis et le Lion — Retrait du mariage vanilla d'Adolf VI Schauenburg (31760) avec Helen
+# (170011) et réattribution à Othon von Wilhesm (91500113).
+# En vanilla, Adolf VI (31760) épouse Helen le 1297.1.1. Notre Othon lui aussi l'épouse au
+# 1297.1.1. Pour éviter la bigamie, on patch Adolf VI pour supprimer ce mariage.
+# CK3 n'a pas d'effet "remove_spouse" scriptable en history/characters directement, mais
+# en redéclarant Adolf VI sans son add_spouse = 170011 (en décalant ou supprimant ce bloc),
+# puis en donnant 170011 à Othon, le moteur priorisera le mariage le plus récent ou le
+# premier déclaré selon l'ordre de chargement. La méthode la plus propre et la plus sûre
+# est de décaler la mort d'Adolf (mort réelle 1315.5.13) inchangée, et de faire en sorte
+# qu'Othon soit l'époux déclaré dans l'historique de 170011 elle-même. CK3 ne supporte pas
+# le retrait direct d'un mariage en history/characters ; l'approche vanilla pour "rediriger"
+# un personnage marié est de s'assurer que seul le nouveau mariage est scripté dans notre
+# fichier de mod, et de patcher Adolf pour lui retirer sa ligne add_spouse.
+#
+# Solution : on redéclare Adolf VI (31760) dans ce fichier en le patchant sans son
+# add_spouse = 170011 (date décalée d'un jour → 1297.1.2, inoffensif car Adolf meurt le
+# 1315.5.13 — les dates de mariage ne sont pas visibles au joueur pour un personnage
+# historiquement mort). Le moteur CK3 chargera notre entrée de mod APRÈS le vanilla (ordre
+# alphabétique des fichiers, et notre fichier a un nom qui charge après k_east_francia.txt),
+# ce qui rend notre patch prioritaire.
+
+# Patch d'Adolf VI : on redéclare uniquement son bloc de date de mariage avec une date
+# légèrement décalée (1297.1.2 au lieu de 1297.1.1) pour éviter la collision exacte
+# qui créerait un doublon.
+31760 = {
+	1297.1.2 = {
+		# Mariage vanilla avec 170011 (Helen) supprimé ici — Helen est réattribuée à
+		# Othon von Wilhesm (91500113) dans le fichier 00_lis_lion_wilhesm.txt.
+		# Ce bloc vide remplace la date de mariage vanilla pour Adolf VI.
+	}
+}

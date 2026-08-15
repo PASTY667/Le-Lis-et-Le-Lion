@@ -1,0 +1,94 @@
+﻿# Le Lis et le Lion — Suzerainetés et rattachements de_jure complémentaires (au 1337.5.24)
+
+# Le duché de Savoie redevient vassal de l'Empereur du Saint-Empire (liege = 0 depuis 1268
+# en vanilla, jamais remis sous l'Empire depuis).
+d_savoie = {
+	1337.5.24 = {
+		liege = e_hre
+	}
+}
+
+# Le royaume de Bourgogne passe de_jure au Saint-Empire (au lieu de l'Empire de France,
+# e_france, en vanilla).
+k_burgundy = {
+	1337.5.24 = {
+		de_jure_liege = e_hre
+	}
+}
+
+# Le royaume de Poméranie passe de_jure au Saint-Empire (au lieu de l'Empire Wende,
+# e_wendish_empire, en vanilla).
+k_pomerania = {
+	1337.5.24 = {
+		de_jure_liege = e_hre
+	}
+}
+
+# Les duchés de Basse-Silésie et Haute-Silésie passent de_jure au royaume de Bohême
+# (au lieu du royaume de Pologne, k_poland, en vanilla).
+d_lower_silesia = {
+	1337.5.24 = {
+		de_jure_liege = k_bohemia
+	}
+}
+
+d_upper_silesia = {
+	1337.5.24 = {
+		de_jure_liege = k_bohemia
+	}
+}
+
+#  Le royaume de Bohême passe de_jure au Saint-Empire 
+
+
+#  Le comté Aix-la-Chappelle passe de_jure au Saint-Empire 
+
+c_aachen = {
+	1207.1.1 = {
+		de_jure_liege = e_hre
+	}
+}
+
+
+# Tous les comtés du duché de Corse passent (ou restent, pour ceux déjà liés) sous contrôle
+# de Gênes, et le duché de Corse lui-même — resté sans titulaire depuis 975 en vanilla — est
+# enfin attribué au Doge de Gênes (Raffaello Doria, cisalpine0259, titulaire du comté de
+# Gênes en gouvernement républicain depuis 1335).
+c_ajaccio = {
+	1337.5.24 = {
+		liege = d_genoa
+		holder = cisalpine0259
+	}
+}
+
+c_bastia = {
+	1337.5.24 = {
+		liege = d_genoa
+		holder = cisalpine0259
+	}
+}
+
+c_vecchio = {
+	1337.5.24 = {
+		liege = d_genoa
+		holder = cisalpine0259
+	}
+}
+
+d_corsica = {
+	1337.5.24 = {
+		liege = d_genoa
+		holder = cisalpine0259
+	}
+}
+
+# ── Duché de Mayence (remplace "Franconie occidentale") ──────────────────────────
+# d_west_franconia est rebaptisé "Mayence" (voir localization) et sa capitale
+# devient b_mainz (via c_mainz) au lieu de c_frankfurt.
+d_west_franconia = {
+	1085.6.3 = {
+		effect = {
+			set_capital_county = title:c_mainz
+		}
+	}
+}

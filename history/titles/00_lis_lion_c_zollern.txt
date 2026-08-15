@@ -1,0 +1,32 @@
+﻿# Le Lis et le Lion — Mise à jour de l'historique du comté de Zollern (c_zollern)
+#
+# En vanilla, l'historique de c_zollern s'arrête au 1145.1.1 (Friedrich III Hohenzollern,
+# id 212393) : aucune mise à jour de titulaire n'existe ensuite, le comté reste figé sur
+# ce personnage jusqu'à la fin de la partie.
+#
+# On complète ici la chronologie en la calquant sur celle du duché de Nordgau (d_nordgau,
+# history/titles/k_bavaria.txt), qui passe justement par le même Friedrich III (212393,
+# titulaire depuis 1192.1.1 dans d_nordgau) puis enchaîne sur la lignée des margraves de
+# Brandebourg-Ansbach/Bourgogne (Hohenzollern). On ne répète pas l'entrée 212393 (déjà
+# titulaire depuis 1145.1.1 en vanilla) ; on reprend la suite à partir de 1200.1.1.
+
+c_zollern = {
+	1200.1.1 = {
+		holder = 462356
+	}
+	1255.1.1 = {
+		holder = 462358
+	}
+	1260.1.1 = {
+		holder = 462359
+	}
+	1297.1.1 = {
+		holder = 33299
+	}
+	1300.1.1 = {
+		holder = 487020
+	}
+	1332.1.1 = {
+		holder = 487021
+	}
+}

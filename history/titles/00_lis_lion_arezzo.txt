@@ -1,0 +1,146 @@
+# Le Lis et le Lion — c_arezzo_lal
+#
+# Clone de c_arezzo (vanilla, k_italy.txt) : le titre vanilla se termine en
+# 1195.1.1 sur un titulaire (212506, Philipp de Souabe) qui meurt en 1208.6.21
+# sans succession écrite ensuite, le comté redevenant une cité-république
+# gérée procéduralement par le moteur (élections de patriciens). Le patch
+# initial (liege = e_hre en 1337.5.24 dans 00_lis_lion_italie_suzerainete.txt)
+# ne faisait donc que changer le liège d'un titre resté sans titulaire valide
+# depuis plus d'un siècle — d'où l'historique cassé/vide constaté en jeu.
+#
+# Ce fichier recopie intégralement la chronologie vanilla jusqu'à 1195, puis
+# comble la vacance 1208-1337 avec une petite lignée fictive locale
+# (91500123/124/125, voir 00_lis_lion_arezzo.txt dans history/characters),
+# avant de rattacher le comté à e_hre en 1337.5.24 comme demandé.
+#
+# c_arezzo (vanilla) est retiré de landed_titles au profit de c_arezzo_lal
+# (voir common/landed_titles/00_landed_titles.txt) ; aucune référence à
+# c_arezzo ne subsiste ailleurs dans le mod.
+
+c_arezzo_lal = {
+	713.1.1 = {
+		liege = k_italy
+	}
+	713.1.1 = {
+		holder = 190278 #Walperto
+	}
+	754.1.1 = {
+		holder = 190279 #Alperto
+	}
+	773.1.1 = {
+		holder = 190280 #Tachiperto
+	}
+	812.1.1 = {
+		liege = "k_italy"
+	}
+	812.1.1 = {
+		holder = 167896
+	}
+	823.10.5 = {
+		holder = 167897
+	}
+	838.1.1 = {
+		holder = 163070
+	}
+	886.1.1 = {
+		holder = 167902
+	}
+	915.9.10 = {
+		holder = 167905
+	}
+	930.1.1 = {
+		holder = 167906
+	}
+	931.1.1 = {
+		liege = k_east_francia
+	}
+	931.1.1 = {
+		holder = 7980
+	}
+	936.1.1 = {
+		holder = 7924
+	}
+	967.9.15 = {
+		holder = 7925
+	}
+	1004.1.1 = {
+		holder = 167987
+	}
+	1014.1.1 = {
+		holder = 180251
+	}
+	1024.7.13 = {
+		liege = e_hre
+	}
+	1027.1.1 = {
+		holder = 7756
+	}
+	1052.5.6 = {
+		holder = 7758
+	}
+	1055.7.1 = {
+		holder = 7757
+		liege = d_toscana
+	}
+	1060.1.1 = {
+		holder = 167671
+	}
+	1115.7.24 = {
+		holder = 7901
+		succession_laws = { feudal_elective_succession_law }
+	}
+	1120.1.1 = {
+		holder = 33466
+	}
+	1127.1.1 = {
+		holder = 30219
+	}
+	1135.1.1 = {
+		holder = 212996
+	}
+	1137.1.1 = {
+		holder = 212602
+	}
+	1139.10.20 = {
+		holder = 73405
+	}
+	1152.1.1 = {
+		holder = 7595
+	}
+	1160.1.1 = {
+		holder = 7596
+	}
+	1167.9.12 = {
+		holder = 7595
+	}
+	1170.1.1 = {
+		holder = barbolani_1 # Ranieri Barbolani
+		government = republic_government
+		liege = 0
+	}
+	1190.6.10 = {
+		holder = 212507
+	}
+	1195.1.1 = {
+		holder = 212506 # Philipp de Souabe, meurt en 1208.6.21 (vanilla)
+	}
+
+	# --- Comblement fictif (demandé explicitement, sans invention historique poussée) ---
+	1208.6.22 = {
+		government = feudal_government
+		succession_laws = { feudal_elective_succession_law }
+		holder = 91500123 # Ranuccio
+		liege = d_toscana
+	}
+	1250.1.2 = {
+		holder = 91500124 # Guccio, fils de Ranuccio
+	}
+	1288.1.2 = {
+		holder = 91500125 # Neri, fils de Guccio
+	}
+
+	# --- Rattachement à e_hre demandé par l'utilisateur ---
+	1337.5.24 = {
+		liege = e_hre
+	}
+}

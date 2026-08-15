@@ -1,0 +1,38 @@
+# Le Lis et le Lion — Prétention d'Édouard III sur la couronne de France
+# Le système vanilla de blason dynamique (coa_england_switches_to_france_coa_trigger,
+# dans common/scripted_triggers/00_coa_triggers.txt) bascule automatiquement le blason
+# du titulaire de k_england vers k_england_france dès qu'il détient le titre k_france
+# OU une prétention sur celui-ci. On donne donc à Édouard III une prétention forte sur
+# la couronne de France à la date du bookmark, ce qui suffit à déclencher le changement
+# de blason sans aucun script supplémentaire.
+
+454500 = { # Édouard III Plantagenêt
+	# CORRIGÉ (bug DNA) : redéclaration complète (voir note dans 00_lis_lion_valois.txt),
+	# valeurs identiques à la fiche vanilla.
+	name = "Edward" # Edward III
+	dynasty_house = house_plantagenet
+	martial = 7
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 7
+	religion = "catholic"
+	culture = "english"
+	dna = lis_lion_edward_iii_plantagenet
+	1312.11.13 = {
+		birth = "1312.11.13"
+	}
+	1328.1.1 = {
+		add_spouse = 455611
+	}
+	1328.2.1 = {
+		add_pressed_claim = title:k_france
+	}
+	1337.5.24 = {
+		effect = {
+			add_pressed_claim = title:k_france
+		}
+	}
+	1377.6.21 = {
+		death = "1377.6.21"
+	}
+}

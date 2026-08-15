@@ -1,0 +1,78 @@
+﻿# Le Lis et le Lion — Maison d'Évreux-Capétien
+# CORRECTION CRITIQUE : ces personnages étaient assignés à house_evreux, qui est en réalité
+# la maison cadette NORMANDE (dynastie 752), sans rapport avec les Évreux capétiens
+# (descendants de Louis d'Évreux, fils de Philippe III le Hardi). On les bascule vers
+# la nouvelle house_evreux_capet, cadette des Robertiens (743).
+# Le changement de maison est appliqué DANS un bloc de date (à la date de naissance).
+
+455811 = { # Louis, comte d'Évreux, fils de Philippe III
+	1276.3.2 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+487045 = { # Marie d'Évreux
+	1300.1.3 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+455822 = { # Marguerite d'Évreux
+	1301.1.2 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+455817 = { # Charles d'Évreux
+	1305.1.2 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+455810 = { # Philippe III, roi de Navarre (jure uxoris)
+	1306.3.27 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+455418 = { # Jeanne d'Évreux
+	1310.1.2 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+455812 = { # Marie
+	1330.1.1 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+455813 = { # Charles, futur "Charles le Mauvais"
+	1332.5.17 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+455814 = { # Blanche
+	1335.1.1 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+455815 = { # Agnès
+	1337.1.1 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+455816 = { # Philippe
+	1340.1.1 = {
+		dynasty_house = house_evreux_capet
+	}
+}
+
+455818 = { # Louis
+	1336.1.1 = {
+		dynasty_house = house_evreux_capet
+	}
+}

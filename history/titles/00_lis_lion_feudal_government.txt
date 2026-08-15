@@ -1,0 +1,359 @@
+﻿﻿# Le Lis et le Lion — Gouvernement féodal des comtés baltiques
+# Conversion en feudal_government pour tous les comtés de la zone baltique,
+# conformément à la conquête et christianisation progressive (1198–1253).
+#
+# Dates d'application :
+#   1198.1.1  : Royaume de Prusse (k_prussia)
+#   1202.1.1  : Royaume de Livonie (k_livonia) + Duché d'Ösel-Wiek
+#   1219.1.1  : Duché d'Estonie (d_esthonia)
+#   1253.1.30 : Royaume de Lituanie (k_lithuania)
+
+# ══════════════════════════════════════════════════════════════════════
+# 1198.1.1 — Royaume de Prusse (k_prussia) — Ordre Teutonique
+# ══════════════════════════════════════════════════════════════════════
+
+d_prussia = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+d_masuria = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+d_pomerelia = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_malbork = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_wormditt_lal = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_natangia = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_konigsberg = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_gumbinnen = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_suvalkai = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_torun = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_osterode = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_allenstein = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_angerburg = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_danzig = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_slupsk = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_miastko = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_berent = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_scalovia_lal = {
+	1198.1.1 = {
+		government = feudal_government
+	}
+}
+
+# ══════════════════════════════════════════════════════════════════════
+# 1202.1.1 — Royaume de Livonie (k_livonia) + Duché d'Ösel-Wiek — Frères Porte-Glaive / Ordre Teutonique
+# ══════════════════════════════════════════════════════════════════════
+
+d_livonia = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+d_courland = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+d_latgalians = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+d_osel_wiek = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_vidzeme_lal = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_livs_lal = {
+	1202.1.1 = {
+		government = feudal_government
+
+	}
+}
+
+c_zemigalians_lal = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_vanemane_lal = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_grobin = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_selpils_lal = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_talava = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_kokenois_lal = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_jersika_lal = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_aluksne_lal = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_dunabourg = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_osel = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_wiek_lal = {
+	1202.1.1 = {
+		government = feudal_government
+	}
+}
+
+# ══════════════════════════════════════════════════════════════════════
+# 1219.1.1 — Duché d'Estonie (d_esthonia) — Danemark puis Ordre Teutonique
+# ══════════════════════════════════════════════════════════════════════
+
+d_esthonia = {
+	1219.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_reval = {
+	1219.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_narva = {
+	1219.1.1 = {
+		government = feudal_government
+	}
+}
+
+# ══════════════════════════════════════════════════════════════════════
+# 1253.1.30 — Royaume de Lituanie (k_lithuania) — Bulle d'Or de Rimini
+# ══════════════════════════════════════════════════════════════════════
+
+k_lithuania = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+# ══════════════════════════════════════════════════════════════════════
+# 1204.8.1 — Quatrième Croisade : effondrement de Byzance en Grèce
+# (d_achaia, d_athens : Principauté d'Achaïe et Duché d'Athènes francs)
+# d_aegean_islands passe en régime féodal en 1207.1.1 (Duché de l'Archipel).
+# Rappels répétés pour d_achaia (1307.1.1, 1337.1.1) pour être bien sûr, le
+# gouvernement administratif byzantin d'origine ayant tendance à se réimposer.
+# ══════════════════════════════════════════════════════════════════════
+
+d_achaia = {
+	1204.8.1 = {
+		government = feudal_government
+	}
+	1307.1.1 = {
+		government = feudal_government
+	}
+	1337.1.1 = {
+		government = feudal_government
+	}
+}
+
+d_athens = {
+	1204.8.1 = {
+		government = feudal_government
+	}
+}
+
+d_aegean_islands = {
+	1207.1.1 = {
+		government = feudal_government
+	}
+}
+
+d_lithuanians = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+d_samogitia = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+c_kernave = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+c_trakai = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+c_yatvyagi = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+c_braslau = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+c_raseiniai = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+c_telsiai = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+c_siauliai = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+c_palanga_lal = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+
+c_memel_lal = {
+	1253.1.30 = {
+		government = feudal_government
+	}
+}
+

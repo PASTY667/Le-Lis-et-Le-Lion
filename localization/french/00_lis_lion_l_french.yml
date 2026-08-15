@@ -1,0 +1,332 @@
+﻿l_french:
+
+ bm_guerre_cent_ans_1337_desc: "Le roi d'Angleterre Édouard III vient de revendiquer le trône de France, contestant la légitimité des Valois. La guerre qui s'allume en cette fin d'automne 1337 durera plus d'un siècle, ravageant la France et redessinant la carte de l'Europe. Quel camp prendrez-vous ?"
+
+ bookmark_group_guerre_cent_ans: "La Guerre de Cent Ans"
+
+ # Noms affichés des personnages du bookmark — CORRECTION : ces clés "name" manquaient
+ # entièrement dans la version précédente, ce qui rendait les fiches personnages vides
+ # ou cassées dans le sélecteur de bookmark.
+ bm_char_edward_iii: "Édouard III"
+ bm_char_philippe_vi: "Philippe VI"
+ bm_char_alphonse_xi: "Alphonse XI"
+ bm_char_robert_naples: "Robert Ier"
+ bm_char_gediminas: "Gediminas"
+ bm_char_orhan: "Orhan"
+ bm_char_david_ii: "David II"
+
+ bm_char_david_ii_desc: "Roi d'Écosse depuis 1329, David II n'est encore qu'un enfant sous la tutelle de régents. Héritier de la victoire de son père Robert Bruce sur l'Angleterre, il devra un jour affirmer seul son autorité face aux prétentions anglaises et à une noblesse écossaise divisée entre fidélité et ambition.\n\nSaurez-vous, une fois votre majorité venue, préserver l'indépendance chèrement acquise par votre père ?"
+
+ bm_char_edward_iii_desc: "Édouard III d'Angleterre est un roi guerrier au faîte de sa puissance. Héritier des Plantagenêts et petit-fils de Philippe IV par sa mère Isabelle, il revendique la couronne de France face aux Valois. Brillant stratège, il s'appuie sur ses archers gallois et ses alliances flamandes pour porter la guerre sur le continent.\n\nSaurez-vous faire valoir vos droits sur la couronne de France, ou l'Angleterre s'épuisera-t-elle dans un conflit sans fin ?"
+ bm_char_philippe_vi_desc: "Philippe VI de Valois est le premier roi de la branche cadette des Capétiens. Sa légitimité, contestée par Édouard III, ne repose que sur la loi salique. Face à l'invasion anglaise, il doit fédérer une noblesse française indisciplinée et trouver les ressources nécessaires pour financer une guerre qui s'annonce longue.\n\nParviendrez-vous à asseoir la légitimité de votre nouvelle dynastie et à repousser les prétentions anglaises sur votre trône ?"
+ bm_char_alphonse_xi_desc: "Alphonse XI de Castille est l'un des monarques les plus puissants de la péninsule ibérique. Alors que la Guerre de Cent Ans embrase le nord de l'Europe, il poursuit inlassablement la Reconquista face aux derniers bastions musulmans. Son royaume se trouve au carrefour des alliances franco-anglaises, chacune cherchant à s'attacher sa puissante flotte.\n\nAchèverez-vous la Reconquista, ou la Castille se laissera-t-elle happer par la rivalité entre Paris et Londres ?"
+ bm_char_robert_naples_desc: "Robert Ier d'Anjou, dit le Sage, règne sur le royaume de Naples depuis 1309. Protecteur des arts et des lettres, allié naturel de la France, il incarne la puissance angevine en Méditerranée au moment même où la guerre éclate entre Paris et Londres.\n\nFerez-vous de Naples le foyer intellectuel et politique de la Méditerranée chrétienne ?"
+ bm_char_gediminas_desc: "Grand-duc de Lituanie, Gediminas règne sur le dernier grand État païen d'Europe, tiraillé entre les assauts incessants de l'Ordre Teutonique et les appels répétés à la conversion. Défendra-t-il les anciens dieux jusqu'au bout, ou verra-t-il dans le baptême une arme diplomatique à double tranchant ?\n\nFerez-vous de la Lituanie païenne un empire capable de rivaliser avec ses voisins chrétiens, ou céderez-vous finalement à la croix ?"
+ bm_char_orhan_desc: "Fils d'Osman, Orhan hérite d'un émirat en pleine expansion aux marches de la Bithynie. Sous son règne, les Ottomans prennent pied en Europe pour la première fois, franchissant les Dardanelles. Sa tâche : transformer une principauté frontalière en puissance véritablement européenne.\n\nSerez-vous celui qui installera durablement les Ottomans sur le sol européen ?"
+
+ # Noms des nouvelles maisons cadettes capétiennes
+ # NOTE : dynn_Valois et dynn_Bourbon sont déjà localisés nativement par le jeu (dynasties
+ # vanilla 101 et 100146) — on ne les redéfinit pas ici pour éviter un conflit de clé.
+ dynn_Evreux_Capet: "Évreux"
+ dynn_Anjou_Capet: "Anjou"
+ dynn_Trastamara: "Trastámara"
+
+ house_valois: "Maison de Valois"
+ house_evreux_capet: "Maison d'Évreux"
+ house_anjou_capet: "Maison d'Anjou"
+ house_bourbon_capet: "Maison de Bourbon"
+ house_trastamara: "Maison de Trastámara"
+
+ # Maison d'Artois-Capétien
+ dynn_Artois_Capet: "Artois"
+ house_artois_capet: "Maison d'Artois"
+
+ # Nouveaux titres — Duché d'Artois et Comté d'Arras
+ d_artois: "Artois"
+ c_arras: "Arras"
+ c_arles: "Arles"
+
+ # Nouveau titre — Duché de Picardie
+ d_picardie: "Picardie"
+
+ # Duché de Lyon et Forez
+ d_lyon_et_forez: "Lyon et Forez"
+ d_lyon_et_forez_adj: "du Lyon et Forez"
+
+ # Duché de Hainaut
+ d_hainaut: "Hainaut"
+
+ # Duché de Liège (principauté ecclésiastique)
+ d_liege: "Liège"
+
+ # Palatinat du Rhin
+ d_palatinate_rhin: "Palatinat du Rhin"
+ d_palatinate_rhin_adj: "rhénan"
+
+ # Duché de Mayence (remplace Franconie occidentale)
+ d_west_franconia: "Mayence"
+ d_west_franconia_adj: "mayençais"
+
+ # Duché / Margraviat de Bade
+ d_baden: "Bade"
+ d_baden_adj: "badois"
+
+ # Duché de Saxe-Lauenbourg
+ d_saxe_lauenburg: "Saxe-Lauenbourg"
+ d_saxe_lauenburg_adj: "de Saxe-Lauenbourg"
+ c_ratzeburg: "Ratzeburg"
+ c_ratzeburg_adj: "de Ratzeburg"
+
+ # Duché de Paderborn et Maison von Wilhesm
+ d_paderborn: "Paderborn"
+ d_paderborn_adj: "de Paderborn"
+ dynn_Wilhesm: "Wilhesm"
+ dynn_Arezzo: "Arezzo"
+ house_wilhesm: "Maison von Wilhesm"
+
+ # Comté de Paderborn (Wilhesm)
+ c_paderborn_wilhesm: "Paderborn"
+ c_paderborn_wilhesm_adj: "de Paderborn"
+ 
+ # Comté de Lippe (Wilhesm)
+ c_lippe_wilhesm: "Lippe"
+ c_riga: "Riga"
+ d_osel_wiek: "Ösel-Wiek"
+ c_telsiai: "Telšiai"
+ c_suvalkai: "Suvalkai"
+ k_prussia: "Prusse"
+
+ # Comtés _lal baltiques ═══
+ c_memel_lal: "Memel"
+ c_memel_lal_adj: "de Memel"
+ c_palanga_lal: "Palanga"
+ c_palanga_lal_adj: "de Palanga"
+ c_gumbinnen: "Gumbinnen"
+ c_gumbinnen_adj: "de Gumbinnen"
+ c_wormditt_lal: "Varmie"
+ c_wormditt_lal_adj: "de Varmie"
+ c_scalovia_lal: "Scalovie"
+ c_scalovia_lal_adj: "de Scalovie"
+ c_vanemane_lal: "Pilten"
+ c_vanemane_lal_adj: "de Pilten"
+ c_zemigalians_lal: "Zemgale"
+ c_zemigalians_lal_adj: "de Zemgale"
+ c_selpils_lal: "Selpils"
+ c_selpils_lal_adj: "de Selpils"
+ c_vidzeme_lal: "Vidzeme"
+ c_vidzeme_lal_adj: "de Vidzeme"
+ c_livs_lal: "Pernau"
+ c_livs_lal_adj: "de Pernau"
+ c_wiek_lal: "Wiek"
+ c_wiek_lal_adj: "de Wiek"
+ c_kokenois_lal: "Koknese"
+ c_kokenois_lal_adj: "de Koknese"
+ c_aluksne_lal: "Marienbourg"
+ c_aluksne_lal_adj: "de Marienbourg"
+ c_jersika_lal: "Jersika"
+ c_jersika_lal_adj: "de Jersika"
+ c_dunabourg: "Dunebourg"
+ c_dunabourg_adj: "de Dunebourg"
+
+ # Duché de Riga
+ d_riga: "Riga"
+ d_riga_adj: "de Riga"
+ 
+ # Royaume de Pologne
+ k_poland_lal: "Pologne"
+ k_poland_lal_adj: "de Pologne"
+
+# ═══════════════════════════════════════════════════════════════════
+ # GROUPE — Le siècle des calamités
+ # ═══════════════════════════════════════════════════════════════════
+ bookmark_group_siecle_calamites: "Le siècle des calamités"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # 1307 — La Chute du Temple
+ # ═══════════════════════════════════════════════════════════════════
+ bm_chute_du_temple_1307: "La Chute du Temple"
+ bm_chute_du_temple_1307_desc: "Le vendredi 13 octobre 1307, Philippe IV le Bel fait arrêter simultanément tous les Templiers de France. L'Ordre du Temple, gardien de la foi et des finances de l'Occident, s'effondre sous les accusations. Jacques de Molay brûlera sur le bûcher en 1314 — non sans avoir maudit le roi et le pape. L'Europe entre dans une ère de bouleversements."
+
+ bm_char_philippe_iv: "Philippe IV le Bel"
+ bm_char_philippe_iv_desc: "Roi de France depuis 1285, Philippe le Bel est l'homme le plus puissant d'Occident. Son bras de fer avec la papauté, couronné par le transfert du Saint-Siège à Avignon, redessine l'équilibre entre le temporel et le spirituel. En ordonnant l'arrestation des Templiers ce funeste vendredi 13, il atteint l'apogée de son pouvoir — mais peut-être aussi le début d'une malédiction promise par Jacques de Molay depuis son bûcher.\n\nSaurez-vous faire plier la papauté et briser l'Ordre du Temple sans attirer sur votre lignée la vengeance des cieux ?"
+
+ bm_char_edward_ii: "Édouard II"
+ bm_char_edward_ii_desc: "Roi d'Angleterre depuis la mort de son père Édouard Ier en juillet 1307, Édouard II hérite d'un royaume en pleine expansion militaire, mais aussi d'un trône écossais toujours contesté par Robert Bruce et d'une noblesse anglaise humiliée par les favoris du roi. Son règne s'annonce semé d'embûches.\n\nParviendrez-vous à dompter vos barons et à achever la conquête de l'Écosse là où votre père a échoué ?"
+
+ bm_char_cangrande: "Cangrande"
+ bm_char_cangrande_desc: "Coseigneur de Vérone avec son frère Alboino depuis 1308, Cangrande della Scala est déjà un chef de guerre redouté, à la tête de compagnies de mercenaires aguerries. Son ambition est claire : faire de Vérone la maîtresse de l'Italie du Nord, quitte à écraser Padoue, Trévise et tous ceux qui s'opposeront à sa marche.\n\nBâtirez-vous, à partir d'une simple seigneurie, l'une des grandes puissances de la péninsule italienne ?"
+
+ bm_char_siegfried: "Siegfried"
+ bm_char_siegfried_desc: "Grand Maître de l'Ordre Teutonique depuis 1303, Siegfried von Feuchtwangen a transféré le siège de l'Ordre à Marienbourg, en Prusse, au cœur de ses conquêtes baltes. Sa mission : étendre l'État monastique le long du littoral et achever, de gré ou de force, la conversion des derniers peuples baltes encore fidèles à leurs anciens dieux.\n\nFerez-vous de l'Ordre Teutonique la première puissance de la Baltique, au prix du sang des païens et de vos propres chevaliers ?"
+
+ bm_char_andronikos_ii: "Andronikos II"
+ bm_char_andronikos_ii_desc: "Empereur byzantin depuis 1282, Andronikos II Paléologue règne sur un empire diminué, rongé par les usurpations de ses proches, l'indiscipline d'une Compagnie catalane devenue incontrôlable et une pression turque grandissante en Anatolie. Sa piété et son érudition suffiront-elles à préserver ce qui reste de la grandeur romaine ?\n\nSaurez-vous redresser Byzance avant que son dernier rempart ne s'effondre ?"
+
+ bm_char_osman: "Osman Ier"
+ bm_char_osman_desc: "Chef d'une petite principauté turkmène à la frontière byzantine d'Anatolie, Osman vient de prendre Éphèse et pose, sans le savoir encore, les fondations de ce qui deviendra l'Empire ottoman. Face à un Empire byzantin affaibli et divisé, l'occasion est belle pour un émirat ambitieux.\n\nFerez-vous d'un simple beylik frontalier la graine d'un empire appelé à dominer trois continents ?"
+
+ bm_char_fernando_iv: "Fernando IV"
+ bm_char_fernando_iv_desc: "Roi de Castille depuis 1295, Fernando IV, dit « l'Ajourné », a survécu à une minorité tumultueuse dominée par les régences et les révoltes nobiliaires. Sa légende noire — deux frères exécutés à tort l'auraient sommé, du haut de leur bûcher, de le rejoindre devant Dieu dans les trente jours — plane sur un règne marqué par la reprise de la Reconquista face à Grenade.\n\nDéjouerez-vous la malédiction qui pèserait sur vous, ou votre règne s'achèvera-t-il comme la prophétie l'annonce ?"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # 1348 — La Mort Noire
+ # ═══════════════════════════════════════════════════════════════════
+ bm_mort_noire_1348: "La Mort Noire"
+ bm_mort_noire_1348_desc: "Venue des steppes d'Asie centrale, la grande peste bubonique atteint l'Europe en 1347. Au printemps 1348, elle dévaste la France et l'Angleterre. Entre un tiers et la moitié de la population européenne mourra. Les guerres s'arrêtent, les routes se vident, les cimetières débordent. Le monde d'avant ne reviendra jamais."
+
+ bm_char_philippe_vi_1348: "Philippe VI"
+ bm_char_philippe_vi_1348_desc: "Le roi de France a signé la trêve avec l'Angleterre après les désastres de Crécy (1346) et de Calais (1347). Sa gloire militaire est ternie, son trésor épuisé. Pour beaucoup de ses sujets, la peste qui ravage le royaume n'est rien d'autre qu'une punition divine s'abattant sur un roi vaincu.\n\nRelèverez-vous la France de ses cendres, ou son déclin s'accélérera-t-il sous votre couronne ?"
+
+ bm_char_edward_iii_1348: "Édouard III"
+ bm_char_edward_iii_1348_desc: "Vainqueur à Crécy, maître de Calais, Édouard III est au faîte de sa gloire militaire. Mais la peste frappe l'Angleterre aussi durement que la France, sans distinction de rang : sa propre fille Jeanne mourra de la maladie avant même d'atteindre la Castille, où elle devait se marier.\n\nTransformerez-vous vos triomphes militaires en couronne durable, malgré le fléau qui frappe votre royaume comme celui de vos ennemis ?"
+
+ bm_char_stefan_dusan: "Stefan Dušan"
+ bm_char_stefan_dusan_desc: "Roi de Serbie, Stefan Dušan mène une conquête fulgurante aux dépens d'un Empire byzantin exsangue. Il rêve d'un empire serbo-grec unifié sous sa couronne, et bientôt d'un titre impérial à la mesure de ses ambitions.\n\nBâtirez-vous, sur les ruines de Byzance, le nouvel empire des Balkans ?"
+
+ bm_char_louis_hongrie: "Louis Ier"
+ bm_char_louis_hongrie_desc: "Fils de Charles Ier d'Anjou, roi de Hongrie depuis 1342, Louis Ier hérite d'un royaume déjà puissant et bien administré. Son ambition : en faire l'une des grandes puissances d'Europe centrale, quitte à intervenir jusqu'en Italie du Sud pour venger son frère André, assassiné à Naples.\n\nFerez-vous de la Hongrie l'arbitre de l'Europe centrale, ou votre soif de vengeance napolitaine vous coûtera-t-elle votre couronne ?"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # 1356 — Bulla Aurea
+ # ═══════════════════════════════════════════════════════════════════
+ bm_bulla_aurea_1356: "Bulla Aurea"
+ bm_bulla_aurea_1356_desc: "Le 19 septembre 1356, le Prince Noir bat l'armée française à Poitiers et fait prisonnier le roi Jean II. La France sans roi bascule dans la crise : le Dauphin Charles gouverne un pays épuisé, révolté, ravagé. En janvier de la même année, Charles IV a promulgué la Bulle d'Or, charte fondamentale du Saint-Empire romain germanique. Deux textes écrits à l'encre d'or, l'un pour une constitution, l'autre pour une rançon."
+
+ bm_char_charles_iv_1356: "Charles IV"
+ bm_char_charles_iv_1356_desc: "Après avoir promulgué la Bulle d'Or en janvier 1356, Charles IV doit désormais gouverner le Saint-Empire et asseoir durablement la domination de la maison de Luxembourg : verrouiller les états électoraux de Bohême et de Brandebourg, et rassembler autant de voix électorales que possible pour faire prospérer sa propre dynastie face aux Habsbourg et aux Wittelsbach.\n\nFerez-vous de la Bulle d'Or le socle d'un Saint-Empire enfin stable, ou les Électeurs se retourneront-ils un jour contre vous ?"
+
+ bm_char_albert_ii: "Albert II"
+ bm_char_albert_ii_desc: "Duc d'Autriche depuis 1330, Albert II de Habsbourg, dit « le Sage » malgré son infirmité, a activement soutenu Charles IV de Luxembourg dans sa lutte contre l'empereur Louis IV de Bavière, contribuant à sa chute en 1347. Mais la reconnaissance impériale se fait attendre : la Bulle d'Or de 1356, qui vient de fixer pour des siècles la liste des sept Électeurs, ignore superbement la maison de Habsbourg. Une rancœur amère couve à Vienne.\n\nFerez-vous payer à Charles IV cet affront, ou saurez-vous forger de nouveaux titres pour rattraper les Électeurs ?"
+
+ bm_char_dauphin_charles: "Le dauphin Charles"
+ bm_char_dauphin_charles_desc: "Son père Jean II le Bon croupit en captivité chez les Anglais, Paris gronde sous la houlette d'Étienne Marcel, et la Jacquerie couve dans les campagnes. Régner sans en avoir le titre : gouverner une régence aussi contestée est peut-être plus périlleux que de gouverner un royaume en paix.\n\nSaurez-vous tenir votre royaume d'une main ferme jusqu'au retour — ou à la mort — de votre père captif ?"
+
+ bm_char_prince_noir: "Édouard le Prince Noir"
+ bm_char_prince_noir_desc: "Vainqueur de Poitiers, le Prince Noir tient le roi de France captif entre ses mains. Son défi : achever la conquête du royaume et transformer ce triomphe éclatant en un véritable empire angevin, aussi durable que celui de ses lointains ancêtres.\n\nFerez-vous de la France une possession anglaise, ou votre victoire restera-t-elle sans lendemain ?"
+
+ bm_char_magnus_iv: "Magnus IV"
+ bm_char_magnus_iv_desc: "Roi de Suède et de Norvège, Magnus IV doit tenir tête à la ligue hanséatique, qui contrôle déjà le commerce de la Baltique, et à l'Ordre Teutonique, qui lorgne sur ces mêmes côtes convoitées.\n\nParviendrez-vous à faire de vos royaumes scandinaves unis une puissance maritime capable de rivaliser avec la Hanse ?"
+
+ bm_char_casimir_iii_1356: "Casimir III le Grand"
+ bm_char_casimir_iii_1356_desc: "Seul roi de Pologne à mériter le titre de Grand, Casimir le Législateur a réformé les lois du royaume, bâti des dizaines de châteaux et doublé le territoire polonais. Le royaume n'a jamais été aussi fort — reste à savoir s'il survivra à l'absence d'héritier mâle de son roi.\n\nAssurerez-vous la pérennité de votre œuvre, ou la Pologne sombrera-t-elle dans la crise successorale à votre mort ?"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # Sous-titres (titre affiché sous le nom du personnage dans le sélecteur
+ # de bookmark) — clé bm_char_(nom)_subheading, absente jusqu'ici.
+ # ═══════════════════════════════════════════════════════════════════
+ # 1307 — La Chute du Temple
+ bm_char_philippe_iv_subheading: "Roi de France"
+ bm_char_edward_ii_subheading: "Roi d'Angleterre"
+ bm_char_cangrande_subheading: "Seigneur de Vérone"
+ bm_char_siegfried_subheading: "Grand Maître de l'Ordre Teutonique"
+ bm_char_andronikos_ii_subheading: "Empereur byzantin"
+ bm_char_osman_subheading: "Bey ottoman"
+ bm_char_fernando_iv_subheading: "Roi de Castille"
+
+ # 1337 — Le Lys et le Lion
+ bm_char_edward_iii_subheading: "Roi d'Angleterre"
+ bm_char_philippe_vi_subheading: "Roi de France"
+ bm_char_gediminas_subheading: "Grand-duc de Lituanie"
+ bm_char_orhan_subheading: "Sultan Ottoman"
+ bm_char_alphonse_xi_subheading: "Roi de Castille"
+ bm_char_robert_naples_subheading: "Roi de Naples"
+ bm_char_david_ii_subheading: "Roi d'Écosse"
+
+ # 1348 — La Mort Noire
+ bm_char_philippe_vi_1348_subheading: "Roi de France"
+ bm_char_edward_iii_1348_subheading: "Roi d'Angleterre"
+ bm_char_stefan_dusan_subheading: "Roi de Serbie"
+ bm_char_louis_hongrie_subheading: "Roi de Hongrie"
+
+ # 1356 — Bulla Aurea
+ bm_char_charles_iv_1356_subheading: "Empereur du Saint-Empire"
+ bm_char_albert_ii_subheading: "Duc d'Autriche"
+ bm_char_dauphin_charles_subheading: "Dauphin de Viennois"
+ bm_char_prince_noir_subheading: "Prince de Galles"
+ bm_char_magnus_iv_subheading: "Roi de Suède"
+ bm_char_casimir_iii_1356_subheading: "Roi de Pologne"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # MISE À JOUR 1337 — groupe renommé
+ # ═══════════════════════════════════════════════════════════════════
+ bookmark_group_siecle_calamites: "Le siècle des calamités"
+ bm_guerre_cent_ans_1337: "Le Lys et le Lion"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # v23.2 — Titres clonés (_lal) : Anhalt, Meissen, Lausitz, Thuringe,
+ # Westphalie, Ostfalie — et nouveaux titres Saxe-Wittemberg / Eilenburg
+ # ═══════════════════════════════════════════════════════════════════
+ d_angria_lal: "Saxe"
+ c_arezzo_lal: "Arezzo"
+ c_strassburg_lal: "Strasbourg"
+ c_minden_lal: "Minden"
+ c_bremen_lal: "Brême"
+ c_wolpe_lal: "Wölpe"
+ c_hannover_lal: "Hanovre"
+ c_hildesheim_lal: "Hildesheim"
+ c_oldenburg_lal: "Oldenbourg"
+ d_saxe-wittemberg: "Saxe-Wittemberg"
+ c_eilenburg: "Eilenburg"
+
+ d_anhalt_lal: "Anhalt"
+ c_dessau_lal: "Dessau"
+ c_halberstadt_lal: "Halberstadt"
+ c_magdeburg_lal: "Magdebourg"
+ c_blankenburg_lal: "Blankenburg"
+ c_mansfeld_lal: "Mansfeld"
+ c_mersenburg_lal: "Merseburg"
+
+ d_meissen_lal: "Meissen"
+ c_meissen_lal: "Meissen"
+ c_dresden_lal: "Dresde"
+ c_wolkenstein_lal: "Wolkenstein"
+ c_osterland_lal: "Osterland"
+ c_naumburg_lal: "Naumburg"
+ c_vogtland_lal: "Vogtland"
+ c_cottbus_lal: "Cottbus"
+
+ d_haute_lusace_lal: "Haute-Lusace"
+ c_gorlitz_lal: "Görlitz"
+
+ d_lausitz_lal: "Lusace"
+ c_juterbog_lal: "Jüterbog"
+ c_wittenberg_lal: "Wittenberg"
+ c_brene_lal: "Brene"
+ c_spreewald_lal: "Spreewald"
+ c_naumberg_lal: "Naumberg"
+
+ d_thuringia_lal: "Thuringe"
+ c_schmalkalden_lal: "Schmalkalden"
+ c_gottingen_lal: "Göttingen"
+ c_gleichenstein_lal: "Gleichenstein"
+ c_orlamunde_lal: "Orlamünde"
+ c_lobdaburg_lal: "Lobdaburg"
+
+ d_westfalen_lal: "Westphalie"
+ c_osnabruck_lal: "Osnabrück"
+ c_tecklenburg_lal: "Tecklenburg"
+ c_munster_lal: "Münster"
+ c_waldeck_lal: "Waldeck"
+
+ d_ostfalen_lal: "Ostfalie"
+ c_luneburg_lal: "Lunebourg"
+ c_brunswick_lal: "Brunswick"
+ c_hamburg_lal: "Hambourg"
+ c_dannenberg_lal: "Dannenberg"
+ c_stendal_lal: "Stendal"
+ d_oldenburg: "Oldenbourg"
+ d_brunswick_luneburg: "Brunswick-Lunebourg"
+ d_minden: "Minden"
+ d_treves: "Trèves"
+ c_fyn_lal: "Fyn"
+
+ c_dyrrachion_lal: "Dyrrachion"
+
+ # Cultures hybrides germaniques (Ostsiedlung) — common/culture/cultures/00_lis_lion_cultures.txt
+ pomeranian_germanic: "Poméranien-germanique"
+ prussian_germanic: "Prussien-germanique"
+ silesian: "Silésien"
+
+ # Nouveau trait — common/traits/00_lis_lion_traits.txt
+ trait_condottiere: "Condottière"
+ condottiere_desc: "Chef de guerre aguerri, ce personnage s'est forgé une réputation à la tête de compagnies de mercenaires à travers l'Italie et au-delà."

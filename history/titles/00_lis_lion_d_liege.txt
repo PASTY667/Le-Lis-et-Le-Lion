@@ -1,0 +1,288 @@
+﻿# Le Lis et le Lion — Duché de Liège (principauté ecclésiastique)
+#
+# STRUCTURE DE JURE (définie dans common/landed_titles/00_landed_titles.txt) :
+#   b_liege (province 2097) → c_liege (capitale du duché)
+#   b_la_roche, b_huy → c_liege
+#   b_namur, b_charleroi, b_couvin → c_namur
+#   c_liege, c_namur → d_liege (nouveau duché, retiré de d_luxembourg)
+#   d_liege → k_lotharingia (de_jure_liege explicite ci-dessous)
+#
+# Le duché est créé le 1066.1.1 (date vanilla réelle de prise de pouvoir de 106610/Dietrich
+# sur c_liege — la date initialement demandée, 985.3.7, ne correspond à aucune entrée
+# d'historique vanilla pour ce personnage). government = theocracy_government, conformément
+# au statut de principauté ecclésiastique déjà porté par c_liege depuis 858 en vanilla
+# (Prince-Évêché de Liège). La succession suit ensuite exactement celle de c_liege/c_namur,
+# qui convergent déjà sur les mêmes titulaires à partir de 1119 en vanilla, jusqu'à
+# 462002 (Adolf) en 1337.
+
+# ---- DUCHÉ DE LIÈGE (nouveau, principauté ecclésiastique) ----
+d_liege = {
+	1066.1.1 = {
+		holder = 106610 # Dietrich
+		liege = "d_lower_lorraine"
+		de_jure_liege = k_lotharingia
+		government = theocracy_government
+	}
+	1075.6.23 = {
+		holder = 33204
+	}
+	1091.1.1 = {
+		holder = 33205
+	}
+	1119.1.1 = {
+		holder = 32286
+	}
+	1121.5.2 = {
+		holder = 41727
+	}
+	1128.1.1 = {
+		holder = 30088
+	}
+	1135.7.6 = {
+		holder = 33208
+	}
+	1145.1.1 = {
+		holder = 33211
+	}
+	1164.10.6 = {
+		holder = 33212
+	}
+	1167.8.9 = {
+		holder = 213148
+		liege = e_hre
+	}
+	1190.8.21 = {
+		liege = e_hre
+	}
+	1191.8.5 = {
+		holder = 206853
+	}
+	1192.11.24 = {
+		holder = 33213
+	}
+	1193.1.1 = {
+		holder = 33214
+	}
+	1195.7.1 = {
+		holder = 33215
+	}
+	1196.1.1 = {
+		holder = 33216
+	}
+	1200.2.1 = {
+		holder = 33217
+	}
+	1229.4.12 = {
+		holder = 33218
+	}
+	1238.5.1 = {
+		holder = 70908
+	}
+	1239.11.1 = {
+		holder = 33219
+	}
+	1246.10.26 = {
+		holder = 30032
+	}
+	1274.1.1 = {
+		holder = 33220
+	}
+	1281.8.24 = {
+		holder = 31551
+	}
+	1292.10.14 = {
+		holder = 33221
+	}
+	1295.1.1 = {
+		holder = 33222
+	}
+	1301.1.1 = {
+		holder = 33223
+	}
+	1302.12.12 = {
+		holder = 31661
+	}
+	1312.5.26 = {
+		holder = 462002 # Adolf — titulaire en 1337
+	}
+}
+
+# ---- COMTÉ DE LIÈGE — suit la même chronologie, liege = d_liege ----
+c_liege = {
+	1066.1.1 = {
+		holder = 106610
+		liege = d_liege
+		government = theocracy_government
+	}
+	1075.6.23 = {
+		holder = 33204
+	}
+	1091.1.1 = {
+		holder = 33205
+	}
+	1119.1.1 = {
+		holder = 32286
+	}
+	1121.5.2 = {
+		holder = 41727
+	}
+	1128.1.1 = {
+		holder = 30088
+	}
+	1135.7.6 = {
+		holder = 33208
+	}
+	1145.1.1 = {
+		holder = 33211
+	}
+	1164.10.6 = {
+		holder = 33212
+	}
+	1167.8.9 = {
+		holder = 213148
+		liege = e_hre
+	}
+	1190.8.21 = {
+		liege = d_liege
+	}
+	1191.8.5 = {
+		holder = 206853
+	}
+	1192.11.24 = {
+		holder = 33213
+	}
+	1193.1.1 = {
+		holder = 33214
+	}
+	1195.7.1 = {
+		holder = 33215
+	}
+	1196.1.1 = {
+		holder = 33216
+	}
+	1200.2.1 = {
+		holder = 33217
+	}
+	1229.4.12 = {
+		holder = 33218
+	}
+	1238.5.1 = {
+		holder = 70908
+	}
+	1239.11.1 = {
+		holder = 33219
+	}
+	1246.10.26 = {
+		holder = 30032
+	}
+	1274.1.1 = {
+		holder = 33220
+	}
+	1281.8.24 = {
+		holder = 31551
+	}
+	1292.10.14 = {
+		holder = 33221
+	}
+	1295.1.1 = {
+		holder = 33222
+	}
+	1301.1.1 = {
+		holder = 33223
+	}
+	1302.12.12 = {
+		holder = 31661
+	}
+	1312.5.26 = {
+		holder = 462002
+	}
+}
+
+# ---- COMTÉ DE NAMUR — suit sa propre lignée jusqu'en 1119, puis converge avec Liège ----
+c_namur = {
+	998.1.1 = {
+		holder = 90117 # Albert I de Namur
+		liege = d_liege
+	}
+	1011.1.1 = {
+		holder = 161536 # Robert de Namur
+	}
+	1016.1.1 = {
+		holder = 90118 # Albert II de Namur
+	}
+	1063.1.1 = {
+		holder = 90119 # Albert III de Namur
+	}
+	1102.1.1 = {
+		holder = 212691 # Godefroy de Namur
+	}
+	1119.1.1 = {
+		holder = 32286
+	}
+	1121.5.2 = {
+		holder = 41727
+	}
+	1128.1.1 = {
+		holder = 30088
+	}
+	1135.7.6 = {
+		holder = 33208
+	}
+	1136.1.1 = {
+		holder = 212690
+	}
+	1190.8.21 = {
+		liege = d_liege
+	}
+	1191.8.5 = {
+		holder = 206853
+	}
+	1192.11.24 = {
+		holder = 33213
+	}
+	1193.1.1 = {
+		holder = 33214
+	}
+	1195.7.1 = {
+		holder = 33215
+	}
+	1196.1.1 = {
+		holder = 33216
+	}
+	1200.2.1 = {
+		holder = 33217
+	}
+	1229.4.12 = {
+		holder = 33218
+	}
+	1238.5.1 = {
+		holder = 70908
+	}
+	1239.11.1 = {
+		holder = 33219
+	}
+	1246.10.26 = {
+		holder = 30032
+	}
+	1274.1.1 = {
+		holder = 33220
+	}
+	1281.8.24 = {
+		holder = 31551
+	}
+	1292.10.14 = {
+		holder = 33221
+	}
+	1295.1.1 = {
+		holder = 33222
+	}
+	1301.1.1 = {
+		holder = 33223
+	}
+	1302.12.12 = {
+		holder = 31661
+	}
+	1312.5.26 = {
+		holder = 462002
+	}
+}

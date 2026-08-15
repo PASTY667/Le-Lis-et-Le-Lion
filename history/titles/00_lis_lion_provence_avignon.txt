@@ -1,0 +1,12 @@
+﻿# Le Lis et le Lion — Baronnie d'Arles et Comtat Venaissin
+#
+# b_arles (province 2017) a été déplacée de c_venaissin vers c_provence via la modification
+# du fichier common/landed_titles/00_landed_titles.txt (méthode vanilla modifiée).
+# Le titulaire de b_arles est Robert Ier d'Anjou (461700), comte de Provence depuis 1309,
+# qui tient déjà c_provence dans le vanilla — cohérence garantie.
+
+b_arles = {
+	1309.5.5 = {
+		holder = 461700 # Robert Ier d'Anjou "le Sage", comte de Provence
+	}
+}

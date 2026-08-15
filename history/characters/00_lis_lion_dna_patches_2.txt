@@ -1,0 +1,245 @@
+# Le Lis et le Lion — Patches DNA (2e vague)
+# CORRIGÉ (bug DNA) : un simple patch "dna=" isolé sur un personnage déjà entièrement
+# défini par le vanilla n'est pas appliqué par le moteur (confirmé par comparaison avec
+# Kazimierz III/471500, qui fonctionne car intégralement redéclaré). Tous les blocs
+# ci-dessous redéclarent donc entièrement le personnage, avec les mêmes valeurs exactes
+# que la fiche vanilla, en y ajoutant uniquement dna=.
+
+214091 = { # Dante Alighieri — vanilla
+	name = "Durante" # Dante
+	dynasty = 1044410 # degli Alighieri
+	religion = "catholic"
+	culture = "italian"
+	learning = 12
+	dna = lis_lion_dante_alighieri
+	1265.6.1 = {
+		birth = yes
+		employer = 7636
+	}
+	1266.2.26 = { employer = 455406 }
+	1280.1.1 =  { employer = 73411 }
+	1287.1.1 = { effect = { set_relation_friend = { reason = friend_generic_history target = character:73460 } } } #Nino Visconti
+	1300.1.1 =  { employer = 73412	}
+	1302.3.1 =  { employer = 70802 } # Verona
+	1308.1.1 =  { employer = 412072 } # Parma
+	1318.1.1 =  { employer = 73551 } # Ravenna 
+	1321.9.13 = {
+		death = yes
+	}
+}
+
+454520 = { # Édouard Ier d'Angleterre (Edward Longshanks) — vanilla
+	name = "Edward"
+	# AKA: Edward Longshanks
+	dynasty_house = house_plantagenet
+	martial = 10
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 7
+	religion = "catholic"
+	culture = "english"
+	dna = lis_lion_edouard_i_angleterre
+	1239.6.17 = {
+		birth = "1239.6.17"
+	}
+	1254.1.1 = {
+		add_spouse = 457642
+	}
+	1299.1.1 = {
+		add_spouse = 455527
+	}
+	1307.7.7 = {
+		death = "1307.7.7"
+	}
+}
+
+454510 = { # Édouard II d'Angleterre — vanilla
+	name = "Edward" # Edward II
+	dynasty_house = house_plantagenet
+	martial = 5
+	diplomacy = 7
+	intrigue = 4
+	stewardship = 4
+	religion = "catholic"
+	culture = "english"
+	dna = lis_lion_edouard_ii_angleterre
+	1284.4.25 = {
+		birth = "1284.4.25"
+	}
+	1308.1.2 = {
+		add_spouse = 455525
+	}
+	1327.9.21 = {
+		death = "1327.9.21"
+	}
+}
+
+455525 = { # Isabelle de France, épouse d'Édouard II — vanilla
+	name = "Isabelle"
+	female = yes
+	dynasty_house = house_capet
+	martial = 7
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 4
+	religion = "catholic"
+	culture = french
+	dna = lis_lion_isabelle_de_france
+	1295.1.2 = {
+		birth = "1295.1.2"
+	}
+	1358.8.22 = {
+		death = "1358.8.22"
+	}
+}
+
+455835 = { # Jeanne II de Navarre — vanilla
+	name = "Jeanne"
+	female = yes
+	dynasty_house = house_capet
+	martial = 8
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 6
+	religion = "catholic"
+	culture = french
+	dna = lis_lion_jeanne_ii_navarre
+	1310.1.28 = {
+		birth = "1310.1.28"
+	}
+	1316.11.19 = {
+		add_pressed_claim = title:k_navarra
+		add_pressed_claim = title:d_champagne
+		add_pressed_claim = title:d_navarra
+		add_pressed_claim = title:c_navarra
+	}
+	1328.2.1 = {
+		remove_claim = title:k_navarra
+		remove_claim = title:d_navarra
+		remove_claim = title:c_navarra
+	}
+	1335.1.1 = {
+		remove_claim = title:d_champagne
+	}
+	1349.10.6 = {
+		death = "1349.10.6"
+	}
+}
+
+170011 = { # Helen de Saxe-Lauenbourg, épouse d'Otto von Wilhesm — vanilla
+	name = "Helen" #Helen of Saxony
+	female = yes
+	dynasty = 226
+	religion = "catholic"
+	culture = saxon
+	dna = lis_lion_helen_saxe_lauenbourg
+	1272.1.1 = {
+		birth = "1272.1.1"
+	}
+	1337.1.1 = {
+		death = "1337.1.1"
+	}
+}
+
+455532 = { # Jeanne de Bourgogne, épouse de Philippe VI — vanilla
+	name = "Jeanne"
+	female = yes
+	dynasty_house = house_bourgogne
+	martial = 6
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 6
+	religion = "catholic"
+	culture = french
+	dna = lis_lion_jeanne_de_bourgogne
+	1293.1.2 = {
+		birth = "1293.1.2"
+	}
+	1343.1.2 = {
+		death = "1343.1.2"
+	}
+}
+
+454501 = { # Édouard de Woodstock, le Prince Noir — vanilla
+	name = "Edward" # The Black Prince
+	dynasty_house = house_plantagenet
+	martial = 10
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 3
+	religion = "catholic"
+	culture = "english"
+	dna = lis_lion_edouard_woodstock
+	1330.6.15 = {
+		birth = "1330.6.15"
+	}
+	1376.6.8 = {
+		death = "1376.6.8"
+	}
+}
+
+462740 = { # Louis IV de Bavière, empereur du Saint-Empire — vanilla
+	name = "Ludwig"
+	dynasty_house = house_wittelsbach
+	martial = 7
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 6
+	religion = "catholic"
+	culture = bavarian
+	dna = lis_lion_louis_de_baviere
+	1282.4.1 = {
+		birth = "1282.4.1"
+	}
+	1309.1.2 = {
+		add_spouse = 161902 # Beatrycza of Schweidnitz
+	}
+	1324.2.25 = {
+		add_spouse = 462741
+	}
+	1347.10.11 = {
+		death = "1347.10.11"
+	}
+}
+
+455502 = { # Jean II le Bon, roi de France — vanilla
+	name = "Jean"
+	# AKA: Jean II
+	dynasty = 101
+	martial = 5
+	diplomacy = 2
+	intrigue = 4
+	stewardship = 5
+	religion = "catholic"
+	culture = french
+	dna = lis_lion_jean_ii_de_france
+	1319.4.16 = {
+		birth = "1319.4.16"
+	}
+	1332.7.28 = {
+		add_spouse = 462600
+	}
+	1364.4.8 = {
+		death = "1364.4.8"
+	}
+}
+
+462600 = { # Jutte de Bohême (Bonne de Luxembourg), épouse de Jean II — vanilla
+	name = "Jutte"
+	# AKA: Bonne
+	female = yes
+	dynasty_house = house_luxemburg
+	martial = 5
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 4
+	religion = "catholic"
+	culture = franconian
+	dna = lis_lion_jutte_de_boheme
+	1315.5.20 = {
+		birth = "1315.5.20"
+	}
+	1349.9.11 = {
+		death = "1349.9.11"
+	}
+}

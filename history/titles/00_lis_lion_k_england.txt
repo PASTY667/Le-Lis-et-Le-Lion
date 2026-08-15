@@ -1,0 +1,17 @@
+﻿# Le Lis et le Lion — Royaume d'Angleterre (k_england)
+# Force la réévaluation du blason dynamique au 1er novembre 1337, date à laquelle
+# Édouard III revendique le trône de France (cf. common/coat_of_arms/dynamic_definitions/
+# 00_lis_lion_dynamic_coas.txt, qui bascule alors le blason vers k_england_france).
+#
+# Un trigger de date seul ne suffit pas : le jeu ne réévalue les blasons dynamiques
+# (update_dynamic_coa) que sur des évènements structurels précis (changement de titulaire,
+# de culture, de foi), jamais sur le simple passage du temps — cf. les commentaires détaillés
+# dans 00_lis_lion_dynamic_coas.txt. On appelle donc ici explicitement update_dynamic_coa,
+# dans une entrée d'historique fusionnée avec celle, vanilla, de k_england.
+k_england = {
+	1337.11.1 = {
+		effect = {
+			update_dynamic_coa = yes
+		}
+	}
+}

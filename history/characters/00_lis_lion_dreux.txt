@@ -1,0 +1,270 @@
+﻿# Le Lis et le Lion — Maison de Dreux (ducs de Bretagne)
+# house_dreux existe déjà nativement et est correctement rattachée à la dynastie
+# Robertine (743) — comme Robert II de Dreux (204987). Mais le reste de la lignée
+# ducale de Bretagne (Éléonore 91039, Jean III le Bon 455750, etc.) était resté sur
+# l'ancienne dynastie 86 (Dreux autonome). On harmonise toute la lignée vers house_dreux.
+# Le changement de maison est appliqué DANS un bloc de date (à la date de naissance).
+
+455517 = {
+	1270.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+455753 = {
+	1319.1.2 = {
+		dynasty_house = house_dreux
+	}
+}
+
+455788 = {
+	1268.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+455789 = {
+	1239.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+7431 = {
+	1266.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+7620 = {
+	1187.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+7621 = {
+	1217.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+7626 = {
+	1212.1.5 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91039 = {
+	1186.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91041 = {
+	1188.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91042 = {
+	1189.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91043 = {
+	1192.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91044 = {
+	1193.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91045 = {
+	1195.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91046 = {
+	1196.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91047 = {
+	1198.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91048 = {
+	1199.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91049 = {
+	1200.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91128 = {
+	1243.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91166 = {
+	1218.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91225 = {
+	1220.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91226 = {
+	1231.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91227 = {
+	1245.4.2 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91228 = {
+	1245.7.23 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91229 = {
+	1247.11.9 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91230 = {
+	1248.12.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91231 = {
+	1249.12.8 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91232 = {
+	1251.3.6 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91233 = {
+	1269.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91234 = {
+	1275.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91235 = {
+	1300.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91236 = {
+	1289.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91237 = {
+	1215.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91239 = {
+	1241.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91240 = {
+	1269.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91241 = {
+	1295.12.7 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91242 = {
+	1296.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+91243 = {
+	1300.7.18 = {
+		dynasty_house = house_dreux
+	}
+}
+
+455755 = {
+	1293.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+455756 = {
+	1298.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+455757 = {
+	1302.1.1 = {
+		dynasty_house = house_dreux
+	}
+}
+
+455751 = {
+	1262.7.25 = {
+		dynasty_house = house_dreux
+	}
+}
+
+455750 = {
+	1286.3.8 = {
+		dynasty_house = house_dreux
+	}
+}
+
+455754 = {
+	1287.1.1 = {
+		dynasty_house = house_dreux
+	}
+}

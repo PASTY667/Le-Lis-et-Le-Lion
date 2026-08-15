@@ -1,0 +1,275 @@
+# ════════════════════════════════════════════════════════════
+# 1198.1.1 — Royaume de Prusse
+# ════════════════════════════════════════════════════════════
+
+120 = { # b_ragnit (c_scalovia_lal)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+157 = { # b_suvalkai (c_suvalkai)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+2835 = { # b_elblag (d_prussia)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+3198 = { # b_kulm (d_masuria)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+3204 = { # b_lautenburg (d_prussia / c_gumbinnen)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+3208 = { # b_lotzen (d_masuria)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+3212 = { # b_allenstein (d_masuria)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+3214 = { # b_eylau (d_masuria)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+3216 = { # b_konigsberg (d_prussia / c_konigsberg)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+3218 = { # b_laukitten (d_prussia / c_natangia)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+3220 = { # b_wormditt (d_prussia / c_wormditt_lal)
+	1198.1.1 = {
+		holding = castle_holding
+	}
+}
+
+# ════════════════════════════════════════════════════════════
+# 1202.1.1 — Royaume de Livonie + Duché d'Ösel-Wiek
+# ════════════════════════════════════════════════════════════
+
+88 = { # b_kuressare (d_osel_wiek / c_osel)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+92 = { # b_hapsal (d_osel_wiek / c_wiek_lal)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+99 = { # b_parnu (d_livonia)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+101 = { # b_lemisele (d_livonia / c_vidzeme_lal)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+102 = { # b_valmiera (d_latgalians / c_vidzeme_lal)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+103 = { # b_kokenois (d_latgalians / c_kokenois_lal)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+104 = { # b_uxkull (d_courland)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+108 = { # b_riga (d_livonia / c_riga)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+110 = { # b_piltene (d_courland)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+114 = { # b_grobin (d_courland / c_grobin)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+133 = { # b_selpils (d_courland / c_selpils_lal)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+136 = { # b_jersika (d_latgalians / c_jersika_lal)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+137 = { # b_daugavpils (d_latgalians / c_dunabourg)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+141 = { # b_aluksne (d_latgalians / c_aluksne_lal)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+145 = { # b_tartu (d_livonia)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+148 = { # b_salacgriva (d_livonia / c_livs_lal)
+	1202.1.1 = {
+		holding = castle_holding
+	}
+}
+
+# ════════════════════════════════════════════════════════════
+# 1219.1.1 — Duché d'Estonie
+# ════════════════════════════════════════════════════════════
+
+94 = { # b_reval (d_esthonia / c_reval)
+	1219.1.1 = {
+		holding = castle_holding
+	}
+}
+
+98 = { # b_narva (d_esthonia / c_narva)
+	1219.1.1 = {
+		holding = castle_holding
+	}
+}
+
+# ════════════════════════════════════════════════════════════
+# 1253.1.30 — Royaume de Lituanie
+# ════════════════════════════════════════════════════════════
+
+115 = { # b_palanga (c_palanga_lal)
+	1253.1.30 = {
+		holding = castle_holding
+	}
+}
+
+118 = { # b_memel (c_memel_lal)
+	1253.1.30 = {
+		holding = castle_holding
+	}
+}
+
+124 = { # b_raseiniai (c_raseiniai)
+	1253.1.30 = {
+		holding = castle_holding
+	}
+}
+
+127 = { # b_siauliai (c_siauliai)
+	1253.1.30 = {
+		holding = castle_holding
+	}
+}
+
+128 = { # b_telsiai (c_telsiai)
+	1253.1.30 = {
+		holding = castle_holding
+	}
+}
+
+153 = { # b_trakai (c_trakai)
+	1253.1.30 = {
+		holding = castle_holding
+	}
+}
+
+154 = { # b_kernave (c_kernave)
+	1253.1.30 = {
+		holding = castle_holding
+	}
+}
+
+156 = { # b_panemune (d_lithuanians)
+	1253.1.30 = {
+		holding = castle_holding
+	}
+}
+
+161 = { # b_augustavas (d_samogitia / c_yatvyagi)
+	1253.1.30 = {
+		holding = castle_holding
+	}
+}
+
+166 = { # b_braslau (c_braslau)
+	1253.1.30 = {
+		holding = castle_holding
+	}
+}
+
+# Paderborn — conversion du holding de b_paderborn en castle_holding (1020.11.20)
+2847 = { # b_paderborn — castle à partir de la fondation du duché
+	1020.11.20 = {
+		holding = castle_holding
+	}
+}
+
+# NOTE : le vanilla (k_east_francia.txt) fixe holding = church_holding par défaut puis
+# le change en city_holding au 845.1.1 (destruction viking, essor hanséatique). Comme
+# "00_..." se charge AVANT "k_east_francia.txt" par ordre alphabétique, une entrée à la
+# même date 845.1.1 serait écrasée par le vanilla : on utilise donc le lendemain
+# (845.1.2) pour être certain que le château l'emporte chronologiquement, quel que
+# soit l'ordre des fichiers (même technique que pour c_passau).
+2802 = { # b_hamburg (c_hamburg_lal) — Le Lis et le Lion : chateau plutot que ville/eglise
+	845.1.2 = {
+		holding = castle_holding
+	}
+}
+
+
+2546 = { # b_ravenna (d_romagna) — Le Lis et le Lion : chateau plutot qu'ecclesiastique
+	867.1.1 = {
+		holding = castle_holding
+	}
+}

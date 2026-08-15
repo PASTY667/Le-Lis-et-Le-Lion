@@ -1,0 +1,214 @@
+﻿# Le Lis et le Lion — Duché de Hainaut
+#
+# STRUCTURE DE JURE (définie dans common/landed_titles/00_landed_titles.txt) :
+#   b_mons (province 2117) → c_hainaut (capitale du duché)
+#   b_tournai, b_ath → c_hainaut
+#   b_cambrai, b_malboden, b_valenciennes → c_cambray
+#   c_hainaut, c_cambray → d_hainaut (nouveau duché, retiré de d_brabant)
+#   d_hainaut → k_lotharingia (de_jure_liege explicite ci-dessous, ce titre n'étant pas
+#     imbriqué dans un autre titre de rang supérieur dans landed_titles)
+#
+# Le duché est créé le 892.1.1 (date vanilla réelle de prise de pouvoir de 7812/Reginar
+# sur c_hainaut — la date initialement demandée, 880.9.24, ne correspond à aucune entrée
+# d'historique vanilla pour ce personnage). La succession suit ensuite exactement celle de
+# c_hainaut (les deux comtés ont déjà la même chronologie de titulaires en vanilla).
+
+# ---- DUCHÉ DE HAINAUT (nouveau) ----
+d_hainaut = {
+	892.1.1 = {
+		holder = 7812 # Reginar (Renier au Long Col)
+		liege = k_lotharingia
+		de_jure_liege = k_lotharingia
+		government = feudal_government
+	}
+	915.1.1 = {
+		holder = 7811
+	}
+	932.1.1 = {
+		holder = 7810
+	}
+	958.1.1 = {
+		holder = 144992
+	}
+	964.1.1 = {
+		holder = 144991
+	}
+	973.1.1 = {
+		holder = 7998
+	}
+	1013.1.1 = {
+		holder = 106642
+	}
+	1039.1.1 = {
+		holder = 94019
+	}
+	1051.1.1 = {
+		holder = 106640 # Richilde
+	}
+	1070.7.17 = {
+		holder = 366 # Arnulf III
+	}
+	1071.2.22 = {
+		liege = e_hre
+		holder = 10074 # Boudewijn
+	}
+	1098.8.1 = {
+		holder = 94015 # Boudewijn
+	}
+	1120.1.1 = {
+		holder = 205521 # Boudewijn
+	}
+	1171.11.8 = {
+		holder = 205520 # Boudewijn
+	}
+	1195.12.17 = {
+		holder = 205523 # Boudewijn
+	}
+	1204.5.16 = {
+		holder = 94021 # Johanna van Vlaanderen
+	}
+	1244.12.5 = {
+		holder = 94024 # Margaretha van Vlaanderen
+	}
+	1280.10.2 = {
+		holder = 94008 # Jan d'Avesnes
+	}
+	1304.8.22 = {
+		holder = 462742 # Willem III (Guillaume Ier de Hainaut)
+	}
+	1337.6.7 = {
+		holder = 487011 # Willem IV
+	}
+}
+
+# ---- COMTÉ DE HAINAUT — suit la même chronologie, liege = d_hainaut ----
+c_hainaut = {
+	892.1.1 = {
+		holder = 7812
+		liege = d_hainaut
+	}
+	915.1.1 = {
+		holder = 7811
+	}
+	932.1.1 = {
+		holder = 7810
+	}
+	958.1.1 = {
+		holder = 144992
+	}
+	964.1.1 = {
+		holder = 144991
+	}
+	973.1.1 = {
+		holder = 7998
+	}
+	1013.1.1 = {
+		holder = 106642
+	}
+	1039.1.1 = {
+		holder = 94019
+	}
+	1051.1.1 = {
+		holder = 106640
+	}
+	1070.7.17 = {
+		holder = 366
+	}
+	1071.2.22 = {
+		liege = e_hre
+		holder = 10074
+	}
+	1098.8.1 = {
+		holder = 94015
+	}
+	1120.1.1 = {
+		holder = 205521
+	}
+	1171.11.8 = {
+		holder = 205520
+	}
+	1195.12.17 = {
+		holder = 205523
+	}
+	1204.5.16 = {
+		holder = 94021
+	}
+	1244.12.5 = {
+		holder = 94024
+	}
+	1280.10.2 = {
+		holder = 94008
+	}
+	1304.8.22 = {
+		holder = 462742
+	}
+	1337.6.7 = {
+		holder = 487011
+	}
+}
+
+# ---- COMTÉ DE CAMBRAY — suit la même chronologie, liege = d_hainaut ----
+c_cambray = {
+	892.1.1 = {
+		holder = 7812
+		liege = d_hainaut
+	}
+	915.1.1 = {
+		holder = 7811
+	}
+	932.1.1 = {
+		holder = 7810
+	}
+	958.1.1 = {
+		holder = 144992
+	}
+	964.1.1 = {
+		holder = 144991
+	}
+	973.1.1 = {
+		holder = 7998
+	}
+	1013.1.1 = {
+		holder = 106642
+	}
+	1039.1.1 = {
+		holder = 94019
+	}
+	1051.1.1 = {
+		holder = 106640
+	}
+	1070.7.17 = {
+		holder = 366
+	}
+	1071.2.22 = {
+		liege = e_hre
+		holder = 10074
+	}
+	1098.8.1 = {
+		holder = 94015
+	}
+	1120.1.1 = {
+		holder = 205521
+	}
+	1171.11.8 = {
+		holder = 205520
+	}
+	1195.12.17 = {
+		holder = 205523
+	}
+	1204.5.16 = {
+		holder = 94021
+	}
+	1244.12.5 = {
+		holder = 94024
+	}
+	1280.10.2 = {
+		holder = 94008
+	}
+	1304.8.22 = {
+		holder = 462742
+	}
+	1337.6.7 = {
+		holder = 487011
+	}
+}

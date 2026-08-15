@@ -1,0 +1,68 @@
+﻿# Le Lis et le Lion — Duché de Bade (d_baden)
+#
+# Nouveau duché créé le 3 juillet 1112, sous le règne de 213153 (déjà comte de Baden
+# depuis 1074.4.25 — toujours vivant en 1112, mort en 1130).
+# Titre "Margrave" (Markgraf) via le flag margrave_flag sur le titre.
+# Capital : b_baden (via c_baden).
+# Comtés de jure : c_baden, c_breisgau, c_furstenberg.
+#
+# Succession copiée du modèle de c_baden à partir de la création, avec correction du
+# bug signalé : 462310 n'hérite qu'UNE SEULE FOIS, au 1297.1.1 (pas de doublon).
+# Vassal direct de l'Empereur du Saint-Empire (liege = e_hre, posé dès la création),
+# mais de jure rattaché au royaume de Germanie (k_east_francia, id 1002),
+# lui-même de jure sous e_hre — hiérarchie correcte respectée.
+
+d_baden = {
+	1112.7.3 = {
+		holder = 213153
+		liege = e_hre
+		de_jure_liege = k_east_francia
+		government = feudal_government
+		add_title_flag = margrave_flag
+	}
+	1130.1.5 = {
+		holder = 212410
+	}
+	1160.1.16 = {
+		holder = 212400
+	}
+	1190.9.16 = {
+		holder = 212402
+	}
+	1243.1.16 = {
+		holder = 462316
+	}
+	1288.1.1 = {
+		holder = 462314
+	}
+	1297.1.1 = {
+		holder = 462310
+	}
+}
+
+# ── De jure : les 3 comtés passent sous d_baden ───────────────────────────────────
+# (libérés de d_swabia et d_alsace à la date de création du duché)
+
+c_baden = {
+	1112.7.3 = {
+		de_jure_liege = d_baden
+	}
+}
+
+c_breisgau = {
+	1112.7.3 = {
+		de_jure_liege = d_baden
+	}
+}
+
+c_furstenberg = {
+	1112.7.3 = {
+		de_jure_liege = d_baden
+	}
+	# Attribution demandée : 462324 devient comte de Furstenberg (au lieu de 462337
+	# en vanilla), vassal du duc de Bade (462310 en 1337).
+	1309.1.3 = {
+		holder = 462324
+		liege = d_baden
+	}
+}

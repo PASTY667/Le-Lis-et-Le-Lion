@@ -1,0 +1,80 @@
+﻿# Le Lis et le Lion — Suzerainetés et gouvernements divers (au 1337.5.24)
+
+# Le Pape devient seigneur lige (liege, sans devenir propriétaire/holder) des terres
+# pontificales périphériques d'Italie centrale, qui en vanilla sont restées indépendantes
+# (liege = 0) après leurs derniers titulaires laïcs.
+d_romagna = {
+	1337.5.24 = {
+		liege = k_papal_state
+	}
+}
+c_bologna = {
+	1337.5.24 = {
+		liege = k_papal_state
+	}
+}
+d_ancona = {
+	1337.5.24 = {
+		liege = k_papal_state
+	}
+}
+c_urbino = {
+	1337.5.24 = {
+		liege = k_papal_state
+	}
+}
+
+# Le duché de Majorque, indépendant depuis 1295 en vanilla (liege = 0), redevient vassal du
+# royaume d'Aragon.
+d_mallorca = {
+	1337.5.24 = {
+		liege = k_aragon
+	}
+}
+
+# L'Empire byzantin doit avoir un gouvernement de type administratif. Rappels répétés à
+# plusieurs dates de contrôle pour être bien sûr que le régime tienne dans la durée.
+e_byzantium = {
+	1307.1.1 = {
+		government = administrative_government
+	}
+	1337.1.1 = {
+		government = administrative_government
+	}
+	1337.5.24 = {
+		government = administrative_government
+	}
+	1348.1.1 = {
+		government = administrative_government
+	}
+	1356.1.1 = {
+		government = administrative_government
+	}
+}
+
+# Les Ottomans présents dans le duché de Paphlagonie doivent être de gouvernement féodal
+# (hérité de clan_government depuis 1077 dans le vanilla, jamais mis à jour).
+d_paphlagonia = {
+	1337.5.24 = {
+		government = feudal_government
+	}
+}
+
+# Confédération des VIII cantons (Suisse)
+k_switzerland = {
+	1291.7.15= {
+		liege="e_hre"
+		de_jure_liege = "e_hre"
+		government = republic_government
+	}
+}
+
+c_aargau = {
+
+	1337.10.21 = {
+		holder = 462052
+		liege = "d_osterreich"
+	}
+
+}
+

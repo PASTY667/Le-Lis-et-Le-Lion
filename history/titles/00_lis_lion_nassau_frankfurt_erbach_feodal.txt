@@ -1,0 +1,29 @@
+# Le Lis et le Lion — Possessions des Nassau (personnage 462362, Gerlach von Nassau,
+# et toute sa lignée/historique) : gouvernement féodal forcé.
+#
+# c_frankfurt et c_erbach (k_east_francia.txt) restent bloqués en theocracy_government
+# depuis le 863.6.4 (évêque Liutbert, holder = 168593) — un état jamais réinitialisé par
+# le vanilla — alors qu'ils passent aux mains de la maison de Nassau (des laïcs,
+# gouvernement féodal) à partir du 1125.5.23 avec Ruprecht von Nassau, et le restent
+# jusqu'à Gerlach von Nassau (462362) et au-delà. On force donc le féodal dès la prise
+# de possession par les Nassau, pour toute la lignée :
+#   1125.5.23 Ruprecht von Nassau (30719) — 1154.5.13 Ruprecht von Nassau (30717) —
+#   1159.4.1 Walram von Nassau (212370) — 1197.7.5 Heinrich II von Nassau (212372) —
+#   1251.1.25 Walram II von Nassau (30700) — 1276.1.24 Adolf von Nassau (462360) —
+#   1298.6.23 Gerlach von Nassau (462362).
+#
+# (c_erbach redevient déjà féodal de lui-même au 1156.1.1 via Konrad von Hohenstaufen,
+# mais reste théocratique de 1125 à 1156 sous les deux premiers Ruprecht : l'entrée
+# ci-dessous comble aussi cette parenthèse.)
+
+c_frankfurt = {
+	1125.5.23 = {
+		government = feudal_government
+	}
+}
+
+c_erbach = {
+	1125.5.23 = {
+		government = feudal_government
+	}
+}

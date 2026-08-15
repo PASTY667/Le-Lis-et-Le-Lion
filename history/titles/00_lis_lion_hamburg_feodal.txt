@@ -1,0 +1,20 @@
+# Le Lis et le Lion — c_hamburg_lal en gouvernement féodal, en cohérence avec la
+# conversion de b_hamburg (province 2802) en castle_holding (voir
+# history/provinces/00_lis_lion_castle_holding.txt).
+#
+# Le vanilla (k_east_francia.txt) fait passer le comté en theocracy_government au
+# 1043.4.15 (Adalbert von Goseck, archevêque de Brême-Hambourg), avant qu'il ne
+# redevienne féodal de lui-même au 1164.1.1 (Adolf de Schauenburg). On comble cette
+# parenthèse théocratique en forçant le féodal dès le lendemain de la conversion en
+# château (845.1.2) et à nouveau juste après le basculement vanilla (1043.4.16), afin
+# que le comté reste féodal sans discontinuer du château (845) jusqu'au comte de
+# Schauenburg (1164), où le vanilla reprend la main normalement.
+
+c_hamburg_lal = {
+	845.1.2 = {
+		government = feudal_government
+	}
+	1043.4.16 = {
+		government = feudal_government
+	}
+}

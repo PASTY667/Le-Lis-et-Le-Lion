@@ -1,0 +1,122 @@
+# Le Lis et le Lion — c_strassburg_lal
+#
+# Clone de c_strassburg (précédemment défini dans k_east_francia.txt). Le
+# vanilla donnait le comté à Heinrich VII de Luxembourg (462611, en réalité
+# père de Jean l'Aveugle, pas duc d'Autriche) le 1308.5.1, puis le faisait
+# passer à Louis IV de Bavière (462740) le 1313.8.24. Un premier correctif
+# avait remplacé 462611 par 462025 (Friedrich le Bel, duc d'Autriche) au
+# 1308.5.1, mais l'entrée du 1313.8.24 restait et rompait quand même la
+# continuité demandée : le comté doit appartenir au duc d'Autriche EN CONTINU
+# depuis le 1er mai 1308.
+#
+# Ce fichier recopie intégralement la chronologie vanilla, retire l'entrée du
+# 1313.8.24 (Louis IV de Bavière), et prolonge la détention par le duc
+# d'Autriche en poste : Friedrich le Bel (462025) depuis 1308.5.1, puis son
+# successeur à d_osterreich, 462020, depuis 1330.2.14 (cf. k_bavaria.txt
+# vanilla), pour rester cohérent jusqu'au début de partie (1337).
+#
+# c_strassburg (vanilla, dans k_east_francia.txt) est retiré au profit de
+# c_strassburg_lal (voir common/landed_titles/00_landed_titles.txt) ; aucune
+# référence à c_strassburg ne subsiste ailleurs dans le mod.
+
+c_strassburg_lal = {
+	670.1.1 = {
+		holder = 161471
+	}
+	682.1.1 = {
+		holder = 161472
+	}
+	722.12.11 = {
+		holder = 161473
+	}
+	739.1.1 = {
+		holder = 161475
+	}
+	748.1.1 = {
+		holder = 161476
+	}
+	780.1.1 = {
+		holder = 161477
+	}
+	800.1.1 = {
+		holder = 161478
+	}
+	822.1.1 = {
+		holder = 161479
+	}
+	842.1.1 = {
+		liege = "k_lotharingia"
+	}
+	898.1.1 = {
+		holder = 1326
+	}
+	940.1.1 = {
+		holder = 1328
+	}
+	972.12.18 = {
+		holder = 1330
+	}
+	986.1.1 = {
+		holder = 144959
+	}
+	1016.1.1 = {
+		holder = 1332 #Hugo VI
+	}
+	1036.1.1 = {
+		holder = 1334
+	}
+	1038.1.1 = {
+		holder = 1336
+	}
+	1049.1.1 = {
+		holder = 1340
+	}
+	1050.6.28 = {
+		holder = 1342
+	}
+	1065.1.1 = {
+		liege = e_hre
+	}
+	1098.1.1 = {
+		holder = 161461
+	}
+	1137.1.1 = {
+		holder = 161462
+	}
+	1178.1.1 = {
+		holder = 161464
+	}
+	1212.1.1 = {
+		holder = 161470
+	}
+	1225.3.19 = {
+		holder = 30759
+	}
+	1235.1.1 = {
+		holder = 30760
+	}
+	1254.5.21 = {
+		holder = 30785
+	}
+	1256.1.28 = {
+		holder = 232682
+	}
+	1268.10.29 = {
+		liege = "e_hre"
+	}
+	1272.4.2 = {
+		holder = 462021
+	}
+	1291.7.15 = {
+		holder = 462360
+	}
+	1298.6.23 = {
+		holder = 462023
+	}
+	1308.5.1 = {
+		holder = 462025 # Friedrich le Bel (Habsbourg), duc d'Autriche depuis cette même date
+	}
+	1330.2.14 = {
+		holder = 462020 # successeur de Friedrich à d_osterreich (k_bavaria.txt vanilla, 1330.2.14) : continuité "duc d'Autriche"
+	}
+}

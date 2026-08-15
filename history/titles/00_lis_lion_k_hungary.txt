@@ -1,0 +1,14 @@
+﻿# Le Lis et le Lion — Royaume de Hongrie (k_hungary)
+# Ce titre n'avait AUCUN bloc d'historique propre en vanilla (contrairement à k_croatia, qui
+# en a un). Charles Robert d'Anjou (469500) est pourtant déjà titulaire de nombreux comtés
+# et duchés hongrois dès 1307.10.10 (cf. k_hungary.txt, comtés individuels), et de la Croatie
+# elle-même à la même date. Sans bloc propre pour k_hungary, le titre principal du personnage
+# risque d'être déterminé par défaut sur la Croatie plutôt que sur la Hongrie. On corrige en
+# donnant à k_hungary son propre historique de titulaire, cohérent avec les comtés.
+
+k_hungary = {
+	1307.10.10 = {
+		holder = 469500 # Charles Robert (Caroberto) d'Anjou
+		government = feudal_government
+	}
+}

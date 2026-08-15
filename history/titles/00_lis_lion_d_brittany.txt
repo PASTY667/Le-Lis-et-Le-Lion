@@ -1,0 +1,18 @@
+﻿# Le Lis et le Lion — Duché de Bretagne (d_brittany)
+# Force la réévaluation du blason dynamique au 27 août 1312 : le blason des Dreux
+# (d_brittany_dreux, en vigueur depuis le 1er janvier 1221) laisse alors place aux
+# armoiries du royaume de Bretagne (d_brittany_royaume — cf.
+# common/coat_of_arms/dynamic_definitions/00_lis_lion_dynamic_coas.txt et le placeholder
+# à compléter dans common/coat_of_arms/coat_of_arms/99_lis_lion_coa.txt).
+#
+# Comme pour k_sicily et k_england, un trigger de date seul ne suffit pas : le jeu ne
+# réévalue les blasons dynamiques que sur des évènements structurels précis, jamais sur
+# le simple passage du temps — cf. les commentaires détaillés dans
+# 00_lis_lion_dynamic_coas.txt.
+d_brittany = {
+	1312.8.27 = {
+		effect = {
+			update_dynamic_coa = yes
+		}
+	}
+}

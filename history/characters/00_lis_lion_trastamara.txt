@@ -1,0 +1,14 @@
+﻿# Le Lis et le Lion — Enrique Alfonsez (457510)
+# Fils bâtard d'Alphonse XI de Castille, fondateur de la maison de Trastamare.
+# CORRECTIONS :
+# - trait = bastard remplacé par trait = bastard_founder (il fonde une nouvelle lignée
+#   destinée à régner, pas un simple bâtard sans postérité dynastique notable)
+# - maison rattachée à house_trastamara (cadette d'Ivrea, 681) au lieu de dynasty = 774
+#   (Trastamare autonome et déconnectée de la maison royale castillane réelle)
+
+457510 = {
+	1332.1.13 = {
+		dynasty_house = house_trastamara
+		trait = bastard_founder
+	}
+}

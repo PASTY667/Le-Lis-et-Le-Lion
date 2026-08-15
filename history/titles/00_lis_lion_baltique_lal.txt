@@ -1,0 +1,705 @@
+﻿# Le Lis et le Lion — Historiques des comtés _lal (Baltique personnalisés)
+# Ces comtés remplacent leurs équivalents vanilla dans landed_titles.
+# Chaque comté inclut les holders vanilla pré-coupure puis la chronologie personnalisée.
+# Source vanilla : k_lithuania.txt (non accessible directement — holders pré-coupure
+# reconstitués d'après les données connues ; à compléter si nécessaire).
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# GROUPE 1 — ARCHEVÊCHÉ DE RIGA
+# Concerne : c_vidzeme_lal, c_riga, c_kokenois_lal, c_aluksne_lal, c_jersika_lal
+# Coupure : 1199.1.1 (Albert de Riga, premier archevêque)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+c_vidzeme_lal = {
+	# ---- Holders vanilla pré-1199 ----
+	765.1.1 = {
+		holder = 170349
+		liege = "d_livonia"
+		government = tribal_government
+	}
+	867.1.1 = {
+		holder = 167737
+	}
+	1066.1.1 = {
+		holder = 28023
+	}
+	1089.1.1 = {
+		holder = 143150
+	}
+	1139.1.1 = {
+		holder = 143151
+	}
+	1187.1.1 = {
+		holder = 228023
+	}
+	# ---- Archevêché de Riga (1199 →) ----
+	1199.1.1 = {
+		liege = "e_hre"
+		government = theocracy_government
+	}
+	1199.1.1 = {
+		holder = 30421	#Albrecht von Buxthoeven
+	}
+	1202.1.1 = {
+		liege = "d_livonia"
+	}
+	1229.1.17 = { holder = 30422 }	#Nikolaus von Nauen
+	1254.1.1  = { holder = 30423 }	#Albrecht Suerbeer
+	1273.3.1  = { holder = 30424 }	#Johann von Lunen
+	1284.1.1  = { holder = 30425 }	#Johann von Vechta
+	1294.2.4  = { holder = 30426 }	#Johann von Schwerin
+	1300.12.19 = { holder = 30427 }	#Isarno de Fenties
+	1302.1.1  = { holder = 30313 }	#Jens Grand
+	1304.1.1  = { holder = 30428 }	#Friedrich von Pernstein
+}
+
+# c_riga : déjà dans 00_lis_lion_baltique.txt (Albert de Riga dès 1201)
+# On lui applique ici uniquement le rattachement de_jure depuis 1199
+# (l'entrée principale est dans 00_lis_lion_baltique.txt)
+
+c_kokenois_lal = {
+
+	765.1.1 = {
+		holder = 170349
+		liege = "d_livonia"
+		government = tribal_government
+	}
+	867.1.1 = {
+		holder = 167737
+	}
+	1066.1.1 = {
+		holder = 28023
+	}
+	1089.1.1 = {
+		holder = 143150
+	}
+	1139.1.1 = {
+		holder = 143151
+	}
+	1178.1.1 = {
+		holder = estonian_vassal_1 # Dabrel
+	}
+	1187.1.1 = {
+		holder = 228023
+	}
+	# ---- Archevêché de Riga (1199 →) ----
+	1199.1.1 = {
+		liege = "e_hre"
+		government = theocracy_government
+	}
+	1199.1.1 = { holder = 30421 }
+	1202.1.1 = { liege = "d_livonia" }
+	1229.1.17 = { holder = 30422 }
+	1254.1.1  = { holder = 30423 }
+	1273.3.1  = { holder = 30424 }
+	1284.1.1  = { holder = 30425 }
+	1294.2.4  = { holder = 30426 }
+	1300.12.19 = { holder = 30427 }
+	1302.1.1  = { holder = 30313 }
+	1304.1.1  = { holder = 30428 }
+}
+
+c_aluksne_lal = {
+	# ---- Holders vanilla pré-1199 ----
+	765.1.1 = {
+		holder = 170349
+		liege = "d_livonia"
+		government = tribal_government
+	}
+	867.1.1 = {
+		holder = 167737
+	}
+	1066.1.1 = {
+		holder = 28023
+	}
+	1089.1.1 = {
+		holder = 143150
+	}
+	1139.1.1 = {
+		holder = 143151
+	}
+	1187.1.1 = {
+		holder = 228023
+	}
+
+	# ---- Archevêché de Riga (1199 →) ----
+	1199.1.1 = {
+		liege = "e_hre"
+		government = theocracy_government
+	}
+	1199.1.1 = { holder = 30421 }
+	1202.1.1 = { liege = "d_livonia" }
+	1229.1.17 = { holder = 30422 }
+	1254.1.1  = { holder = 30423 }
+	1273.3.1  = { holder = 30424 }
+	1284.1.1  = { holder = 30425 }
+	1294.2.4  = { holder = 30426 }
+	1300.12.19 = { holder = 30427 }
+	1302.1.1  = { holder = 30313 }
+	1304.1.1  = { holder = 30428 }
+}
+
+c_jersika_lal = {
+	# ---- Holders vanilla pré-1199 ----
+	768.1.1 = {
+		holder = 170351
+		government = tribal_government
+	}
+	867.1.1 = {
+		holder = 167732
+	}
+	1066.1.1 = {
+		holder = 28020
+	}
+	1120.1.1 = {
+		holder = 144628
+	}
+	1170.1.1 = {
+		holder = 228020
+	}
+
+	# ---- Archevêché de Riga (1199 →) ----
+	1199.1.1 = {
+		liege = "e_hre"
+		government = theocracy_government
+	}
+	1199.1.1 = { holder = 30421 }
+	1202.1.1 = { liege = "d_livonia" }
+	1229.1.17 = { holder = 30422 }
+	1254.1.1  = { holder = 30423 }
+	1273.3.1  = { holder = 30424 }
+	1284.1.1  = { holder = 30425 }
+	1294.2.4  = { holder = 30426 }
+	1300.12.19 = { holder = 30427 }
+	1302.1.1  = { holder = 30313 }
+	1304.1.1  = { holder = 30428 }
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# GROUPE 2 — ÉVÊCHÉ DE WIEK / ÖSEL-WIEK
+# Concerne : c_wiek_lal
+# Coupure : 1228.1.1 (Gottfried von Naumburg)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+c_wiek_lal = {
+	# ---- Holders vanilla pré-1228 ----
+	765.1.1 = {
+		holder = 170349
+		liege = "d_livonia"
+		government = tribal_government
+	}
+	867.1.1 = {
+		holder = 167737
+	}
+	1066.1.1 = {
+		holder = 28023
+	}
+	1089.1.1 = {
+		holder = 143150
+	}
+	1139.1.1 = {
+		holder = 143151
+	}
+	1187.1.1 = {
+		holder = 228023
+	}
+	
+	##Livonian Swordbrothers
+	
+	1202.1.1 = {
+		holder = 30443 #Vinno von Rohrbach
+	}
+	1209.1.1 = {
+		holder = 30444 #Volkwin von Naumburg
+	}
+	
+	# ---- Évêché d'Ösel-Wiek (1228 →) ----
+	1228.1.1 = {
+		liege = "d_osel_wiek"
+		government = theocracy_government
+	}
+	1228.1.1 = { holder = 30436 }	#Gottfried von Naumburg
+	1234.1.1 = { holder = 30437 }	#Heinrich von Ösel
+	1260.1.1 = { holder = 30438 }	#Hermann von Buxthoeven
+	1285.1.1 = { holder = 30439 }	#Heinrich II von Osel
+	1294.1.1 = { holder = 30440 }	#Konrad von Osel
+	1307.1.1 = { holder = 30441 }	#Hartung von Osel
+	1321.1.1 = { holder = 30442 }	#Jakob von Osel
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# GROUPE 3 — ORDRE TEUTONIQUE / FRÈRES PORTE-GLAIVE
+# Concerne : c_zemigalians_lal, c_selpils_lal, c_dunabourg
+# Coupure : 1199.1.1 (Henri von Bassenheim)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+c_zemigalians_lal = {
+	# ---- Holders vanilla pré-1199 ----
+	750.1.1 = {
+		liege = d_courland
+		government = tribal_government
+		holder = 194110
+	}
+	810.1.1 = { holder = 194111 }
+	870.1.1 = { holder = 194112 }
+	930.1.1 = { holder = 194113 }
+	1000.1.1 = { holder = 194114 }
+	1060.1.1 = { holder = 194115 }
+	1120.1.1 = { holder = 194116 }
+
+	# ---- Frères Porte-Glaive / Ordre Teutonique (1199 →) ----
+	1199.1.1 = { liege = "d_teutonic_order" }
+	1199.1.1 = { holder = 30400 }	#Henri von Bassenheim
+	1202.1.1 = { liege = "d_livonia" }
+	1202.1.1 = { holder = 30443 }	#Vinno von Rohrbach
+	1209.1.1 = { holder = 30444 }	#Volkwin von Naumburg
+	1236.9.22 = { liege = "d_teutonic_order" }
+	1236.9.22 = { holder = 30403 }	#Hermann von Salza
+	1239.3.20 = { holder = 30404 }	#Konrad von Thüringen
+	1240.7.24 = { holder = 30405 }	#Gerhard von Malberg
+	1244.1.1  = { holder = 30406 }	#Heinrich von Hohenlohe
+	1249.7.15 = { holder = 30407 }	#Gunther von Wüllersleben
+	1252.5.4  = { holder = 30408 }	#Poppo von Osterna
+	1256.1.1  = { holder = 30409 }	#Anno von Sangershausen
+	1273.7.8  = { holder = 30410 }	#Hartmann von Heldrungen
+	1282.8.19 = { holder = 30411 }	#Burchard von Schwanden
+	1290.1.1  = { holder = 30412 }	#Konrad von Feuchtwangen
+	1296.7.4  = { holder = 30413 }	#Gottfried von Hohenlohe
+	1303.1.1  = { holder = 30414 }	#Siegfried von Feuchtwangen
+	1311.5.3  = { holder = 30415 }	#Karl von Trier
+	1324.2.11 = { holder = 30416 }	#Werner von Orseln
+	1330.11.18 = { holder = 30417 }	#Luther Welf
+	1335.4.18 = { holder = 474000 }	#Dietrich von Altenburg
+}
+
+c_selpils_lal = {
+	# ---- Holders vanilla pré-1199 ----
+	750.1.1 = {
+		liege = d_latgalians
+		government = tribal_government
+		holder = 194120
+	}
+	810.1.1 = { holder = 194121 }
+	870.1.1 = { holder = 194122 }
+	930.1.1 = { holder = 194123 }
+	1000.1.1 = { holder = 194124 }
+	1060.1.1 = { holder = 194125 }
+	1120.1.1 = { holder = 194126 }
+
+	# ---- Frères Porte-Glaive / Ordre Teutonique (1199 →) ----
+	1199.1.1 = { liege = "d_teutonic_order" }
+	1199.1.1 = { holder = 30400 }
+	1202.1.1 = { liege = "d_livonia" }
+	1202.1.1 = { holder = 30443 }
+	1209.1.1 = { holder = 30444 }
+	1236.9.22 = { liege = "d_teutonic_order" }
+	1236.9.22 = { holder = 30403 }
+	1239.3.20 = { holder = 30404 }
+	1240.7.24 = { holder = 30405 }
+	1244.1.1  = { holder = 30406 }
+	1249.7.15 = { holder = 30407 }
+	1252.5.4  = { holder = 30408 }
+	1256.1.1  = { holder = 30409 }
+	1273.7.8  = { holder = 30410 }
+	1282.8.19 = { holder = 30411 }
+	1290.1.1  = { holder = 30412 }
+	1296.7.4  = { holder = 30413 }
+	1303.1.1  = { holder = 30414 }
+	1311.5.3  = { holder = 30415 }
+	1324.2.11 = { holder = 30416 }
+	1330.11.18 = { holder = 30417 }
+	1335.4.18 = { holder = 474000 }
+}
+
+c_dunabourg = {
+	# Nouveau comté — suit la même chronologie que c_zemigalians_lal / c_selpils_lal
+	# (baronies b_daugavpils 137 et b_rezekne 138, ex-c_jersika)
+
+	768.1.1 = {
+		holder = 170351
+		liege = d_latgalians
+		government = tribal_government
+	}
+	867.1.1 = {
+		holder = 167732
+	}
+	1066.1.1 = {
+		holder = 28020
+	}
+	1120.1.1 = {
+		holder = 144628
+	}
+	1170.1.1 = {
+		holder = 228020
+	}
+	1199.1.1 = { liege = "d_teutonic_order" }
+	1199.1.1 = { holder = 30400 }
+	1202.1.1 = { liege = "d_livonia" }
+	1202.1.1 = { holder = 30443 }
+	1209.1.1 = { holder = 30444 }
+	1236.9.22 = { liege = "d_teutonic_order" }
+	1236.9.22 = { holder = 30403 }
+	1239.3.20 = { holder = 30404 }
+	1240.7.24 = { holder = 30405 }
+	1244.1.1  = { holder = 30406 }
+	1249.7.15 = { holder = 30407 }
+	1252.5.4  = { holder = 30408 }
+	1256.1.1  = { holder = 30409 }
+	1273.7.8  = { holder = 30410 }
+	1282.8.19 = { holder = 30411 }
+	1290.1.1  = { holder = 30412 }
+	1296.7.4  = { holder = 30413 }
+	1303.1.1  = { holder = 30414 }
+	1311.5.3  = { holder = 30415 }
+	1324.2.11 = { holder = 30416 }
+	1330.11.18 = { holder = 30417 }
+	1335.4.18 = { holder = 474000 }
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# GROUPE 4 — ÉVÊCHÉ DE COURLANDE (c_vanemane_lal)
+# Coupure : 1199 → Frères Porte-Glaive, puis 1234 → Évêché de Courlande propre
+# ═══════════════════════════════════════════════════════════════════════════════
+
+c_vanemane_lal = {
+	# ---- Holders vanilla pré-1199 ----
+		750.1.1 = {
+		holder = 194105
+		liege = d_courland
+		government = tribal_government
+	}
+	799.1.1 = {
+		holder = 194106
+	}
+	822.1.1 = {
+		holder = 194107
+	}
+	867.1.1 = {
+		holder = 167730
+	}
+	
+	1066.1.1 = {
+		holder = 28075
+	}
+	1089.1.1 = {
+		holder = 143132
+	}
+	1139.1.1 = {
+		holder = 143133
+	}
+	1187.1.1 = {
+		holder = 228075
+	}
+	##Livonian Swordbrothers
+	1202.1.1 = {
+		liege = "d_livonia"
+	}
+	
+	1202.1.1 = {
+		holder = 30443 #Vinno von Rohrbach
+	}
+	
+	1209.1.1 = {
+		holder = 30444 #Volkwin von Naumburg
+	}
+
+	# ---- Évêché de Courlande (1234 →) ----
+	# Personnages créés dans 00_lis_lion_courland_bishops.txt
+	1234.1.1 = {
+		liege = "d_courland"
+		government = theocracy_government
+		holder = 1227753		#Engelbert, premier évêque de Courlande
+	}
+	1237.1.1 = { holder = 1227754 }	#Richard
+	1251.1.1 = { holder = 1227755 }	#Heinrich von Lützelburg
+	1263.1.1 = { holder = 1227756 }	#Edmund von Werth
+	1292.1.1 = { holder = 0 }		#Siège vacant 1292–1300
+	1300.1.1 = { holder = 1227757 }	#Burkhard
+	1322.1.1 = { holder = 1227758 }	#Paul
+	1328.1.1 = { holder = 1227759 }	#Johann Ier
+	1332.1.1 = { holder = 1227760 }	#Johan II
+	1353.1.1 = { holder = 0 }		#Siège vacant
+	1354.1.1 = { holder = 1227761 }	#Ludolf
+	1360.1.1 = { holder = 1227762 }	#Jakob
+	1371.1.1 = { holder = 1227763 }	#Otto
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# GROUPE 5 — WILHESM (Prusse)
+# Concerne : c_gumbinnen, c_wormditt_lal
+# Coupure : 1260.1.1 (Leopold von Wilhesm)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+c_gumbinnen = {
+	# ---- Holders vanilla pré-1260 (c_bartenstein) ----
+	750.1.1 = {
+		holder = 194076
+		liege = d_prussia
+	}
+	799.1.1 = {
+		holder = 194077
+	}
+	822.1.1 = {
+		holder = 194078
+	}
+	867.1.1 = {
+		holder = 167744
+	}
+	
+	1066.1.1 = {
+		holder = 28022
+	}
+	1120.1.1 = {
+		holder = 144672
+	}	
+	1170.1.1 = {
+		holder = 228019
+	}
+	
+	#Golden Bull of Rimini
+	
+# ---- Wilhesm (1260 →) ----
+	
+	1225.1.1 = {
+		holder = 91500111		#Leopold von Wilhesm
+		liege = d_prussia
+		government = feudal_government
+	}
+	1277.1.1 = { holder = 91500112 }	#Simon
+	1278.1.1 = { holder = 91500113 }	#Othon
+	1324.1.1 = { holder = 91500115 }	#Karl (fils d'Othon)
+	1393.1.1 = { holder = 0 }
+}
+
+c_wormditt_lal = {
+	# ---- Holders vanilla pré-1260 (c_wormditt) ----
+	750.1.1 = {
+		holder = 194076
+		liege = d_prussia
+		government = tribal_government
+	}
+	799.1.1 = { holder = 194077 }
+	822.1.1 = { holder = 194078 }
+	867.1.1 = { holder = 167744 }
+	1066.1.1 = { holder = 28019 }
+	1120.1.1 = { holder = 144672 }
+	1170.1.1 = { holder = 228019 }
+# ---- Wilhesm (1260 →) ----
+	
+	1225.1.1 = {
+		holder = 91500111		#Leopold von Wilhesm
+		liege = d_prussia
+		government = feudal_government
+	}
+	1277.1.1 = { holder = 91500112 }	#Simon
+	1278.1.1 = { holder = 91500113 }	#Othon
+	1324.1.1 = { holder = 91500115 }	#Karl (fils d'Othon)
+	1393.1.1 = { holder = 0 }
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# GROUPE 6 — MEMEL WILHESM
+# Concerne : c_memel_lal
+# Coupure : 1304.3.3 (Othon von Wilhesm)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+c_memel_lal = {
+	# ---- Holders vanilla pré-1304.3.3 ----
+	750.1.1 = {
+		holder = 194110
+		liege = d_courland
+		government = tribal_government
+	}
+	799.1.1 = { holder = 194111 }
+	822.1.1 = { holder = 194112 }
+	850.1.1 = {
+		holder = 82141
+		liege = d_samogitia
+	}
+	890.1.1  = { holder = 82149 }
+	910.1.1  = { holder = 82150 }
+	930.1.1  = { holder = 82146 }
+	938.1.1  = { holder = 82153 }
+	962.1.1  = { holder = 82166 }
+	989.1.1  = { holder = 82170 }
+	1023.1.1 = { holder = 82175 }
+	1064.1.1 = { holder = 82180 }
+	1088.1.1 = { holder = 82182 }
+	1093.1.1 = { holder = 82200 }
+	1124.1.1 = { holder = 82204 }
+	1139.1.1 = { holder = 143133 }
+	1166.1.1 = {
+		holder = skalauti_1
+		liege = 0
+	}
+	1187.1.1 = { de_jure_liege = d_prussia }
+	1187.1.1 = { holder = 228022 }
+	1210.1.1 = { holder = 143149 }
+	1253.6.30 = { holder = 125301 }
+	1263.9.12 = { holder = 125302 }
+	1264.1.2  = { holder = 125303 }
+	1267.4.23 = { holder = 125122 }
+	1269.1.2  = { holder = 125310 }
+	1282.1.2  = { holder = 125311 }
+	1285.1.2  = { holder = 125314 }
+	1291.1.2  = { holder = 472352 }
+	1295.1.2  = { holder = 125315 }
+
+	# ---- Wilhesm (1304.3.3 →) ----
+	1304.3.3 = {
+		holder = 91500113		#Othon von Wilhesm
+		liege = d_prussia
+		government = feudal_government
+	}
+	1324.1.1 = { holder = 91500115 }	#Karl
+	1393.1.1 = { holder = 0 }
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# GROUPE 7 — ORDRE TEUTONIQUE (Scalovie / Palanga)
+# Concerne : c_scalovia_lal, c_palanga_lal
+# ═══════════════════════════════════════════════════════════════════════════════
+
+c_scalovia_lal = {
+	# ---- Holders vanilla pré-1296.1.1 ----
+
+	750.1.1 = {
+		holder = 194113
+		liege = d_prussia
+		de_jure_liege = d_prussia
+		government = tribal_government
+	}
+	799.1.1 = {
+		holder = 194114
+	}
+	820.1.1 = {
+		holder = 82275
+	}
+	850.1.1 = {
+		liege = 0
+	}
+	865.1.1 = {
+		holder = 82276
+	}
+	927.1.1 = {
+		holder = 82278
+	}
+	1000.1.1 = {
+		holder = 82279
+	}
+	1015.1.1 = {
+		holder = 82280
+	}
+	1065.1.1 = {
+		holder = 82283
+	}
+	1123.1.1 = {
+		holder = 82286
+	}
+	1144.1.1 = {
+		holder = 82287
+	}
+	1189.1.1 = {
+		holder = 82288
+	}
+	1200.1.1 = {
+		liege = "d_teutonic_order"
+		holder = 30403
+	}
+	1239.3.20 = { holder = 30404 }
+	1240.7.24 = { holder = 30405 }
+	1244.1.1  = { holder = 30406 }
+	1249.7.15 = { holder = 30407 }
+	1252.5.4  = { holder = 30408 }
+	1256.1.1  = { holder = 30409 }
+	1273.7.8  = { holder = 30410 }
+	1282.8.19 = { holder = 30411 }
+	1290.1.1  = { holder = 30412 }
+
+	# ---- Ordre Teutonique suite (1296 →) ----
+	1296.1.1 = { holder = 30413 }	#Gottfried von Hohenlohe
+	1303.1.1 = { holder = 30414 }
+	1311.5.3  = { holder = 30415 }
+	1324.2.11 = { holder = 30416 }
+	1330.11.18 = { holder = 30417 }
+	1335.4.18 = { holder = 474000 }
+}
+
+c_palanga_lal = {
+	750.1.1 = {
+		holder = 194110
+		liege = d_courland
+		government = tribal_government
+	}
+	799.1.1 = {
+		holder = 194111
+	}
+	822.1.1 = {
+		holder = 194112
+	}
+	850.1.1 = {
+		holder = 82141
+		liege = d_samogitia
+	}
+	890.1.1 = {
+		holder = 82149
+	}
+	910.1.1 = {
+		holder = 82150
+	}
+	930.1.1 = {
+		holder = 82146 #Borkus son of Palemon
+	}
+	938.1.1 = {
+		holder = 82153 #Gimbutas son of Kunos
+	}
+	962.1.1 = {
+		holder = 82166 #Montvilas son of Gimbutas
+	}
+	989.1.1 = {
+		holder = 82170 #Vykintas son of Montvilas
+	}
+	1023.1.1 = {
+		holder = 82175 #Zivinbudas son of Vykintas
+	}
+	1064.1.1 = {
+		holder = 82180 #Kukovaitis son of Zivinbudas
+	}
+	1088.1.1 = {
+		holder = 82182 # ventaragis son of Utenis
+	}
+	1093.1.1 = {
+		holder = 82200 #Skirmantas son of  ventaragis
+	}
+	1124.1.1 = {
+		holder = 82204 #Trabus son of Skirmantas
+	}
+	1169.1.1 = {
+		holder = 82198 #Algimantas son of Liubartas
+	}
+	1178.1.1 = {
+		holder = 143135 # Antanas
+		liege = d_lithuanians
+	}
+	1238.1.1 = {
+		holder = 125301 #Mindaugas son of Rimgaudas
+	}
+	1240.1.1 = {
+		liege = "d_teutonic_order"
+		holder = 30407
+	}
+	1252.5.4  = { holder = 30408 }
+	1256.1.1  = { holder = 30409 }
+	1273.7.8  = { holder = 30410 }
+	1282.8.19 = { holder = 30411 }
+	1290.1.1  = { holder = 30412 }
+
+	# ---- Ordre Teutonique suite (1295 →) ----
+	1295.1.2 = { holder = 30412 }	#Konrad von Feuchtwangen
+	1296.7.4  = { holder = 30413 }
+	1303.1.1  = { holder = 30414 }
+	1311.5.3  = { holder = 30415 }
+	1324.2.11 = { holder = 30416 }
+	1330.11.18 = { holder = 30417 }
+	1335.4.18 = { holder = 474000 }
+}

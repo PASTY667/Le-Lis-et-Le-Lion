@@ -1,0 +1,74 @@
+# Le Lis et le Lion — Suzerainetés italiennes (au 1337.5.24, comme les autres
+# rattachements de_jure/liege complémentaires du mod, voir 00_lis_lion_de_jure_misc.txt)
+#
+# d_lombardia, c_monferrato, c_cuneo, d_verona, c_mantua, c_pisa et c_firenze
+# redeviennent vassaux directs de l'Empereur (liege = e_hre), la plupart
+# d'entre eux étant devenus des cités-états indépendantes ("liege = 0") depuis
+# la Paix de Venise de 1177 dans le vanilla.
+#
+# c_orvieto passe quant à lui sous la suzeraineté du Pape (liege = k_papal_state).
+#
+# c_arezzo a été retiré d'ici : le titre est devenu sans titulaire valide dès
+# 1208 (mort de Philipp de Souabe, dernier titulaire vanilla, sans succession
+# écrite ensuite), donc un simple changement de liège ne suffisait pas — voir
+# 00_lis_lion_arezzo.txt qui le remplace par un clone c_arezzo_lal avec une
+# chronologie de titulaires complète jusqu'en 1337.
+#
+# c_siena a également été retiré d'ici : son historique complet (avec
+# rattachement à e_hre dès 1307, au lieu de 1337.5.24) est désormais recopié
+# intégralement dans 00_lis_lion_siena_orbetello.txt, avec c_orbetello (qui,
+# lui, n'était pas du tout traité ici auparavant).
+#
+# NB : c_pisa, c_firenze, c_monferrato, c_cuneo et c_mantua reposent
+# potentiellement sur le même mécanisme vanilla de cité-république procédurale
+# et pourraient présenter le même problème de titulaire cassé/vide ; non
+# vérifié/non corrigé ici, seuls c_arezzo, c_siena et c_orbetello ayant été
+# signalés.
+
+d_lombardia = {
+	1337.5.24 = {
+		liege = e_hre
+	}
+}
+
+c_monferrato = {
+	1337.5.24 = {
+		liege = e_hre
+	}
+}
+
+c_cuneo = {
+	1337.5.24 = {
+		liege = e_hre
+	}
+}
+
+d_verona = {
+	1337.5.24 = {
+		liege = e_hre
+	}
+}
+
+c_mantua = {
+	1337.5.24 = {
+		liege = e_hre
+	}
+}
+
+c_pisa = {
+	1337.5.24 = {
+		liege = e_hre
+	}
+}
+
+c_firenze = {
+	1337.5.24 = {
+		liege = e_hre
+	}
+}
+
+c_orvieto = {
+	1337.5.24 = {
+		liege = k_papal_state
+	}
+}

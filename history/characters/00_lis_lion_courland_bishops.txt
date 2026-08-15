@@ -1,0 +1,148 @@
+﻿# Le Lis et le Lion — Évêques de Courlande
+# Titulaires de c_vanemane_lal après la transition des Frères Porte-Glaive en 1234.
+# IDs dans la plage 1227753–1227763 (comme suggéré par le joueur).
+# Culture : franconian (Allemands du Saint-Empire) | Religion : catholic
+# Gouvernement : theocracy_government
+
+1227753 = {
+	name = "Engelbert"
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1210.1.1 = {
+		birth = "1210.1.1"
+	}
+	1237.1.1 = {
+		death = "1237.1.1"
+	}
+}
+
+1227754 = {
+	name = "Richard"
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1215.1.1 = {
+		birth = "1215.1.1"
+	}
+	1251.1.1 = {
+		death = "1251.1.1"
+	}
+}
+
+1227755 = {
+	name = "Heinrich"	# Heinrich von Lützelburg
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1225.1.1 = {
+		birth = "1225.1.1"
+	}
+	1263.1.1 = {
+		death = "1263.1.1"
+	}
+}
+
+1227756 = {
+	name = "Edmund"		# Edmund von Werth
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1235.1.1 = {
+		birth = "1235.1.1"
+	}
+	1292.1.1 = {
+		death = "1292.1.1"
+	}
+}
+
+1227757 = {
+	name = "Burkhard"
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1260.1.1 = {
+		birth = "1260.1.1"
+	}
+	1322.1.1 = {
+		death = "1322.1.1"
+	}
+}
+
+1227758 = {
+	name = "Paul"
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1270.1.1 = {
+		birth = "1270.1.1"
+	}
+	1328.1.1 = {
+		death = "1328.1.1"
+	}
+}
+
+1227759 = {
+	name = "Johann"		# Johann Ier
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1285.1.1 = {
+		birth = "1285.1.1"
+	}
+	1332.1.1 = {
+		death = "1332.1.1"
+	}
+}
+
+1227760 = {
+	name = "Johann"		# Johan II
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1295.1.1 = {
+		birth = "1295.1.1"
+	}
+	1353.1.1 = {
+		death = "1353.1.1"
+	}
+}
+
+1227761 = {
+	name = "Ludolf"
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1310.1.1 = {
+		birth = "1310.1.1"
+	}
+	1360.1.1 = {
+		death = "1360.1.1"
+	}
+}
+
+1227762 = {
+	name = "Jakob"
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1320.1.1 = {
+		birth = "1320.1.1"
+	}
+	1371.1.1 = {
+		death = "1371.1.1"
+	}
+}
+
+1227763 = {
+	name = "Otto"
+	dynasty = 0
+	religion = "catholic"
+	culture = franconian
+	1335.1.1 = {
+		birth = "1335.1.1"
+	}
+	1398.1.1 = {
+		death = "1398.1.1"
+	}
+}

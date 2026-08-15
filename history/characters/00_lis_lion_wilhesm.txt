@@ -1,0 +1,429 @@
+﻿# Le Lis et le Lion — Personnages von Wilhesm
+# Maison de Paderborn, culture saxonne, religion catholique
+# Tous ces personnages appartiennent à la dynasty_house house_wilhesm.
+# Plage d'IDs : 91500100 à 91500120.
+# Conventions suivies : même structure que les personnages vanilla saxons (saxon.txt) ;
+# pas de mère ni d'épouse pour les personnages intermédiaires entre Heinrich et Leopold
+# (le jeu gère seul la succession) ; traits limités à 3 maximum, aucun pour les personnages
+# intermédiaires sans rôle particulier. Les blocs de date suivent strictement le pattern
+# vanilla : date = { birth / death / add_spouse / add_pressed_claim ... }.
+# NOTE : les numéros romains (Ier, II, etc.) ne font pas partie du prénom CK3.
+
+# ---- Otto von Wilhesm — Fondateur, 1er duc/comte de Paderborn ----
+# Prénom : Otto. Traits demandés : 3 maximum, personnage fondateur.
+91500100 = {
+	name = "Otto"
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	trait = ambitious
+	trait = brave
+	trait = diligent
+	trait = loyal
+	trait = education_diplomacy_4
+	985.1.1 = {
+		birth = "985.1.1"
+	}
+	1002.1.1 = {
+		add_spouse = 91500102 # Godesti de Saxe
+	}
+	1020.11.20 = {
+		# Reçoit le comté de Paderborn et crée d_paderborn (cf. history/titles/00_lis_lion_d_paderborn.txt)
+	}
+	1048.1.1 = {
+		death = "1048.1.1"
+	}
+}
+
+# ---- Godesti de Saxe — Épouse d'Otto, fille de Bernard Ier (1412) ----
+91500102 = {
+	name = "Godesti"
+	dna = lis_lion_godesti_billung
+	female = yes
+	dynasty = 656		# Maison d'Ascanie (père Bernard Ier, id 1412, dynasty 656)
+	religion = "catholic"
+	culture = saxon
+	father = 1412		# Bernard Ier de Saxe (id vanilla)
+	1002.1.1 = {
+		birth = "1002.1.1"
+	}
+	1040.1.1 = {
+		death = "1040.1.1"
+	}
+}
+
+# ---- Enfants d'Otto : Judith, Adelheid, Oda (filles), Heinrich (fils héritier) ----
+91500103 = {
+	name = "Judith"
+	female = yes
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500100
+	mother = 91500102
+	1020.1.1 = {
+		birth = "1020.1.1"
+	}
+	1075.1.1 = {
+		death = "1075.1.1"
+	}
+}
+
+91500104 = {
+	name = "Adelheid"
+	female = yes
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500100
+	mother = 91500102
+	1022.1.1 = {
+		birth = "1022.1.1"
+	}
+	1080.1.1 = {
+		death = "1080.1.1"
+	}
+}
+
+91500105 = {
+	name = "Oda"
+	female = yes
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500100
+	mother = 91500102
+	1025.1.1 = {
+		birth = "1025.1.1"
+	}
+	1082.1.1 = {
+		death = "1082.1.1"
+	}
+}
+
+# ---- Heinrich von Wilhesm — fils d'Otto, successeur direct ----
+91500106 = {
+	name = "Heinrich"
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500100
+	mother = 91500102
+	1039.1.1 = {
+		birth = "1039.1.1"
+	}
+	1105.1.1 = {
+		death = "1105.1.1"
+	}
+}
+
+# ---- Wilbrand von Wilhesm — fils de Heinrich ----
+91500107 = {
+	name = "Wilbrand"
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500106
+	1062.1.1 = {
+		birth = "1062.1.1"
+	}
+	1127.1.1 = {
+		death = "1127.1.1"
+	}
+}
+
+# ---- Bernard von Wilhesm — fils de Wilbrand, sans enfant ----
+91500108 = {
+	name = "Bernhard"
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500107
+	1095.1.1 = {
+		birth = "1095.1.1"
+	}
+	1147.1.1 = {
+		death = "1147.1.1"
+	}
+}
+
+# ---- Johann von Wilhesm — frère de Bernard ----
+91500109 = {
+	name = "Johann"
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500107
+	1126.1.1 = {
+		birth = "1126.1.1"
+	}
+	1210.1.1 = {
+		death = "1210.1.1"
+	}
+}
+
+# ---- Johann von Wilhesm — fils du précédent ----
+91500110 = {
+	name = "Johann"
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500109
+	1167.1.1 = {
+		birth = "1167.1.1"
+	}
+	1247.1.1 = {
+		death = "1247.1.1"
+	}
+}
+
+# ---- Leopold von Wilhesm — frère de Johann II, duc de Paderborn
+# Trait demandé : faith_warrior (= "Crusader" pour les catholiques en CK3)
+91500111 = {
+	name = "Leopold"
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	trait = faith_warrior
+	trait = just
+	trait = zealous
+	trait = education_martial_4
+	father = 91500109
+	1179.1.1 = {
+		birth = "1179.1.1"
+	}
+	1277.1.1 = {
+		death = "1277.1.1"
+	}
+}
+
+# ---- Simon von Wilhesm — fils de Leopold ----
+91500112 = {
+	name = "Simon"
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500111
+	1225.1.1 = {
+		birth = "1225.1.1"
+	}
+	1258.1.1 = {
+		add_spouse = 91500121
+	}
+	1278.1.1 = {
+		death = "1278.1.1"
+	}
+}
+
+# ---- Othon von Wilhesm — fils de Simon, duc jusqu'en 1304.3.3
+# puis uniquement comte de Bartenstein et Wormditt
+# Épouse : Helen Askanien (id 170011) dissociée de son mari vanilla Adolf VI (31760)
+91500113 = {
+	name = "Otto"
+	dna = lis_lion_otto_von_wilhesm
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	trait = bold
+	trait = gallant
+	trait = temperate
+	trait = education_martial_2
+	father = 91500112
+	mother = 91500121
+	1266.1.1 = {
+		birth = "1266.1.1"
+	}
+	1297.1.1 = {
+		# Helen d'Ascanie (id 170011) — cf. note sur le retrait de son mariage vanilla (31760)
+		# Son mariage vanilla avec Adolf VI (31760) scripté le 1297.1.1 est retiré dans
+		# le fichier 00_lis_lion_paderborn_retrait_mariage.txt ; elle est ici associée à Othon.
+		add_spouse = 170011
+	}
+	1324.1.1 = {
+		death = "1324.1.1"
+	}
+}
+
+# ---- Karl von Wilhesm — fils d'Othon
+# Traits demandés : arrogant, ambitious, brave
+# Hérite de c_bartenstein et c_wormditt après Othon
+# En 1337 : 25 ans → Karl et Hedwige sont mariés (>16 ans tous les deux)
+91500115 = {
+	name = "Karl"
+	dna = karl_von_wilhesm
+	dynasty_house = house_wilhesm
+	martial = 15
+	diplomacy = 11
+	intrigue = 10
+	stewardship = 5
+	religion = "catholic"
+	culture = saxon
+	trait = arrogant
+	trait = ambitious
+	trait = brave
+	trait = education_martial_3
+	father = 91500113
+	mother = 170011
+	1312.1.1 = {
+		birth = "1312.1.1"
+	}
+	1335.1.1 = {
+		# Hedwige de Suède (91500120) — mariés
+		add_spouse = 91500120
+	}
+	1393.1.1 = {
+		death = "1393.1.1"
+	}
+}
+
+# ---- Marguerite von Wilhesm — fille d'Othon ----
+91500116 = {
+	name = "Margarete"	# prénom médiéval germanique pour Marguerite
+	female = yes
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500113
+	mother = 170011
+	1311.1.1 = {
+		birth = "1311.1.1"
+	}
+	1352.1.1 = {
+		death = "1352.1.1"
+	}
+}
+
+# ---- Friedrich von Wilhesm — fils d'Othon ----
+91500117 = {
+	name = "Friedrich"
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500113
+	mother = 170011
+	1314.1.1 = {
+		birth = "1314.1.1"
+	}
+	1381.1.1 = {
+		death = "1381.1.1"
+	}
+}
+
+# ---- Bernard von Wilhesm — fils de Simon, frère d'Othon
+# Hérite du duché de Paderborn le 3 mars 1304 (Othon en est dessaisi ce jour-là)
+# Traits demandés : Karl est "Arrogant, Ambitious, Brave" (pour Karl) — ici Bernard II :
+91500114 = {
+	name = "Bernhard"
+	dna = lis_lion_bernard_von_wilhesm
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500112
+	mother = 91500121
+	1267.1.1 = {
+		birth = "1267.1.1"
+	}
+	12.1.1 = {
+		add_spouse = 91500122
+	}
+	1321.1.1 = {
+		death = "1321.1.1"
+	}
+}
+
+# ---- Bernard von Wilhesm — fils de Bernard II ----
+91500118 = {
+	name = "Bernhard"
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500114
+	mother = 91500122
+	1290.1.1 = {
+		birth = "1290.1.1"
+	}
+	1322.1.1 = {
+		add_spouse = 462376
+	}
+	1341.1.1 = {
+		death = "1341.1.1"
+	}
+}
+
+# ---- Henri von Wilhesm — fils de Bernard III ----
+91500119 = {
+	name = "Heinrich"
+	dna = lis_lion_henri_von_wilhesm
+	dynasty_house = house_wilhesm
+	religion = "catholic"
+	culture = saxon
+	father = 91500118
+	mother = 462376
+	1324.1.1 = {
+		birth = "1324.1.1"
+	}
+	1380.1.1 = {
+		death = "1380.1.1"
+	}
+}
+
+# ---- Hedwige de Suède — épouse de Karl, fille d'Erik IV (450501) et Ingibjorg (452505) ----
+91500120 = {
+	name = "Hedwig"
+	dna = hedwige_de_suede
+	female = yes
+	dynasty = 155		# Folkungr (dynastie d'Erik IV, id 450501)
+	religion = "catholic"
+	culture = "swedish"
+	trait = content
+	trait = honest
+	trait = trusting
+	trait = beauty_good_3
+	father = 450501		# Erik IV de Suède (id vanilla)
+	mother = 452505		# Ingibjorg (id vanilla)
+	1318.1.1 = {
+		birth = "1318.1.1"
+	}
+	1363.1.1 = {
+		death = "1363.1.1"
+	}
+}
+
+
+# ---- Marie de Nuremberg  — épouse de Simon I
+
+91500121 = {
+	name = "Maria"
+	female = yes
+	dynasty = 12476		# Hohenzolern
+	religion = "catholic"
+	culture = "swabian"
+	trait = education_learning_3
+	father = 462359		# Friedrich of Nurnberg 1260-1297
+	mother = 161703		
+	1239.1.1 = {
+		birth = "1239.1.1"
+	}
+	1301.1.1 = {
+		death = "1301.1.1"
+	}
+}
+
+# ---- Bonne de Oldenbourg — épouse de Bernard II
+
+91500122 = {
+	name = "Jutta"
+	female = yes
+	dynasty = 224		# Oldenbourg
+	religion = "catholic"
+	culture = saxon
+	trait = education_learning_3
+	father = 462912
+	mother = 462913
+	1270.1.1 = {
+		birth = "1270.1.1"
+	}
+	1328.9.7 = {
+		death = "1328.9.7"
+	}
+}

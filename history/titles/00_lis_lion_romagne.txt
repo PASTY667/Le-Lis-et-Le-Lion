@@ -1,0 +1,8 @@
+# Le Lis et le Lion — Romagne : gouvernement féodal (au lieu du gouvernement
+# hérité par défaut) pour d_romagna, dès sa création historique.
+
+d_romagna = {
+	1209.1.1 = {
+		government = feudal_government
+	}
+}

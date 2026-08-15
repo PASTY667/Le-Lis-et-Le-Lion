@@ -1,0 +1,1192 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# Le Lis et le Lion — Déplacement de suzeraineté des comtés de Rus' Blanche
+# et de Ruthénie occidentale vers le Grand-duché de Lituanie, et distribution
+# des titres ducaux/princiers aux Gédiminides.
+#
+# IMPORTANT : les comtés qui ont été clonés en "_lal" (voir
+# 00_lis_lion_ruthenie_lal.txt) N'EXISTENT PLUS sous leur nom vanilla dans
+# 00_landed_titles.txt. Toutes les références ci-dessous ont donc été
+# corrigées vers leur clé _lal quand applicable : c_novogrudok_lal,
+# c_pinsk_lal, c_sebezh_lal, c_kletsk_lal, c_slutsk_lal, c_babruysk_lal,
+# c_orsha_lal, c_volkovysk_lal, c_berestye_lal, c_dorohychyn_lal,
+# c_dubrovytsia_lal.
+# c_polotsk, c_lukoml, c_vitebsk, d_minsk, d_polotsk
+# restent inchangés (non clonés dans ce pack).
+#
+# ⚠ MISE À JOUR : d_kiev et d_volhynia ont depuis été clonés en
+# d_kiev_lal / d_volhynia_lal (voir 00_lis_lion_ruthenie_lal.txt pour
+# leur armoirie et 00_landed_titles.txt pour leur définition). Les blocs
+# ci-dessous ont été renommés en conséquence et toutes les références
+# "liege = d_volhynia" en "liege = d_volhynia_lal".
+#
+# ⚠ CORRECTION IMPORTANTE (v2) : les blocs de titre de niveau DUCHÉ
+# (d_kiev, d_volhynia, d_minsk, d_polotsk) ont été complétés avec leur
+# VÉRITABLE historique de possesseurs vanilla (copié depuis
+# history/titles/k_ruthenia.txt, k_galicia-volhynia.txt, k_white_rus.txt),
+# qui s'arrêtait auparavant brutalement sans transition vers nos entrées
+# personnalisées. c_sebezh_lal, supprimé par erreur dans une version
+# précédente, est restauré avec son historique vanilla complet (jusqu'à
+# 1189, ère de la République de Novgorod), puis passe explicitement en
+# régime féodal sous les ducs lituaniens de Polotsk.
+#
+# ⚠ NOTE SUR LES ID GÉDIMINIDES : Vainius, Narimantas, Andrei, Liubartas,
+# Mantvydas, Kęstutis, Karijotas, Algirdas et Feodor sont TOUS des
+# personnages vanilla déjà présents dans history/characters/lithuanian.txt
+# (et non des placeholders génériques comme supposé à tort dans une version
+# précédente) : mêmes dates de naissance/mort, mêmes liens de parenté avec
+# Gediminas (473500), parfois même surnom orthodoxe correspondant ("Gleb"
+# pour Narimantas, "Dmitriy" pour Liubartas...). Aucune fiche personnage
+# supplémentaire n'était donc nécessaire pour eux — seul l'ID exact compte.
+# Attention : Vainius est en réalité 472351 (et non 472321, coquille de
+# l'ancien brouillon). Feodor est bien 472100 et n'entre en collision avec
+# rien : il tient déjà c_kiev_lal et douze autres comtés _lal à la même
+# date (1325) dans 00_lis_lion_ruthenie_lal.txt, il tient ici en plus le
+# duché d_kiev_lal lui-même en tant que suzerain direct. Seul un personnage
+# (Mikhail Narimantaitis, prince de Pinsk après 1348) n'existe pas en
+# vanilla ; il a été créé sous un ID libre (473523) dans
+# 00_lis_lion_lithuanian_and_polish.txt.
+#
+# Sources principales pour les dates gédiminides : en.wikipedia.org
+# "Prince of Polotsk", "Vainius", "Narimantas", "Andrei of Polotsk",
+# "Karijotas", "Algirdas", "Liubartas", "Fiodor of Kiev",
+# "House of Gediminas", "Daumantas of Lithuania".
+# ═══════════════════════════════════════════════════════════════════════════
+
+
+# ═══════════════════════════════════════════════════════════════
+# DUCHÉ DE KIEV (d_kiev) — vanilla (579-1303) puis Gédiminides
+# ═══════════════════════════════════════════════════════════════
+
+d_kiev_lal = {
+	###Pre-Kievan Rus'
+	579.1.2 = {
+		holder = 302187		#semi-legendary Kyi
+		government = tribal_government
+	}
+	860.1.1 = {
+		holder = 6811 # Dyre
+	}
+	
+	###Kievan Rus'
+	882.1.2 = {
+		holder = 40606	#Oleg/Helgi the Seer
+		liege = k_ruthenia
+	}
+	912.1.2 = {
+		holder = 600	#Igor/Helgi, son of Rurik
+	}
+	935.1.1 = {
+		government = feudal_government	#Ahistorical, just for ease of bookmarks.
+	}
+	945.1.2 = {
+		holder = 602	#Sviatoslav I, w/ some regency by St Olga
+	}
+	972.1.2 = {
+		holder = 604	#Yaropolk I
+	}
+	980.1.2 = {
+		holder = 608	#Vladimir the Great
+	}
+	1015.7.15 = {
+		holder = 610	#Sviatopolk the Accursed
+	}
+	1016.1.2 = {
+		holder = 612	#Yaroslav the Wise
+	}
+	1018.1.2 = {
+		holder = 610	#Sviatopolk the Accursed
+	}
+	1019.1.2 = {
+		holder = 612	#Yaroslav the Wise
+	}
+	1054.2.20 = {
+		holder = 626	#Iziaslav I Yaroslavich of Kiev
+	}
+	1068.9.14 = {
+		holder = 650	#Vseslav of Polotsk
+	}
+	
+	###Fragmentation of Kievan Rus'
+	1069.4.15 = {
+		holder = 626
+		liege = 0
+	}
+	1073.1.2 = {
+		holder = 628
+	}
+	1076.12.27 = {
+		holder = 630
+	}
+	1077.1.2 = {
+		holder = 626
+	}
+	1078.10.4 = {
+		holder = 630
+	}
+	1093.4.13 = {
+		holder = 652
+	}
+	1113.4.16 = {
+		holder = 666
+	}
+	1125.5.19 = {
+		holder = 222574
+	}
+	1132.4.14 = {
+		holder = 125101
+	}
+	1139.2.8 = {
+		holder = 125102
+	}
+	1139.3.4 = {
+		holder = 222602
+	}
+	1146.8.1 = {
+		holder = 125069
+	}
+	1147.1.2 = {
+		holder = 222525
+	}
+	1149.1.2 = {
+		holder = 222672
+	}
+	1151.1.2 = {
+		holder = 125102
+	}
+	1154.2.6 = {
+		holder = 222525
+	}
+	1154.11.13 = {
+		holder = 222672
+	}
+	1157.5.15 = {
+		holder = 125047
+	}
+	1158.1.2 = {
+		holder = 222522
+	}
+	1159.1.2 = {
+		holder = 222572
+	}
+	1161.2.12 = {
+		holder = 125047
+	}
+	1161.3.6 = {
+		holder = 222572
+	}
+	1167.3.14 = {
+		holder = 222522
+	}
+	1169.1.2 = {
+		holder = 222702
+	}
+	1170.1.2 = {
+		holder = 222522
+	}
+	1170.8.19 = {
+		holder = 222702
+	}
+	1171.1.20 = {
+		holder = 222592
+	}
+	1171.5.30 = {
+		holder = 222577
+	}
+	1174.1.2 = {
+		holder = 222622
+	}
+	1175.1.2 = {
+		holder = 222577
+	}
+	1176.8.1 = {
+		holder = 222650 # Sviatoslav
+	}
+	1178.1.1 = {
+		succession_laws = { male_only_law }
+	}
+	1194.7.27 = {
+		holder = 222579
+	}
+	1202.1.2 = {
+		holder = 125132
+	}
+	1204.1.2 = {
+		holder = 222587
+	}
+	1205.1.2 = {
+		holder = 222579
+	}
+	1206.1.2 = {
+		holder = 222652
+	}
+	1207.1.2 = {
+		holder = 222579
+	}
+	1210.1.2 = {
+		holder = 222652
+	}
+	1214.1.2 = {
+		holder = 222610
+	}
+	1223.6.2 = {
+		holder = 222588
+	}
+	1239.3.3 = {
+		holder = 125154
+	}
+	1239.3.3 = {
+		liege = e_golden_horde
+	}
+	1240.1.2 = {
+		holder = 125114
+	}
+	1241.1.2 = {
+		holder = 222654
+	}
+	1243.1.2 = {
+		holder = 472885
+	}
+	1246.9.30 = {
+		holder = 472844
+	}
+	1263.11.14 = {
+		holder = 125074
+	}
+	1265.1.2 = {
+		holder = 125075
+	}
+	1285.1.2 = {
+		holder = 125076
+	}
+	1303.1.2 = {
+		holder = 125077
+	}
+
+	# --- Prise de contrôle gédiminide ---
+	1325.1.1 = {
+		holder = 472100 #Feodor/Fiodor, frère de Gediminas (fils de Butvydas, comme lui) — duc de Kiev
+		                # tributaire de la Horde d'Or, 1325-1362/63. Personnage vanilla (lithuanian.txt),
+		                # déjà titulaire de c_kiev_lal à cette même date dans 00_lis_lion_ruthenie_lal.txt.
+		liege = "k_lithuania"
+		government = feudal_government
+	}
+	1337.11.1 = {
+		liege = 0 #Duché de Kiev rendu indépendant pour le bookmark 1337 (bm_guerre_cent_ans_1337) :
+		          # Feodor reste tributaire de la Horde d'Or mais n'est plus vassal féodal de k_lithuania à cette date.
+	}
+	1362.1.1 = {
+		holder = 473522 #Vladimir Olgerdovich, fils d'Algirdas — Kiev annexé directement après la bataille des Eaux Bleues (1362/63)
+		liege = "k_lithuania"
+	}
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+# DUCHÉ DE VOLHYNIE (d_volhynia) — vanilla (981-1303) puis Gédiminides
+# ═══════════════════════════════════════════════════════════════
+
+d_volhynia_lal = {
+	###Kievan Rus' & creation of principality of Volhynia
+	981.1.2 = {
+		liege = k_ruthenia
+	}
+	987.1.2 = {
+		holder = 125017	#Vsevolod Volodymyrovych
+	}
+	1013.1.2 = {
+		holder = 612	#Yaroslav the Wise, no proper record between 1013-1036 so we default to Yaroslav
+	}
+	1036.1.2 = {
+		holder = 628	#Sviatoslav I Yaroslavich
+	}
+	1054.2.20 = {
+		holder = 638		#Igor Yaroslavich
+	}
+	1057.1.2 = {
+		holder = 670	#Rostislav of Tmutarakan
+	}
+	1064.1.2 = {
+		holder = 302173	#Volodar Volhynsky, fictional character, because no record between 1064-1069, and better for gameplay/Rus distribution
+	}
+	1069.1.2 = {
+		holder = 684	#Yaropolk Izyaslavich
+	}
+	
+	###Fragmentation of Kievan Rus'
+	1073.1.2 = {
+		holder = 660	#Oleg I of Chernigov (occupation)
+		liege = 0
+	}
+	1078.1.2 = {
+		holder = 684	#Yaropolk Izyaslavich (again)
+	}
+	1078.10.4 = {
+		holder = 630
+	}
+	1093.4.13 = {
+		holder = 652
+	}
+	1113.4.16 = {
+		holder = 666
+	}
+	1125.5.19 = {
+		holder = 222574
+	}
+	1132.4.14 = {
+		holder = 125101
+	}
+	1139.2.8 = {
+		holder = 125102
+	}
+	1139.3.4 = {
+		holder = 222602
+	}
+	1146.8.1 = {
+		holder = 125069
+	}
+	1147.1.2 = {
+		holder = 222525
+	}
+	1149.1.2 = {
+		holder = 222672
+	}
+	1151.1.2 = {
+		holder = 125102
+	}
+	1154.2.6 = {
+		holder = 222525
+	}
+	1154.11.13 = {
+		holder = 222672
+	}
+	1157.5.15 = {
+		holder = 125047
+	}
+	1158.1.2 = {
+		holder = 222522
+	}
+	1159.1.2 = {
+		holder = 222572
+	}
+	1161.2.12 = {
+		holder = 125047
+	}
+	1161.3.6 = {
+		holder = 222572
+	}
+	1167.3.14 = {
+		holder = 222522
+	}
+	1169.1.2 = {
+		holder = 222702
+	}
+	1170.1.2 = {
+		holder = 222522
+	}
+	1170.7.19 = {
+		holder = 222520 # Roman the Great
+	}
+	1178.1.1 = {
+		succession_laws = { male_only_law }
+	}
+	1194.7.27 = {
+		holder = 222579
+	}
+	1202.1.2 = {
+		holder = 125132
+	}
+	1204.1.2 = {
+		holder = 222587
+	}
+	1205.1.2 = {
+		holder = 222579
+	}
+	1206.1.2 = {
+		holder = 222652
+	}
+	1207.1.2 = {
+		holder = 222579
+	}
+	1210.1.2 = {
+		holder = 222652
+	}
+	1214.1.2 = {
+		holder = 222610
+	}
+	1223.6.2 = {
+		holder = 222588
+	}
+	1239.3.3 = {
+		holder = 125154
+	}
+	1240.1.2 = {
+		holder = 125114
+	}
+	1241.1.2 = {
+		holder = 222654
+	}
+	1243.1.2 = {
+		holder = 472885
+	}
+	1246.9.30 = {
+		holder = 472844
+	}
+	1263.11.14 = {
+		holder = 125074
+	}
+	1265.1.2 = {
+		holder = 125075
+	}
+	1285.1.2 = {
+		holder = 125076
+	}
+	1303.1.2 = {
+		holder = 125077
+	}
+
+	# --- Prise de contrôle gédiminide ---
+	1320.1.1 = {
+		holder = 473510 #Liubartas/Dmitry gouverne déjà Loutsk dès le début des années 1320 (avant de
+		                # contrôler toute la Volhynie en 1340). Personnage vanilla (lithuanian.txt).
+		liege = "k_lithuania"
+		government = feudal_government
+	}
+	1337.11.1 = {
+		liege = 0 #Duché de Volhynie rendu indépendant pour le bookmark 1337 (bm_guerre_cent_ans_1337) :
+		          # Liubartas n'est plus vassal féodal de k_lithuania à cette date.
+	}
+	1340.4.7 = {
+		liege = k_lithuania #Suzeraineté lituanienne totale sur la Volhynie à la mort de Boleslaw-Jerzy II
+		                     # (Georges II) de Galicie-Volhynie, assassiné par les boyards — guerre de
+		                     # succession de Galicie-Volhynie (1340-1349). Le royaume k_galicia-volhynia
+		                     # est détruit à cette même date (voir 00_lis_lion_ruthenie_lal.txt).
+	}
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+# DUCHÉ DE MINSK (d_minsk) — vanilla (825-1178) puis Gédiminides
+# Algirdas épouse Maria, fille du prince Yaroslav Vasilkovich de Vitebsk,
+# en 1318 ; à la mort de Yaroslav en 1320, Algirdas devient prince de
+# Vitebsk, vassal de son père Gediminas, qui lui adjoint Borisov (Barysaw,
+# déjà dans c_minsk_lal) près de Minsk (lithaz.org, "Grand Duke Algirdas").
+# Duc de Minsk : c. 1320-1345 (en.wikipedia "Algirdas" — jusqu'à son
+# accession au trône de Grand-duc en 1345).
+# ═══════════════════════════════════════════════════════════════
+
+d_minsk = {
+	###Pre-Kievan Rus
+	825.12.3 = {
+		holder = 302209		#Fictional Krivichi
+		government = tribal_government
+	}
+	864.2.23 = {
+		holder = 302212		#Fictional Krivichi
+	}
+	935.1.1 = {
+		government = feudal_government	#Ahistorical, just for ease of bookmarks.
+	}
+	
+	###Vladimir the great invades Minsk area
+	978.6.15 = {
+		holder = 0
+	}
+	
+	#Split of the possessions of Polotsk
+	1101.4.14 = {
+		holder = 672	#Gleb Vseslavich
+	}
+	1119.9.13 = {
+		holder = 666	#Kievan influence
+	}
+	1146.1.22 = {
+		holder = 222795	#Rostislav Glebovich
+	}
+	1151.1.2 = {
+		holder = 222792	#Volodar Glebovich
+	}
+	1159.1.2 = {
+		holder = 222795	#Rostislav Glebovich
+	}
+	1165.1.2 = {
+		holder = 222792	#Volodar Glebovich
+	}
+	1176.1.2 = {	#some confusion around dates here, 1167 often cited, as well as 1182 thus with a hole, and 1176 as Volodar's death
+		holder = 222790	#Vladimir Volodarovich
+	}
+	1178.1.1 = {
+		succession_laws = { male_only_law }
+	}
+
+	# --- Prise de contrôle gédiminide ---
+	1320.1.1 = {
+		holder = 473506 #Algirdas — duc de Minsk ("Zaslawye") 1320-1345. Personnage vanilla
+		                # (lithuanian.txt, né 1296) : parfaitement plausible comme titulaire à 24 ans.
+		liege = "k_lithuania"
+		government = feudal_government
+	}
+	# 1345 : Algirdas devient Grand-duc de Lituanie et cède cet apanage — le successeur
+	# précis à Minsk n'est pas identifié par les sources consultées ; à compléter si tu as
+	# un id de personnage/une source pour la suite de la lignée.
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+# PRINCIPAUTÉ DE POLOTSK (d_polotsk / c_polotsk / c_lukoml) — vanilla (800-1185)
+# puis liste "Princes of Polotsk" (familypedia, reprend Janet Martin,
+# Medieval Russia 980-1584) :
+#   1252–1263 Tautvilas
+#   1264–1267 Gerdenis (ton fichier utilise l'id 125015 "Vasiko Rourikide" —
+#             à vérifier : cet id correspond-il bien à Gerdenis dans ta base
+#             de personnages ? Le nom ne correspond pas à celui de la source.)
+#   1267–1270 Iziaslav III de Vitebsk (incertain, non représenté ici faute
+#             d'id de personnage)
+#   1270–1290 Konstantin le Manchot (non représenté, faute d'id)
+#   1290–1307 occupation par l'Ordre de Livonie (Archevêché de Riga)
+#   1307–1334 Vainius / Voin (frère de Gediminas), mort en 1334 (Wikidata)
+#   1334–1342 Narimantas (baptisé Gleb), fils de Gediminas
+#   1342–1387 Andrei (Andrzej) Olgierdowicz, fils aîné d'Algirdas
+#   1387–     Skirgaila (dépose Andrei en 1387)
+# ⚠ Entre 1185 (fin de l'historique vanilla) et 1252 (Tautvilas), aucune
+# source précise trouvée — le dernier possesseur vanilla (Vladimir
+# Vseslavich, 222550) reste donc titulaire par défaut jusqu'en 1252.
+# ═══════════════════════════════════════════════════════════════
+
+d_polotsk = {
+	800.1.2 = {
+		holder = 0
+		government = tribal_government
+	}
+	
+	#Kievan Rus creation
+	987.1.2 = {
+		holder = 616		#Iziaslav I Vladimirovich
+		liege = k_ruthenia
+		government = feudal_government	#Orthodox conversion
+	}
+	1001.1.2 = {
+		holder = 125000		#Vseslav I Iziaslavich
+	}
+	1003.1.2 = {
+		holder = 642		#Briacheslav I Iziaslavich
+	}
+	1044.1.2 = {
+		holder = 650		#Vseslav II Briacheslavich
+	}
+	
+	#Yaroslav the Wise dies
+	1054.2.20 = {
+		liege = 0
+	}
+	1101.4.14 = {
+		holder = 676		#Davyd Vseslavich
+	}
+	1127.1.2 = {
+		holder = 680		#Boris Vseslavichi
+	}
+	1128.1.2 = {
+		holder = 676		#Davyd Vseslavich
+	}
+	1129.1.2 = {
+		holder = 222525		#Iziaslav II Mstislavich
+	}
+	1132.1.2 = {
+		holder = 222554		#Vasilko Sviatoslavich
+	}
+	1144.1.2 = {
+		holder = 125003		#Rogvolod Borisovich
+	}
+	1151.1.2 = {
+		holder = 222795		#Rostislav Glebovich
+	}
+	1159.1.2 = {
+		holder = 125003
+	}
+	1162.1.2 = {
+		holder = 222552
+	}
+	1178.1.1 = {
+		succession_laws = { male_only_law }
+	}
+	1180.1.2 = {
+		holder = 222562
+	}
+	1185.1.2 = {
+		holder = 222550		#Vladimir Vseslavich
+	}
+
+	1252.1.1 = {
+		holder = 125306 #Tautvilas
+		liege = "k_lithuania"
+		government = feudal_government
+	}
+	1264.1.2 = {
+		holder = 125015 #"Vasiko Rourikide" — censé représenter Gerdenis (1264-1267) ? à vérifier
+	}
+	1290.1.1  = {
+		holder = 30412
+		liege = 0
+	}	#Konrad von Feuchtwangen — occupation de l'Ordre de Livonie
+	1296.7.4  = {
+		holder = 30413
+	}	#Gottfried von Hohenlohe
+	1303.1.1  = {
+		holder = 30414
+	}	#Siegfried von Feuchtwangen
+	1307.1.1 = {
+		holder = 472351 #Vainius/Voin, frère de Gediminas — prince de Polotsk 1307-1334 (personnage vanilla)
+		liege = "k_lithuania"
+		government = feudal_government
+	}
+	1334.1.1 = {
+		holder = 473504 #Narimantas/Gleb, fils de Gediminas — mort de Vainius en 1334 (Wikidata)
+	}
+	1342.1.1 = {
+		holder = 473513 #Andrei (Andrzej) Olgierdowicz, fils aîné d'Algirdas — prince de Polotsk 1342-1387
+		                # (transfert politique, Narimantas reste vivant jusqu'en 1348 et conserve Pinsk)
+	}
+	1387.1.1 = {
+		holder = 473520 #Skirgaila, fils d'Algirdas — attaque et dépose Andrei en 1387, prend Polotsk
+	}
+}
+
+c_polotsk = {
+	800.1.2 = {
+		holder = 0
+		government = tribal_government
+	}
+	
+	#Kievan Rus creation
+	987.1.2 = {
+		holder = 616		#Iziaslav I Vladimirovich
+		liege = k_ruthenia
+		government = feudal_government	#Orthodox conversion
+	}
+	1001.1.2 = {
+		holder = 125000		#Vseslav I Iziaslavich
+	}
+	1003.1.2 = {
+		holder = 642		#Briacheslav I Iziaslavich
+	}
+	1044.1.2 = {
+		holder = 650		#Vseslav II Briacheslavich
+	}
+	
+	#Yaroslav the Wise dies
+	1054.2.20 = {
+		liege = 0
+	}
+	1101.4.14 = {
+		holder = 676		#Davyd Vseslavich
+	}
+	1127.1.2 = {
+		holder = 680		#Boris Vseslavichi
+	}
+	1128.1.2 = {
+		holder = 676		#Davyd Vseslavich
+	}
+	1129.1.2 = {
+		holder = 222525		#Iziaslav II Mstislavich
+	}
+	1132.1.2 = {
+		holder = 222554		#Vasilko Sviatoslavich
+	}
+	1144.1.2 = {
+		holder = 125003		#Rogvolod Borisovich
+	}
+	1151.1.2 = {
+		holder = 222795		#Rostislav Glebovich
+	}
+	1159.1.2 = {
+		holder = 125003
+	}
+	1162.1.2 = {
+		holder = 222552
+	}
+	1178.1.1 = {
+		succession_laws = { male_only_law }
+	}
+	1180.1.2 = {
+		holder = 222562
+	}
+	1185.1.2 = {
+		holder = 222550		#Vladimir Vseslavich
+	}
+
+	1252.1.1 = {
+		holder = 125306 #Tautvilas
+		liege = "d_polotsk"
+		government = feudal_government
+	}
+	1264.1.2 = {
+		holder = 125015
+	}
+	1290.1.1  = {
+		holder = 30412
+		liege = d_polotsk
+	}	#Konrad von Feuchtwangen
+	1296.7.4  = {
+		holder = 30413
+	}	#Gottfried von Hohenlohe
+	1303.1.1  = {
+		holder = 30414
+	}	#Siegfried von Feuchtwangen
+	1307.1.1 = {
+		holder = 472351 #Vainius/Voin — prince de Polotsk 1307-1334
+		liege = "k_lithuania"
+		government = feudal_government
+	}
+	1334.1.1 = {
+		holder = 473504 #Narimantas/Gleb — mort de Vainius en 1334
+	}
+	1342.1.1 = {
+		holder = 473513 #Andrei of Polotsk — 1342-1387 (déposé par Skirgaila en 1387)
+	}
+	1387.1.1 = {
+		holder = 473520 #Skirgaila
+	}
+}
+
+# c_lukoml (typo corrigée : "c_lokuml" -> "c_lukoml", nom vanilla réel) —
+# ville proche de Polotsk, suit vraisemblablement la même suzeraineté ;
+# NON clonée dans le pack _lal, clé inchangée.
+c_lukoml = {
+	800.1.2 = {
+		holder = 0
+		government = tribal_government
+	}
+	
+	#Kievan Rus creation
+	987.1.2 = {
+		holder = 616		#Iziaslav I Vladimirovich
+		liege = k_ruthenia
+		government = feudal_government	#Orthodox conversion
+	}
+	1001.1.2 = {
+		holder = 125000		#Vseslav I Iziaslavich
+	}
+	1003.1.2 = {
+		holder = 642		#Briacheslav I Iziaslavich
+	}
+	1044.1.2 = {
+		holder = 650		#Vseslav II Briacheslavich
+	}
+	
+	#Yaroslav the Wise dies
+	1054.2.20 = {
+		liege = 0
+	}
+	1101.4.14 = {
+		holder = 676		#Davyd Vseslavich
+	}
+	1127.1.2 = {
+		holder = 680		#Boris Vseslavichi
+	}
+	1128.1.2 = {
+		holder = 676		#Davyd Vseslavich
+	}
+	1129.1.2 = {
+		holder = 222525		#Iziaslav II Mstislavich
+	}
+	1132.1.2 = {
+		holder = 222554		#Vasilko Sviatoslavich
+	}
+	1144.1.2 = {
+		holder = 125003		#Rogvolod Borisovich
+	}
+	1151.1.2 = {
+		holder = 222795		#Rostislav Glebovich
+	}
+	1159.1.2 = {
+		holder = 125003
+	}
+	1162.1.2 = {
+		holder = 222552
+	}
+	1178.1.1 = {
+		succession_laws = { male_only_law }
+	}
+	1180.1.2 = {
+		holder = 222562
+	}
+	1185.1.2 = {
+		holder = 222550		#Vladimir Vseslavich
+	}
+
+	1252.1.1 = {
+		holder = 125306 #Tautvilas
+		liege = "d_polotsk"
+		government = feudal_government
+	}
+	1264.1.2 = {
+		holder = 125015
+	}
+	1290.1.1  = {
+		holder = 30412
+		liege = d_polotsk
+	}	#Konrad von Feuchtwangen
+	1296.7.4  = {
+		holder = 30413
+	}	#Gottfried von Hohenlohe
+	1303.1.1  = {
+		holder = 30414
+	}	#Siegfried von Feuchtwangen
+	1307.1.1 = {
+		holder = 472351 #Vainius
+		liege = "d_polotsk"
+		government = feudal_government
+	}
+	1334.1.1 = {
+		holder = 473504 #Narimantas/Gleb — mort de Vainius en 1334
+	}
+	1342.1.1 = {
+		holder = 473513 #Andrei of Polotsk
+	}
+	1387.1.1 = {
+		holder = 473520 #Skirgaila
+	}
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+# COMTÉ DE SEBEZH (c_sebezh_lal) — de jure d_novgorod (INCHANGÉ, seul le
+# comté est cloné, pas son duché-liège, comme demandé initialement).
+# Historique vanilla complet (860-1189, ère Kiévienne puis République de
+# Novgorod) conservé, puis rattaché explicitement aux ducs lituaniens de
+# Polotsk EN RÉGIME FÉODAL à partir de 1307 (même chronologie que
+# d_polotsk : Vainius, Narimantas, Andrei, Skirgaila), sur demande
+# explicite.
+# ⚠ Aucune source précise sur la date exacte de la prise lituanienne de
+# Sebezh — alignée par convention sur la prise de Polotsk elle-même
+# (1307). À ajuster si tu as une date différente.
+# ═══════════════════════════════════════════════════════════════
+
+c_sebezh_lal = {
+	###Pre Kievan Rus
+	860.1.2 = {
+		holder = 302222	#Truvor
+		liege = 0
+		government = tribal_government
+	}
+	862.1.2 = {
+		holder = 302219	#fictional Ingvar Pskovych
+		liege = d_novgorod
+	}
+	
+	###Added to Rus
+	882.4.10 = {
+		holder = 40606	#Oleg the Seer
+	}
+	912.1.1 = {
+		holder = 600	#Igor I the Old
+	}
+	945.1.1 = {
+		holder = 601	#Olga of Kiev
+	}
+	962.1.2 = {
+		holder = 602	#Sviatoslav I the Brave
+	}
+	969.1.2 = {
+		holder = 608	#Vladimir the Great
+	}
+	977.1.2 = {
+		holder = 604	#Yaropolk I Sviatoslavich
+	}
+	978.1.2 = {
+		holder = 608	#Vladimir the Great
+	}
+	1010.1.2 = {
+		holder = 612	#Yaroslav the Wise
+	}
+	1034.1.2 = {
+		holder = 634	#Vladimir II Yaroslavich
+	}
+	1052.10.4 = {
+		holder = 626	#Iziaslav I Yaroslavich
+	}
+	1054.2.20 = {
+		holder = 686	#Mstislav I Iziaslavich
+	}
+	1067.1.2 = {
+		holder = 654	#Gleb I Sviatoslavich
+	}
+	1078.5.30 = {
+		holder = 652	#Sviatopolk I Iziaslavich
+	}
+	1088.1.2 = {
+		holder = 222574	#Mstislav II the Great Vladimirovich
+	}
+	1117.1.2 = {
+		holder = 222822	#Vsevolod I Mstislavich
+	}
+	1132.1.2 = {
+		holder = 125113	#Sviatopolk II
+	}
+	1132.7.2 = {
+		holder = 222822	#Vsevolod I Mstislavich
+	}
+	1136.1.2 = {
+		holder = 222632	#Sviatoslav II Olgovich
+	}
+	
+	#Novgorod Republic
+	1138.1.2 = {
+		holder = 125113	#Sviatopolk II
+	}
+	1138.7.2 = {
+		holder = 222675	#Rostislav I Yuryevich
+	}
+	1140.1.2 = {
+		holder = 222632	#Sviatoslav II Olgovich
+	}
+	1141.1.2 = {
+		holder = 222650	#Sviatoslav III Vsevolodovich
+	}
+	1141.7.2 = {
+		holder = 222675	#Rostislav I Yuryevich
+	}
+	1142.1.2 = {
+		holder = 125113	#Sviatopolk II
+	}
+	1148.1.2 = {
+		holder = 222622	#Yaroslav II Iziaslavich
+	}
+	1154.1.2 = {
+		holder = 222572	#Rostislav II Mstislavich
+	}
+	1154.7.2 = {
+		holder = 222570	#David II Rostislavich
+	}
+	1155.1.2 = {
+		holder = 222681	#Mstislav III
+	}
+	1158.1.2 = {
+		holder = 125142	#Sviatoslav IV
+	}
+	1160.1.2 = {
+		holder = 222722	#Mstislav IV the Eyeless
+	}
+	1161.1.2 = {
+		holder = 125142	#Sviatoslav IV
+	}
+	1168.1.2 = {
+		holder = 222520	#Roman I the Great
+	}
+	1170.1.2 = {
+		holder = 222579	#Rurik II
+	}
+	1171.1.2 = {
+		holder = 222828	#Yuri I Bogolyubsky
+	}
+	1175.1.2 = {
+		holder = 222722	#Mstislav IV the Eyeless
+	}
+	1176.1.2 = {
+		holder = 222710	#Yaroslav III the Red
+	}
+	1177.1.2 = {
+		holder = 125233 # Mikhail Stepanovich, technically of Novgorod
+	}
+	1179.1.2 = {
+		holder = 222582	#Mstislav V the Brave
+	}
+	1180.1.2 = {
+		holder = 125233
+	}
+	1184.1.2 = {
+		holder = 125231
+	}
+	1186.1.2 = {
+		holder = 125233
+	}
+	1189.1.2 = {
+		holder = 125234
+	}
+
+	1307.1.1 = {
+		holder = 472351 #Vainius/Voin — rattaché aux ducs lituaniens de Polotsk, en régime féodal
+		liege = "d_polotsk"
+		government = feudal_government
+	}
+	1334.1.1 = {
+		holder = 473504 #Narimantas/Gleb
+	}
+	1342.1.1 = {
+		holder = 473513 #Andrei of Polotsk
+	}
+	1387.1.1 = {
+		holder = 473520 #Skirgaila
+	}
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+# COMTÉ DE NOVOGRUDOK (c_novogrudok_lal) — de jure d_grodno
+# Karijotas (Koriat), fils de Gediminas : comte de Navahrudak (Novogrudok)
+# à partir du 2 janvier 1325 (date avancée sur demande explicite ; la source
+# habituelle, en.wikipedia "Karijotas" daté par Jan Tęgowski, donne plutôt
+# 1341 pour Navahrudak ET Vaŭkavysk — conservé pour Vaŭkavysk, voir
+# c_volkovysk_lal). Mort entre 1358 et 1363.
+# Les deux entrées de ton brouillon (1290.1.2 holder=125076 et
+# 1230.1.1 holder=473509) sont contradictoires et chronologiquement
+# invalides (1230 après 1290 dans le fichier = ordre inversé, interdit en
+# CK3) ; 125076 est en réalité un id de holder vanilla de c_korsun
+# (Ruthénie), donc une erreur de copier-coller. Remplacées par l'entrée
+# correcte ci-dessous. NOTE : le comté c_novogrudok_lal a déjà reçu son
+# historique vanilla complet dans 00_lis_lion_ruthenie_lal.txt — seule la
+# continuation gédiminide est ajoutée ici.
+# ═══════════════════════════════════════════════════════════════
+
+c_novogrudok_lal = {
+	1325.1.2 = {
+		holder = 473509 #Karijotas/Koriat, fils de Gediminas — comte de Novogroudok à partir du 2 janvier
+		                # 1325 (date avancée depuis 1341 sur demande explicite ; Karijotas, né en 1302, a alors
+		                # 23 ans, ce qui reste parfaitement plausible). Le comté est déjà passé sous suzeraineté
+		                # lituanienne (k_lithuania) depuis le 1er janvier 1306, voir 00_lis_lion_ruthenie_lal.txt.
+		government = feudal_government
+	}
+	1362.1.1 = {
+		holder = 473521 #Teodoras/Fedir Koriatovych, fils de Karijotas — hérite de Navahrudak à la mort de son père
+	}
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+# DUCHÉ DE PINSK (d_pinsk) — création en 1306, sous suzeraineté lituanienne
+# dès sa création, avec Jaunutis (473507, fils de Gediminas) comme titulaire
+# à terme. Jaunutis étant né en 1315 (personnage vanilla, lithuanian.txt), le
+# duché est d'abord tenu par Yuri Dmitrievich, dernier prince rurikide de
+# Pinsk (lignée de Turov-Pinsk, voir 00_lis_lion_lithuanian_and_polish.txt
+# pour sa généalogie complète et ses sources), puis transmis à Jaunutis en
+# 1335 quand celui-ci atteint sa majorité (20 ans).
+# ═══════════════════════════════════════════════════════════════
+
+d_pinsk = {
+	1306.1.1 = {
+		holder = 1227802 #Yuri Dmitrievich, prince de Pinsk (lignée des Iziaslavitchi de Turov-Pinsk,
+		                # descendant direct de Yaroslav Yuryevich/125033 — voir généalogie détaillée dans
+		                # 00_lis_lion_lithuanian_and_polish.txt) — le duché passe sous suzeraineté
+		                # lituanienne (k_lithuania) dès sa création, mais Yuri conserve le titre ducal en
+		                # tant que vassal local, le temps que Jaunutis atteigne l'âge adulte.
+		liege = k_lithuania
+		government = feudal_government
+	}
+	1335.4.12 = {
+		holder = 473507 #Jaunutis, fils de Gediminas — succède à Yuri Dmitrievich à la mort de celui-ci
+		                # (transfert politique du duché à un Gédiminide, sur le même modèle que Minsk,
+		                # Vitebsk ou Polotsk pour ses frères). Personnage vanilla (lithuanian.txt), 20 ans
+		                # à cette date (né 1315).
+	}
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+# COMTÉ DE PINSK (c_pinsk_lal) — de jure d_pinsk (historique vanilla déjà
+# dans 00_lis_lion_ruthenie_lal.txt, seule la continuation est ici)
+# Narimantas/Gleb reçoit Pinsk de son père à la mort de celui-ci en 1341.
+# Il la conserve jusqu'à sa mort en 1348 (bataille de la Strėva).
+#
+# ⚠ Sur Daumantas (1282-1285) mentionné dans tes notes : il s'agit du
+# Grand-duc de Lituanie Daumantas (1282-1285), sans lien démontré avec
+# Pinsk spécifiquement — non intégré à la lignée de Pinsk faute de source.
+# ═══════════════════════════════════════════════════════════════
+
+c_pinsk_lal = {
+	1341.1.1 = {
+		holder = 473504 #Narimantas/Gleb — comte de Pinsk 1341-1348. Personnage vanilla (lithuanian.txt).
+		liege = "k_lithuania"
+		government = feudal_government
+	}
+	1348.2.2 = {
+		holder = 473523 #Mikhail Narimantaitis, fils de Narimantas — "prince de Turov et Pinsk"
+		                # (Nobility of Medieval Lithuania), lui succède à la mort de son père.
+		                # Personnage sans équivalent vanilla, créé sous un ID libre (voir
+		                # 00_lis_lion_lithuanian_and_polish.txt).
+	}
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+# COMTÉS DE PINSK MINEURS PASSÉS SOUS SUZERAINETÉ LITUANIENNE (~1320)
+# Aucune source ne documente un titulaire individuel précis pour ces trois
+# comtés à cette date — conservé tel quel (juste changement de liège).
+# ═══════════════════════════════════════════════════════════════
+
+c_kletsk_lal = {
+	1320.1.1 = {
+		liege = "k_lithuania"
+	}
+}
+
+c_slutsk_lal = {
+	1320.1.1 = {
+		liege = "k_lithuania"
+	}
+}
+
+c_babruysk_lal = {
+	1320.1.1 = {
+		liege = "k_lithuania"
+	}
+}
+
+
+# c_vitebsk : NON cloné dans ce pack, clé inchangée. Algirdas garde Vitebsk toute sa vie
+# (en.wikipedia infobox : "Duke of Vitebsk, Reign 1318-1377"), contrairement à Minsk.
+c_vitebsk = {
+	1318.1.1 = {
+		holder = 473506 #Algirdas — prince de Vitebsk 1318 (mariage), effectif dès 1320 (mort de son beau-père Yaroslav)
+		liege = "d_minsk"
+		government = feudal_government
+	}
+	1377.5.24 = {
+		holder = 473518 #Uliana de Tver, veuve d'Algirdas — lui succède à Vitebsk (infobox en.wikipedia "Successor: Uliana Alexandrovna of Tver")
+	}
+}
+
+c_orsha_lal = {
+	1320.1.1 = {
+		liege = "d_minsk"
+		government = feudal_government
+	}
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+# AUTRES COMTÉS DE VOLHYNIE — Liubartas/Dmitry (historique vanilla déjà
+# dans 00_lis_lion_ruthenie_lal.txt pour ces trois, continuation ici)
+# c_volkovysk_lal et c_berestye_lal utilisaient l'id 473500 en 1327 dans
+# ton brouillon : ⚠ CORRECTION — 473500 est en réalité Gediminas lui-même
+# (déjà défini dans 00_lis_lion_lithuanian_and_polish.txt, né 1270, mort
+# 1341.5.2) donc PARFAITEMENT vivant et plausible comme titulaire direct
+# en 1327 ! Contrairement à ce que j'avais supposé par erreur au tour
+# précédent (je l'avais pris pour Vytenis, mort 1315/16) — conservé tel
+# quel, avec ajout de la continuation par Liubartas en 1340.
+# ═══════════════════════════════════════════════════════════════
+
+c_volkovysk_lal = {
+	1327.1.2 = {
+		holder = 473500 #Gediminas lui-même (né 1270, mort 1341) — cohérent, conservé de ton brouillon original
+		liege = "k_lithuania"
+	}
+	1340.1.1 = {
+		holder = 473510 #Liubartas/Dmitry — duc de Volhynie 1340-1383, Gediminas transfère la zone à son fils
+		liege = "d_volhynia_lal"
+	}
+}
+
+c_berestye_lal = {
+	1327.1.2 = {
+		holder = 473500 #Gediminas lui-même — conservé de ton brouillon original
+		liege = "k_lithuania"
+	}
+	1340.1.1 = {
+		holder = 473510 #Liubartas/Dmitry
+		liege = "d_volhynia_lal"
+	}
+}
+
+# c_dorohychyn_lal et c_dubrovytsia_lal : historique gédiminide déjà géré
+# entièrement dans 00_lis_lion_ruthenie_lal.txt (Mantvydas, fils de Gediminas,
+# à partir de 1303/1306) — blocs redondants supprimés d'ici pour éviter un
+# conflit de dates entre les deux fichiers.

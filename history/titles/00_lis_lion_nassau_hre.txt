@@ -1,0 +1,50 @@
+﻿# Le Lis et le Lion — Possessions des Nassau : verrouillage du lien avec le Saint-Empire
+# c_cologne, c_aachen et c_zutphen doivent rester liège de e_hre en tout temps (les Nassau
+# y détiennent des possessions), quelles que soient les réassignations de duchés
+# intermédiaires effectuées ailleurs dans le mod (restructuration saxonne, etc.). On répète
+# l'ancrage à plusieurs dates de contrôle (avant 1300, 1306, 1337, 1348) pour être bien sûr.
+
+c_cologne = {
+	1298.1.1 = {
+		liege = e_hre
+	}
+	1306.1.1 = {
+		liege = e_hre
+	}
+	1337.1.1 = {
+		liege = e_hre
+	}
+	1348.1.1 = {
+		liege = e_hre
+	}
+}
+
+c_aachen = {
+	1298.1.1 = {
+		liege = e_hre
+	}
+	1306.1.1 = {
+		liege = e_hre
+	}
+	1337.1.1 = {
+		liege = e_hre
+	}
+	1348.1.1 = {
+		liege = e_hre
+	}
+}
+
+c_zutphen = {
+	1298.1.1 = {
+		liege = e_hre
+	}
+	1306.1.1 = {
+		liege = e_hre
+	}
+	1337.1.1 = {
+		liege = e_hre
+	}
+	1348.1.1 = {
+		liege = e_hre
+	}
+}

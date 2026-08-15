@@ -1,0 +1,35 @@
+﻿# Le Lis et le Lion — Dalmatie : rattachement à la Hongrie plutôt qu'à Venise
+# Le personnage 470003 devient titulaire de c_zadar, c_knin, c_gacka, c_lika et c_modrus
+# le 1er janvier 1302 (cf. vanilla k_croatia.txt), mais ces comtés restent liège de
+# k_venice depuis 1165/1202 en vanilla. On corrige : à cette même date, ces possessions
+# (et donc 470003) deviennent vassales du roi de Hongrie plutôt que de Venise.
+
+c_zadar = {
+	1302.1.1 = {
+		liege = k_hungary
+	}
+}
+
+c_knin = {
+	1302.1.1 = {
+		liege = k_hungary
+	}
+}
+
+c_gacka = {
+	1302.1.1 = {
+		liege = k_hungary
+	}
+}
+
+c_lika = {
+	1302.1.1 = {
+		liege = k_hungary
+	}
+}
+
+c_modrus = {
+	1302.1.1 = {
+		liege = k_hungary
+	}
+}

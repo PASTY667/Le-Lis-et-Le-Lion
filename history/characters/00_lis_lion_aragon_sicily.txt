@@ -1,0 +1,109 @@
+﻿# Le Lis et le Lion — Harmonisation de la maison royale de Sicile (Barcelone/Trinacria)
+# CORRECTION : Federigo II (461500) est déjà nativement en dynasty = 100204 (Barcelona),
+# tout comme son père Jaume II (460560). Une précédente version de ce mod l'avait basculé
+# par erreur vers house_aragon-sicily — annulé. C'est en réalité PETRU (II) (461502) et
+# toute SA descendance qui étaient sur house_aragon-sicily : on les ramène vers
+# dynasty = 100204 (Barcelona), comme leur grand-père et leur père, pour que toute la
+# lignée soit homogène dans la même dynastie.
+
+461502 = { # Petru (II), roi de Sicile
+	1304.1.1 = {
+		dynasty = 100204
+	}
+}
+
+71752 = { # Ruggeru, fils de Federigo II
+	1305.1.1 = {
+		dynasty = 100204
+	}
+}
+
+71753 = { # Manfredi, fils de Federigo II
+	1307.1.1 = {
+		dynasty = 100204
+	}
+}
+
+71754 = { # Isabella, fille de Federigo II
+	1310.1.1 = {
+		dynasty = 100204
+	}
+}
+
+71756 = { # Sanciu, fils de Federigo II
+	1295.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461503 = { # Luduvicu, fils de Petru II
+	1335.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461504 = { # Custanza, fille de Petru II
+	1324.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461505 = { # Eleunora, fille de Petru II
+	1325.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461506 = { # Biatrici, fille de Petru II
+	1326.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461507 = { # Eufemia, fille de Petru II
+	1330.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461508 = { # Viulanti, fille de Petru II
+	1334.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461509 = { # Custanza, fille de Federigo II
+	1306.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461510 = { # Gugghiermu, fils de Federigo II
+	1312.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461520 = { # Giuvanni, fils de Federigo II
+	1317.5.1 = {
+		dynasty = 100204
+	}
+}
+
+461560 = { # Orlannu, fils de Federigo II
+	1296.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461565 = { # Isabella, fille de Federigo II
+	1292.1.1 = {
+		dynasty = 100204
+	}
+}
+
+461567 = { # Eleunora, fille de Federigo II
+	1298.1.1 = {
+		dynasty = 100204
+	}
+}

@@ -1,0 +1,22 @@
+﻿# Le Lis et le Lion — Royaume de Naples (k_naples)
+# Ce titre existe dans landed_titles mais n'avait JAMAIS de bloc d'historique propre en
+# vanilla : tous les comtés du sud de l'Italie pointent vers lui comme liège dès 1302/1309
+# (cf. k_sicily.txt), mais le titre royal lui-même restait sans titulaire enregistré.
+# On reconstitue la chronologie réelle depuis Charles Ier d'Anjou (sacré roi de Sicile le
+# 6 janvier 1266), en cohérence avec k_sicily (qui couvre la période 1266-1302), puis on
+# bascule formellement sur k_naples à partir du traité de Caltabellotta (1302), continué
+# par Charles II jusqu'à sa mort, puis Robert Ier (1309), conformément à d_provence/c_provence
+# qui suivent déjà cette chronologie nativement.
+
+k_naples = {
+	1266.1.6 = {
+		holder = 455406 # Charles Ier d'Anjou, sacré roi de Sicile le 6 janvier 1266
+		government = feudal_government
+	}
+	1285.1.7 = {
+		holder = 461710 # Charles II le Boiteux
+	}
+	1309.5.5 = {
+		holder = 461700 # Robert Ier "le Sage"
+	}
+}

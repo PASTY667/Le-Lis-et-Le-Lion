@@ -1,0 +1,230 @@
+# Le Lis et le Lion — Titres principaux forcés
+#
+# c_nassau doit être le titre comtal principal de tous les comtes de Nassau
+# historiques, à l'exception d'Adolf von Nassau (462360) dont le titre
+# impérial (e_hre, 1291-1298) est préservé sans y toucher : on ne fixe donc
+# aucun set_primary_title_to pour lui, le comté restant simplement l'un de
+# ses titres sans en être le titre principal forcé.
+#
+# d_ostmark (Brandebourg) doit être le titre principal de tous ceux qui l'ont
+# possédé au cours de l'histoire.
+
+# ═══════════════════ c_nassau ═══════════════════
+
+33328 = { #Heimerich
+	765.1.1 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+190397 = { #Heimerich
+	795.5.5 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+7946 = {
+	826.1.1 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+7947 = {
+	860.1.1 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+franconian0002 = {
+	1066.1.1 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+30721 = {
+	1094.1.1 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+7901 = { #Heinrich V Salier
+	1106.7.8 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+30719 = { #Ruprecht von Nassau
+	1125.5.23 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+30717 = { #Ruprecht von Nassau
+	1154.5.13 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+212370 = { #Walram von Nassau
+	1159.4.1 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+212372 = { #Heinrich II von Nassau
+	1197.7.5 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+30700 = { #Walram II von Nassau
+	1251.1.25 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+462362 = { #Gerlach von Nassau
+	1298.6.23 = {
+		set_primary_title_to = title:c_nassau
+	}
+}
+
+# ═══════════════════ d_ostmark (Brandebourg) ═══════════════════
+
+168582 = {
+	867.1.1 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+168562 = {
+	926.1.1 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+168568 = {
+	965.5.20 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+168573 = {
+	979.8.3 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+303438 = { #Kornel Lutici
+	983.1.1 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+303439 = { #Marek Lutici
+	1012.11.4 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+303440 = { #Kornel Lutici
+	1035.1.24 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+303442 = { #Kasper Lutici
+	1064.9.2 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+303446 = { #Kornel Lutici
+	1091.12.4 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+33788 = {
+	1123.1.1 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+212908 = { #Albert the Bear
+	1124.5.22 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+33790 = {
+	1131.1.1 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+212040 = {
+	1135.12.31 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+212030 = { #Otto I
+	1170.11.18 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+212938 = {
+	1185.2.9 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+212550 = {
+	1190.8.16 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+212042 = {
+	1210.5.6 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+7504 = {
+	1221.2.17 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+7509 = {
+	1288.2.15 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+33427 = {
+	1291.8.16 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+33758 = {
+	1307.12.10 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+7560 = {
+	1308.12.1 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}
+
+462731 = {
+	1320.8.20 = {
+		set_primary_title_to = title:d_ostmark
+	}
+}

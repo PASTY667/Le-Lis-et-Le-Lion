@@ -1,0 +1,24 @@
+# Le Lis et le Lion — c_nassau et c_passau en gouvernement féodal, sans discontinuer,
+# depuis leur création (au lieu du gouvernement théocratique appliqué en vanilla
+# lors du passage aux princes-évêques).
+
+c_nassau = {
+	765.1.1 = {
+		government = feudal_government
+	}
+}
+
+c_passau = {
+	751.1.1 = {
+		government = feudal_government
+	}
+	# Le vanilla impose government = theocracy_government à cette même date
+	# (prise de fonction de l'évêque Diepold von Berg, dans k_bavaria.txt).
+	# Comme "00_..." se charge AVANT "k_bavaria.txt" par ordre alphabétique,
+	# une entrée à la même date serait écrasée par le vanilla : on utilise donc
+	# une date strictement postérieure (le lendemain) pour être certain que le
+	# féodal l'emporte chronologiquement, quel que soit l'ordre des fichiers.
+	1172.6.11 = {
+		government = feudal_government
+	}
+}

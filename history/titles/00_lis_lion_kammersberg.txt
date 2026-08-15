@@ -1,0 +1,15 @@
+# Le Lis et le Lion — c_kammersberg (k_bavaria.txt) : détenu par 462710 (Margarete,
+# fille de 462720, précédent titulaire depuis 1310.3.28) depuis le 2 avril 1335.
+#
+# Le vanilla a déjà une entrée au 1335.4.2 (holder = 462035). Comme ce fichier
+# ("00_lis_lion_") charge avant "k_bavaria.txt" (vanilla) par ordre alphabétique,
+# une entrée à la même date serait exécutée AVANT celle du vanilla et donc écrasée
+# par elle. On utilise ici la technique habituelle du mod : décaler d'un jour
+# (1335.4.3) pour garantir que notre changement s'applique bien après celui du
+# vanilla et le remplace effectivement.
+
+c_kammersberg = {
+	1335.4.3 = {
+		holder = 462710 # Margarete, fille de 462720
+	}
+}

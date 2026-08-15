@@ -1,0 +1,103 @@
+﻿# Le Lis et le Lion — Maison d'Artois
+# Branche capétienne issue de Robert Ier de France, comte d'Artois (fils de Saint Louis).
+# En vanilla, ces personnages sont dans la dynasty 100 (Artois indépendante).
+# On les rattache à house_artois_capet (cadette des Robertiens, 743) à leur date de naissance.
+
+455405 = { # Robert IV d'Artois (Robert II historique, fils de Saint Louis)
+	1216.9.26 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455546 = { # Robert V de Lille (Robert III d'Artois, fils du précédent)
+	1250.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+91147 = { # Mahaut d'Artois (fille de Robert V, 455546)
+	1268.1.2 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+# Membres supplémentaires de la branche d'Artois (dynasty 100 en vanilla)
+# Descendants de 455546 (Robert V de Lille) et de 455516 (Philippe d'Artois)
+
+454524 = { # Blanche d'Artois (fille de 455405, née 1243.1.2)
+	1243.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455516 = { # Philippe d'Artois (fils de 455546, né 1269.1.2)
+	1269.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455825 = { # Marguerite d'Artois (fille de 455516, née 1285.1.2)
+	1285.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455515 = { # Robert III d'Artois dit le Bon (fils de 455516, né 1287.1.2)
+	1287.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455545 = { # Jeanne d'Artois (fille de 455516, née 1289.1.2)
+	1289.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455941 = { # Marie d'Artois (fille de 455516, née 1295.1.1)
+	1295.1.2 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455518 = { # Catherine d'Artois (fille de 455516, née 1296.1.2)
+	1296.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455519 = { # Louis d'Artois (fils de 455515, né 1320.1.2)
+	1320.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455520 = { # Jean d'Artois (fils de 455515, né 1321.1.2)
+	1321.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455521 = { # Jeanne d'Artois (fille de 455515, née 1323.1.2)
+	1323.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455522 = { # Jacques d'Artois (fils de 455515, né 1325.1.2)
+	1325.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455523 = { # Robert d'Artois (fils de 455515, né 1326.1.2)
+	1326.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}
+
+455524 = { # Charles d'Artois (fils de 455515, né 1328.1.2)
+	1328.1.3 = {
+		dynasty_house = house_artois_capet
+	}
+}

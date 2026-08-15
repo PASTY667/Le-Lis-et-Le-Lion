@@ -1,0 +1,644 @@
+﻿# Le Lis et le Lion — Évolution des cultures germaniques (Ostsiedlung)
+#
+# Ce fichier programme, par date, la progression de la colonisation/
+# assimilation germanique dans le Mecklembourg, la Poméranie, la Prusse,
+# la Lusace et la Silésie. Les cultures hybrides "pomeranian_germanic",
+# "prussian_germanic" et "silesian" sont définies dans
+# common/culture/cultures/00_lis_lion_cultures.txt (héritage, langue,
+# éthos, traditions, gfx et liste de noms entièrement germaniques).
+#
+# Ces entrées ne redéclarent pas l'état de base (vanilla) des provinces :
+# elles ajoutent uniquement les changements datés qui se superposent à
+# l'historique existant.
+
+# Culture saxonne — 1230
+# Assimilation germanique du Mecklembourg / de la Poméranie occidentale (polabien -> saxon).
+
+# c_mecklenburg
+2807 = { # b_wismar (c_mecklenburg)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+2813 = { # b_parchim (c_mecklenburg)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+
+# c_werle
+2812 = { # b_werle (c_werle)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+2820 = { # b_neubrandenburg (c_werle)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+2821 = { # b_neustrelitz (c_werle)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+
+# c_rostock
+2809 = { # b_rostock (c_rostock)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+2819 = { # b_gustrow (c_rostock)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+
+# c_wolgast
+2817 = { # b_wolgast (c_wolgast)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+2816 = { # b_griefswald (c_wolgast)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+
+# c_rugen
+2811 = { # b_rugen (c_rugen)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+2810 = { # b_stralsund (c_rugen)
+	1230.1.1 = {
+		culture = saxon
+	}
+}
+
+# Culture poméranienne germanique — 1250
+# Naissance de la culture hybride poméranienne (germanique), issue du poméranien (slave, vanilla) et du saxon.
+
+# c_stettin
+2823 = { # b_szczecin (c_stettin)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+2822 = { # b_ucramund (c_stettin)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3155 = { # b_gryfino (c_stettin)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+
+# c_soldin
+3154 = { # b_soldin (c_soldin)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3153 = { # b_kostschin (c_soldin)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+
+# c_kolobrzeg
+2818 = { # b_swinoujscie (c_kolobrzeg)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+2824 = { # b_kolobrzeg (c_kolobrzeg)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+2825 = { # b_stargad (c_kolobrzeg)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+2836 = { # b_lobez (c_kolobrzeg)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+
+# c_landsberg
+3152 = { # b_landsberg (c_landsberg)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3151 = { # b_driesen (c_landsberg)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3156 = { # b_arnswalde (c_landsberg)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3183 = { # b_kreuz (c_landsberg)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+
+# c_cammin
+2826 = { # b_cammin (c_cammin)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3184 = { # b_dramberg (c_cammin)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3185 = { # b_belgard (c_cammin)
+	1250.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+
+# Culture poméranienne germanique — 1300
+# Extension de la culture poméranienne germanique.
+
+# c_pila
+3187 = { # b_walcz (c_pila)
+	1300.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3186 = { # b_pila (c_pila)
+	1300.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3188 = { # b_szczecinek (c_pila)
+	1300.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+
+# c_miastko
+3190 = { # b_hammerstein (c_miastko)
+	1300.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3189 = { # b_miastko (c_miastko)
+	1300.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+
+# c_slupsk
+2827 = { # b_slupsk (c_slupsk)
+	1300.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+2828 = { # b_koszalin (c_slupsk)
+	1300.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+2829 = { # b_lebno (c_slupsk)
+	1300.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+3191 = { # b_bytow (c_slupsk)
+	1300.1.1 = {
+		culture = pomeranian_germanic
+	}
+}
+
+# Culture prussienne germanique — 1230
+# Naissance de la culture hybride prussienne (germanique), issue du prussien (balte, vanilla) et du saxon. Conversion au catholicisme.
+
+# c_malbork
+2835 = { # b_elblag (c_malbork)
+	1230.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+2834 = { # b_marienburg (c_malbork)
+	1230.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+3197 = { # b_graudenz (c_malbork)
+	1230.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+2831 = { # b_wislana (c_malbork)
+	1230.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+
+# c_torun
+3198 = { # b_kulm (c_torun)
+	1230.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+3199 = { # b_torun (c_torun)
+	1230.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+3202 = { # b_briesen (c_torun)
+	1230.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+
+# Culture prussienne germanique — 1300
+# Extension de la culture prussienne germanique. Conversion au catholicisme.
+
+# c_wormditt_lal
+3220 = { # b_wormditt (c_wormditt_lal)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+3201 = { # b_mohrungen (c_wormditt_lal)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+3217 = { # b_braunsberg (c_wormditt_lal)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+
+# c_natangia
+3218 = { # b_laukitten (c_natangia)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+3203 = { # b_paterswalde (c_natangia)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+
+# c_konigsberg
+3216 = { # b_konigsberg (c_konigsberg)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+122 = { # b_labiau (c_konigsberg)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+
+# c_danzig
+2830 = { # b_gdansk (c_danzig)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+2833 = { # b_sopot (c_danzig)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+2832 = { # b_wladyslawowo (c_danzig)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+3194 = { # b_trsow (c_danzig)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+
+118 = { # b_memel (c_konigsberg)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+3219 = { # b_ostlandsberg (c_natangia)
+	1300.1.1 = {
+		culture = prussian_germanic
+		religion = catholic
+	}
+}
+
+# Culture franconienne — 1230
+# Assimilation germanique de la marche de Lusace / du margraviat de Misnie.
+
+# c_dresden_lal
+3030 = { # b_dresden (c_dresden_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+3033 = { # b_bischofswerda (c_dresden_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+3028 = { # b_freiberg (c_dresden_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+
+# c_gorlitz_lal
+2980 = { # b_gorlitz (c_gorlitz_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+3032 = { # b_bautzen (c_gorlitz_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+3136 = { # b_spremberg (c_gorlitz_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+3141 = { # b_kamenz (c_gorlitz_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+
+# c_juterbog_lal
+3180 = { # b_juterbog (c_juterbog_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+3178 = { # b_dahme (c_juterbog_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+
+# c_naumberg_lal
+3143 = { # b_naumberg (c_naumberg_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+3138 = { # b_forst (c_naumberg_lal)
+	1230.1.1 = {
+		culture = franconian
+	}
+}
+
+# Culture franconienne — 1250
+# Extension de la culture franconienne à la marche de Lubusz.
+
+# c_lubusz
+3149 = { # b_lebus (c_lubusz)
+	1250.1.1 = {
+		culture = franconian
+	}
+}
+3142 = { # b_oderfrankfurt (c_lubusz)
+	1250.1.1 = {
+		culture = franconian
+	}
+}
+3148 = { # b_sulecin (c_lubusz)
+	1250.1.1 = {
+		culture = franconian
+	}
+}
+3147 = { # b_rzepin (c_lubusz)
+	1250.1.1 = {
+		culture = franconian
+	}
+}
+
+# Culture silésienne — 1250
+# Naissance de la culture hybride silésienne (germanique), issue du franconien et du polonais.
+
+# c_grunberg
+3064 = { # b_grunberg (c_grunberg)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3139 = { # b_gubin (c_grunberg)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3144 = { # b_crossen (c_grunberg)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_schweibus
+3145 = { # b_schweibus (c_schweibus)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3146 = { # b_siedlischo (c_schweibus)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3065 = { # b_bytom (c_schweibus)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_sprottau
+3067 = { # b_sprottau (c_sprottau)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3066 = { # b_zagan (c_sprottau)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3070 = { # b_nowogrodziec (c_sprottau)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_legnica
+3058 = { # b_legnica (c_legnica)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3063 = { # b_glogow (c_legnica)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3060 = { # b_sadowel (c_legnica)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_przemkow
+3068 = { # b_przemkow (c_przemkow)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3069 = { # b_wlen (c_przemkow)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3059 = { # b_swiny (c_przemkow)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_breslau
+3045 = { # b_breslau (c_breslau)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3057 = { # b_bardo (c_breslau)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_miliez
+3061 = { # b_miliez (c_miliez)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3062 = { # b_olesnica (c_miliez)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_brzeg
+3049 = { # b_brzeg (c_brzeg)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3055 = { # b_olawa (c_brzeg)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3056 = { # b_otmunchow (c_brzeg)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_nysa
+3048 = { # b_nysa (c_nysa)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3050 = { # b_glogowek (c_nysa)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3046 = { # b_frankenstein (c_nysa)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_opole
+3052 = { # b_opole (c_opole)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3053 = { # b_kreuzburg (c_opole)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3051 = { # b_strehlitz (c_opole)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_bethen
+3044 = { # b_bethen (c_bethen)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3054 = { # b_lubliniec (c_bethen)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+
+# c_ratibor
+3042 = { # b_ratibor (c_ratibor)
+	1250.1.1 = {
+		culture = silesian
+	}
+}
+3043 = { # b_rybnik (c_ratibor)
+	1250.1.1 = {
+		culture = silesian
+	}
+}

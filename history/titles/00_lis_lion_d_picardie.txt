@@ -1,0 +1,51 @@
+﻿# Le Lis et le Lion — Duché de Picardie
+#
+# STRUCTURE DE JURE (définie dans common/landed_titles/00_lis_lion_lt.txt) :
+#   b_amiens (id 2184) → c_amiens (capitale du duché)
+#   b_corbie (id 2185) → c_amiens
+#   c_amiens → d_picardie (NOTE : b_peronne, id 2186, reste affectée à c_arras/Artois,
+#     elle ne fait donc plus partie de c_amiens — choix retenu pour éviter le conflit
+#     avec le duché d'Artois)
+#   c_guines (id 7254) → d_picardie (de jure, sans vassalité directe au duc)
+#   c_boulogne (id 7262) → d_picardie (de jure, sans vassalité directe au duc)
+#   d_picardie → k_france (de_jure_liege explicite ci-dessous, ce titre n'étant pas
+#     imbriqué nativement dans le landed_titles vanilla)
+#
+# STATUT : d_picardie existe (de jure défini, visible sur la carte de jure, formable en
+# jeu) mais n'est PAS créé ni attribué — exactement le même statut que d_valois ou
+# d_orleans en vanilla (titres de jure réels mais sans holder ni liege scriptés dans
+# history/titles). c_amiens, c_guines et c_boulogne gardent leurs liege/holders vanilla
+# réels totalement inchangés ; seul leur de_jure_liege est recâblé vers d_picardie.
+
+# ---- DUCHÉ DE PICARDIE (nouveau, titulaire — non créé/attribué) ----
+d_picardie = {
+	1306.2.1 = {
+		de_jure_liege = k_france
+	}
+}
+
+# ---- COMTÉ D'AMIENS (id natif vanilla, sans b_peronne) — de_jure dans d_picardie ----
+# On ne change PAS le liege ni le holder courant ; seulement le de_jure_liege.
+c_amiens = {
+	1306.2.1 = {
+		de_jure_liege = d_picardie
+	}
+}
+
+# ---- COMTÉ DE GUÎNES (id 7254) — de_jure dans d_picardie ----
+# On ne change PAS le liege ni le holder courant (Raoul II de Guines, 455850, depuis 1302) ;
+# seulement le de_jure_liege est recâblé vers d_picardie.
+c_guines = {
+	1306.2.1 = {
+		de_jure_liege = d_picardie
+	}
+}
+
+# ---- COMTÉ DE BOULOGNE (id 7262) — de_jure dans d_picardie ----
+# Titulaire actuel en 1337 : Jeanne d'Auvergne (455820, depuis 1332.8.6 dans le vanilla).
+# On ne change PAS la possession ; seulement le de_jure_liege vers d_picardie.
+c_boulogne = {
+	1306.2.1 = {
+		de_jure_liege = d_picardie
+	}
+}

@@ -1,0 +1,171 @@
+# Le Lis et le Lion — Portraits DNA des personnages jouables du bookmark
+# Philippe VI de Valois (455500) -> dna wired directly in 00_lis_lion_valois.txt
+# Édouard III (454500) -> dna wired directly in 00_lis_lion_edward_claim.txt
+# Philippe IV le Bel (455526) -> dna wired below
+# Alphonse XI de Castille (457500) -> not yet done, no dna template defined, left commented out
+# Albert II de Habsbourg (462020), Charles Ier d'Anjou/Caroberto (469500),
+# Louis Ier de Hongrie (469510) -> dna wired below (08/2026, valeurs vanilla vérifiées
+# depuis les fichiers de base : swabian.txt pour 462020, french.txt pour 469500/469510)
+#
+# NOTE : bug corrige ici. Les blocs ci-dessous etaient commentes ligne par ligne
+# (# devant chaque ligne interne) mais PAS les accolades fermantes, qui restaient
+# actives et cassaient le parsing de tout le fichier (accolades orphelines).
+
+#457500 = {
+#	1311.8.13 = {
+#		dna = lis_lion_alphonse_xi_castille
+#	}
+#}
+
+455526 = { # Philippe IV le Bel, roi de France
+	# CORRIGÉ (bug DNA) : redéclaration complète (voir note dans 00_lis_lion_valois.txt),
+	# valeurs identiques à la fiche vanilla.
+	name = "Philippe"
+	dynasty_house = house_capet
+	martial = 8
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 6
+	religion = "catholic"
+	culture = french
+	dna = lis_lion_philippe_iv_le_bel
+	1268.6.8 = {
+		birth = "1268.6.8"
+	}
+	1284.8.16 = {
+		add_spouse = 455531
+	}
+	1314.11.29 = {
+		death = "1314.11.29"
+	}
+}
+
+# CORRIGÉ : 462614 (Charles IV/Karl) est un ID VANILLA (confirmé dans le bookmark : né 1316,
+# roi de Bohême depuis 1346). Le bloc précédent redéclarait entièrement le personnage (name,
+# dynasty_house, stats, birth, spouse, death), ce qui entrait en collision avec sa propre fiche
+# vanilla et déclenchait "Duplicate character id in history: 462614" dans error.log — sans doute
+# la vraie raison pour laquelle rien ne s'appliquait à Karl. Le bloc est réduit à un simple patch
+# DNA, exactement comme pour les autres personnages vanilla ci-dessus.
+462614 = { # Charles IV / "Karl" von Luxembourg
+	# CORRIGÉ (bug DNA) : redéclaration complète (voir note dans 00_lis_lion_valois.txt),
+	# valeurs identiques à la fiche vanilla.
+	name = "Wenzel"
+	# AKA: Karl
+	dynasty_house = house_luxemburg
+	martial = 7
+	diplomacy = 9
+	intrigue = 9
+	stewardship = 9
+	religion = "catholic"
+	culture = franconian
+	dna = karl_iv_of_luxembourg
+	1316.5.14 = {
+		birth = "1316.5.14"
+	}
+	1328.1.2 = {
+		add_spouse = 455537
+	}
+	1378.11.29 = {
+		death = "1378.11.29"
+	}
+}
+
+# NOTE : dynasty_house pour 469500/469510 est laissé sur la valeur VANILLA (dynasty = 81, pas
+# house_anjou_capet) dans ce patch, conformément à la note #2 de 00_lis_lion_dna.txt : le
+# rattachement à house_anjou_capet est déjà posé via une entrée datée dans 00_lis_lion_anjou.txt
+# (1288.1.2 / 1326.1.2), et doit RESTER ainsi — le poser aussi en clé racine ici ferait doublon
+# et risquerait de casser ce mécanisme.
+
+462020 = { # Albert II de Habsbourg, duc d'Autriche
+	# CORRIGÉ (bug DNA) : redéclaration complète (voir note dans 00_lis_lion_valois.txt),
+	# valeurs identiques à la fiche vanilla (history/characters/swabian.txt).
+	name = "Albrecht"
+	dynasty_house = house_habsburg
+	martial = 6
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 8
+	religion = "catholic"
+	culture = swabian
+	dna = albert_ii_autriche
+	1298.12.12 = {
+		birth = "1298.12.12"
+	}
+	1324.1.1 = {
+		add_spouse = 462033
+	}
+	1358.8.16 = {
+		death = "1358.8.16"
+	}
+}
+
+469500 = { # Charles Ier d'Anjou / Charles Robert (Caroberto), roi de Hongrie
+	# CORRIGÉ (bug DNA) : redéclaration complète (voir note dans 00_lis_lion_valois.txt),
+	# valeurs identiques à la fiche vanilla (history/characters/french.txt).
+	name = "Charles"
+	dynasty = 81
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 8
+	religion = "catholic"
+	culture = french
+	dna = charles_i_anjou_hongrie
+	1288.1.2 = {
+		birth = "1288.1.2"
+	}
+	1321.1.2 = {
+		add_spouse = 471501
+	}
+	1342.7.16 = {
+		death = "1342.7.16"
+	}
+}
+
+469510 = { # Louis Ier de Hongrie
+	# CORRIGÉ (bug DNA) : redéclaration complète (voir note dans 00_lis_lion_valois.txt),
+	# valeurs identiques à la fiche vanilla (history/characters/french.txt).
+	name = "Louis"
+	dynasty = 81
+	martial = 5
+	diplomacy = 4
+	intrigue = 8
+	stewardship = 8
+	religion = "catholic"
+	culture = french
+	dna = louis_i_hongrie
+	1326.1.2 = {
+		birth = "1326.1.2"
+	}
+	1376.1.2 = {
+		death = "1376.1.2"
+	}
+}
+
+453501 = { # Robert the Bruce, roi d'Écosse
+	# CORRIGÉ (bug DNA) : redéclaration complète (voir note dans 00_lis_lion_valois.txt),
+	# valeurs identiques à la fiche vanilla (history/characters/scottish.txt).
+	name = "Robert"
+	dynasty = 3123
+	martial = 5
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 5
+	religion = "catholic"
+	culture = "scottish"
+	dna = robert_the_bruce
+	1274.1.2 = {
+		birth = "1274.1.2"
+	}
+	1295.1.2 = {
+		add_spouse = 453024
+	}
+	1302.1.2 = {
+		add_spouse = 453502
+	}
+	1329.6.7 = {
+		death = "1329.6.7"
+	}
+}
+
+

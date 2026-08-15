@@ -1,0 +1,79 @@
+# Le Lis et le Lion — Duché du Dauphiné (d_dauphine)
+#
+# c_lyon et c_forez ayant déjà été détachés de d_dauphine par le mod (voir
+# 00_lis_lion_d_lyon_forez.txt, vers d_lyon_et_forez), il ne reste de_jure que
+# c_viennois et c_viviers dans d_dauphine. On fait de d_dauphine un titre tenu
+# dès 844.1.1, avec pour capitale c_viennois (au lieu de c_lyon en vanilla) et
+# dont la succession suit exactement celle de c_viennois. Le duché a pour
+# seigneur lige e_hre en permanence, quelles que soient les fluctuations de
+# suzeraineté du comté de Viennois lui-même (d_upper_burgundy, k_burgundy,
+# d_provence, d_savoie...).
+#
+# CORRECTION : le vanilla (k_burgundy.txt) possède son propre historique pour
+# d_dauphine et fixe liege = k_lotharingia au 863.1.25, écrasant le liege = e_hre
+# posé ci-dessous à la création (844.1.1) — jamais réinitialisé ensuite dans le
+# vanilla. On force donc e_hre à nouveau à partir du 996.10.18, avec des rappels
+# de contrôle aux dates 1307 et 1337 (mêmes dates pivots que le reste du mod) pour
+# être certain que l'ancrage impérial tienne dans la durée, sans discontinuer.
+
+d_dauphine = {
+	844.1.1 = {
+		government = feudal_government
+		liege = e_hre
+		holder = 91490 #VULFARD, historical placeholder (titulaire de c_viennois)
+		effect = {
+			set_capital_county = title:c_viennois
+		}
+	}
+	855.1.1 = {
+		holder = 163062
+	}
+	996.10.18 = {
+		liege = e_hre
+		holder = 138403 #Guigues II d'Albon
+	}
+	1009.1.1 = {
+		holder = 40462 #Guigues III the old d'Albon
+	}
+	1074.4.22 = {
+		holder = 212804 #Guigues IV Pinguis d'Albon
+	}
+	1106.1.19 = {
+		holder = 212803 #Guigues V d'Albon
+	}
+	1125.12.21 = {
+		holder = 212802 #Guigues VI d'Albon
+	}
+	1142.6.28 = {
+		holder = 212801 #Guigues VII d'Albon
+	}
+	1162.7.29 = {
+		holder = 212800 #Beatrix d'Albon
+	}
+	1228.12.15 = {
+		holder = 206016 #André Guigues VIII d'Albon
+	}
+	1237.3.14 = {
+		holder = 7499 #Guigues VII/IX de Viennois
+	}
+	1269.1.1 = {
+		holder = 7495 #Jean I de Viennois
+	}
+	1282.9.24 = {
+		holder = 462701 #Jean II de la Tour du Pin
+	}
+	1307.4.12 = {
+		liege = e_hre
+		holder = 7497 #Jean III de la Tour du Pin
+	}
+	1319.3.5 = {
+		holder = 7493 #Guigues VIII/X de Viennois
+	}
+	1333.7.28 = {
+		holder = 7492 #Humbert de la Tour du Pin
+	}
+	1337.1.1 = {
+		liege = e_hre
+	}
+}
+

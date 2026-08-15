@@ -1,0 +1,38 @@
+# Le Lis et le Lion — Royaume de Livonie (k_livonia)
+#
+# k_livonia est un titre de jure RÉEL (non créé en jeu) — même principe que k_prussia.
+# Il est défini dans landed_titles avec can_create = { always = no }.
+# Les duchés d_livonia, d_courland, d_latgalians sont imbriqués dedans.
+# Aucun holder n'est assigné : le titre existe sur la carte de jure mais n'est
+# jamais distribué automatiquement.
+#
+# La conversion féodale de ses comtés est dans 00_lis_lion_feudal_government.txt.
+
+k_livonia = {
+	1202.1.1 = {
+		# Fondation de l'Évêché de Livonie par Albert de Buxthoeven (30421).
+		# Le titre existe de_jure mais n'est pas détenu — même statut que k_prussia.
+		de_jure_liege = e_wendish_empire
+		government = feudal_government
+	}
+}
+
+# De_jure des duchés vers k_livonia (gérés aussi dans landed_titles,
+# mais on confirme ici via history pour la solidité du lien).
+d_livonia = {
+	1202.1.1 = {
+		de_jure_liege = k_livonia
+	}
+}
+
+d_courland = {
+	1202.1.1 = {
+		de_jure_liege = k_livonia
+	}
+}
+
+d_latgalians = {
+	1202.1.1 = {
+		de_jure_liege = k_livonia
+	}
+}

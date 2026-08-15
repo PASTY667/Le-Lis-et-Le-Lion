@@ -1,0 +1,36 @@
+﻿# Le Lis et le Lion — Duché de Lyon et Forez (d_lyon_et_forez)
+#
+# Le duché existe comme titre de jure mais N'EST PAS attribué à un personnage
+# (comme d_valois, d_anjou dans le vanilla). Il sert de structure de_jure pour
+# regrouper c_lyon et c_forez, qui gardent leurs titulaires vanilla normaux.
+#
+# c_forez : reste vassal du duc de Bourgogne (liege = d_burgundy depuis 1187 vanilla)
+# c_lyon  : au bookmark, c_lyon est sous le roi de France (k_france depuis 1312 vanilla)
+# c_viviers : reste vassal du roi de France (liege = k_france depuis 1309 vanilla)
+#
+# NE PAS REDÉFINIR liege de c_forez, c_viviers ici — le vanilla gère déjà correctement
+# leurs vassalités. On ne touche qu'au de_jure_liege pour la structure de jure.
+
+# Le duché existe mais sans holder (holder = 0 = jamais créé/distribué)
+d_lyon_et_forez = {
+	867.1.1 = {
+		holder = 0
+		de_jure_liege = k_france
+		government = feudal_government
+	}
+}
+
+# c_lyon passe de jure dans d_lyon_et_forez (au lieu de d_dauphine vanilla)
+c_lyon = {
+	867.1.1 = {
+		de_jure_liege = d_lyon_et_forez
+	}
+}
+
+# c_forez passe de jure dans d_lyon_et_forez (au lieu de d_dauphine vanilla)
+# Le liege effectif (d_burgundy) est géré par le vanilla et n'est PAS touché ici.
+c_forez = {
+	867.1.1 = {
+		de_jure_liege = d_lyon_et_forez
+	}
+}

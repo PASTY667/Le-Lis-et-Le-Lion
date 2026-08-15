@@ -1,0 +1,206 @@
+﻿# Le Lis et le Lion — Culture manquante dans les provinces custom du mod
+#
+# Artois (provinces de c_arras, nouveau comté du mod) :
+# Ces provinces n'avaient pas de culture définie en vanilla car elles appartiennent
+# à des comtés déplacés/recâblés. On leur attribue la culture française.
+
+2134 = { # b_aire (capitale c_arras / d_artois)
+	culture = french
+	religion = catholic
+}
+
+2133 = { # b_saint_omer
+	culture = french
+	religion = catholic
+}
+
+2186 = { # b_peronne
+	culture = french
+	religion = catholic
+}
+
+2129 = { # b_grevelines
+	culture = french
+	religion = catholic
+}
+
+# Comtat Venaissin (c_venaissin, sous le pape) :
+# b_arles a déjà culture = occitan en vanilla.
+# Les autres baronies du Comtat n'ont pas de culture définie.
+
+2062 = { # b_orange
+	culture = occitan
+	religion = catholic
+	1307.1.1 = {
+		holding = castle_holding
+	}
+}
+
+2059 = { # b_avignon
+	culture = occitan
+	religion = catholic
+	1307.1.1 = {
+		holding = castle_holding
+	}
+}
+
+2067 = { # b_vaison
+	culture = occitan
+	religion = catholic
+}
+
+# Comté de Ratzeburg (c_ratzeburg, nouveau comté du Duché de Saxe-Lauenbourg) :
+# Aucune des deux baronies n'a de culture définie en vanilla (la province voisine
+# b_wismar, restée dans c_mecklenburg, est en polabian). On leur attribue ici la
+# culture saxonne, conformément à la demande.
+
+2806 = { # b_ratzeburg (capitale c_ratzeburg / d_saxe_lauenburg)
+	culture = saxon
+	religion = catholic
+	1259.1.1 = {
+		holding = castle_holding
+	}
+}
+
+2808 = { # b_schwerin
+	culture = saxon
+	religion = catholic
+}
+
+# Comté de Suvalkai 
+
+157 = { # b_suvalkai
+	culture = lithuanian 
+	religion = baltic_pagan
+}
+
+163 = { # b_sejny
+	culture = lithuanian 
+	religion = baltic_pagan
+}
+
+# Comté de Telsiai
+
+128 = { # b_telsiai
+	culture = lithuanian 
+	religion = baltic_pagan
+}
+
+126 = { # b_medeniken
+	culture = lithuanian 
+	religion = baltic_pagan
+}
+
+# Comté de Telsiai
+
+137 = { # b_telsiai
+	culture =  latgalian	
+	religion = baltic_pagan
+	1202.1.1 = {
+	religion = catholic
+
+	}
+}
+
+# Comté de Mazyr
+
+5106 = { # b_mazyr
+	culture =  russian	
+	religion = slavic_pagan
+	988.1.1 = {
+	religion = orthodox
+
+	}
+}
+
+5108 = { # b_mazyr
+	culture =  russian	
+	religion = slavic_pagan
+	988.1.1 = {
+	religion = orthodox
+
+	}
+}
+
+3015 = { # b_colditz
+	culture = polabian	
+	religion = slavic_pagan
+	1307.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}
+	1337.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}
+}
+
+3017 = { # b_devin
+	culture = polabian	
+	religion = slavic_pagan
+	1024.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}
+	1307.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}
+	1337.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}
+}
+
+3016 = { # b_leisning
+	culture = polabian	
+	religion = slavic_pagan
+	1024.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}
+	1307.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}
+	1337.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}
+}
+
+
+3175 = { # b_brene
+	culture = polabian	
+	religion = slavic_pagan
+	1230.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}	
+	1307.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}
+	1337.1.1 = {
+	culture = franconian	
+	religion = catholic
+	}
+}
+
+158 = { # b_vilkaviskis
+	culture = lithuanian 
+	religion = baltic_pagan
+	1200.1.1 = {	
+	religion = baltic_pagan
+	}
+}
+156 = { # b_panemune
+	culture = lithuanian 
+	religion = baltic_pagan
+	1200.1.1 = {	
+	religion = baltic_pagan
+	}
+}
+
+
+

@@ -1,0 +1,40 @@
+# Le Lis et le Lion — Rodolphe IV de Habsbourg ("le Fondateur")
+#
+# Personnage entièrement créé pour le mod (aucun ID vanilla ne lui correspond).
+# Fils d'Albrecht II "le Sage" (462020) et de Johanna von Pfirt (462033), tous deux
+# personnages vanilla — cf. history/characters/swabian.txt et franconian.txt.
+# ID choisi dans une plage libre (90 000 000+), jamais utilisée par le jeu de base.
+#
+# Rodolphe IV (1339-1365), duc d'Autriche à partir de 1358, exclu des sept
+# Électeurs par la Bulle d'Or de 1356 (celle-ci ne réserve ce statut qu'aux
+# Palatinat, Saxe, Brandebourg, Bohême et aux trois archevêchés rhénans).
+# Pour compenser, il fait fabriquer en 1358-1359 un faux recueil de privilèges,
+# le "Privilegium Maius", afin de s'octroyer le titre d'archiduc et une préséance
+# quasi électorale — d'où son trait ci-dessous.
+
+90090001 = {
+	name = "Rudolf"
+	dynasty_house = house_habsburg
+	martial = 4
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 6
+	religion = "catholic"
+	culture = swabian
+	trait = ambitious
+	trait = education_diplomacy_3
+	father = 462020 #Albrecht II "le Sage" de Habsbourg
+	mother = 462033 #Johanna von Pfirt
+
+	1339.11.1 = {
+		birth = "1339.11.1"
+	}
+	1358.8.16 = {
+		# Mort de son père Albrecht II (voir swabian.txt) : Rodolphe IV devient
+		# duc d'Autriche et chef de la maison de Habsbourg.
+		set_primary_title_to = title:d_osterreich
+	}
+	1365.7.27 = {
+		death = "1365.7.27"
+	}
+}

@@ -1,0 +1,327 @@
+﻿l_english:
+ bm_guerre_cent_ans_1337_desc: "King Edward III of England has just claimed the throne of France, contesting the legitimacy of the Valois. The war that ignites in this late autumn of 1337 will last over a century, ravaging France and redrawing the map of Europe. Which side will you take?"
+
+ bookmark_group_guerre_cent_ans: "The Hundred Years' War"
+
+ bm_char_edward_iii: "Edward III"
+ bm_char_philippe_vi: "Philip VI"
+ bm_char_alphonse_xi: "Alfonso XI"
+ bm_char_robert_naples: "Robert I"
+ bm_char_gediminas: "Gediminas"
+ bm_char_orhan: "Orhan"
+ bm_char_david_ii: "David II"
+
+ bm_char_david_ii_desc: "King of Scotland since 1329, David II is still a child under the tutelage of regents. Heir to his father Robert Bruce's victory over England, he will one day have to assert his own authority against English claims and a Scottish nobility divided between loyalty and ambition.\n\nWhen your majority comes, will you preserve the independence your father won at such a cost?"
+
+ bm_char_edward_iii_desc: "Edward III of England is a warrior king at the height of his power. Heir of the Plantagenets and grandson of Philip IV through his mother Isabella, he claims the French crown against the Valois. A brilliant strategist, he relies on his Welsh archers and Flemish alliances to carry the war onto the continent.\n\nWill you make your claim to the French crown a reality, or will England exhaust itself in an endless war?"
+ bm_char_philippe_vi_desc: "Philip VI of Valois is the first king of the Capetian cadet branch. His legitimacy, contested by Edward III, rests on Salic law alone. Facing the English invasion, he must rally an unruly French nobility and find the resources needed to finance a war that promises to be long.\n\nWill you secure the legitimacy of your new dynasty and repel England's claim to your throne?"
+ bm_char_alphonse_xi_desc: "Alfonso XI of Castile is one of the most powerful monarchs of the Iberian peninsula. While the Hundred Years' War sets the north of Europe ablaze, he tirelessly pursues the Reconquista against the last Muslim strongholds. His kingdom sits at the crossroads of Franco-English alliances, each seeking to win over his powerful fleet.\n\nWill you complete the Reconquista, or will Castile be dragged into the rivalry between Paris and London?"
+ bm_char_robert_naples_desc: "Robert I of Anjou, called the Wise, has ruled the Kingdom of Naples since 1309. A patron of the arts and letters, natural ally of France, he embodies Angevin power in the Mediterranean just as war breaks out between Paris and London.\n\nWill you make Naples the intellectual and political heart of Christian Mediterranean?"
+ bm_char_gediminas_desc: "Grand Duke of Lithuania, Gediminas rules the last great pagan state in Europe, caught between relentless Teutonic Order raids and repeated calls to convert. Will he defend the old gods to the end, or see baptism as a double-edged diplomatic weapon?\n\nWill you build a pagan Lithuania able to rival its Christian neighbours, or will you ultimately bow to the cross?"
+ bm_char_orhan_desc: "Son of Osman, Orhan inherits a rapidly expanding emirate on the marches of Bithynia. Under his rule, the Ottomans gain their first foothold in Europe, crossing the Dardanelles. His task: turn a frontier principality into a truly European power.\n\nWill you be the one to plant the Ottomans permanently on European soil?"
+
+ # NOTE: dynn_Valois and dynn_Bourbon are already localized natively by the game (vanilla
+ # dynasties 101 and 100146) — not redefined here to avoid a duplicate key conflict.
+ dynn_Evreux_Capet: "Évreux"
+ dynn_Anjou_Capet: "Anjou"
+ dynn_Trastamara: "Trastámara"
+
+ house_valois: "House of Valois"
+ house_evreux_capet: "House of Évreux"
+ house_anjou_capet: "House of Anjou"
+ house_bourbon_capet: "House of Bourbon"
+ house_trastamara: "House of Trastámara"
+
+ # Artois-Capetian House
+ dynn_Artois_Capet: "Artois"
+ house_artois_capet: "House of Artois"
+
+ # New titles — Duchy of Artois and County of Arras
+ d_artois: "Artois"
+ c_arras: "Arras"
+ c_arles: "Arles"
+
+ # New title — Duchy of Picardy
+ d_picardie: "Picardy"
+
+ # Duchy of Lyon and Forez
+ d_lyon_et_forez: "Lyon and Forez"
+ d_lyon_et_forez_adj: "of Lyon and Forez"
+
+ # Duchy of Hainaut
+ d_hainaut: "Hainaut"
+
+ # Duchy of Liège (ecclesiastical principality)
+ d_liege: "Liège"
+
+ # Palatinate of the Rhine
+ d_palatinate_rhin: "Palatinate of the Rhine"
+ d_palatinate_rhin_adj: "Rhenish"
+
+ # Duchy of Mainz (replaces West Franconia)
+ d_west_franconia: "Mainz"
+ d_west_franconia_adj: "Mainzite"
+
+ # Duchy / Margraviate of Baden
+ d_baden: "Baden"
+ d_baden_adj: "Badense"
+
+ # Duchy of Saxe-Lauenburg
+ d_saxe_lauenburg: "Saxe-Lauenburg"
+ d_saxe_lauenburg_adj: "of Saxe-Lauenburg"
+ c_ratzeburg: "Ratzeburg"
+ c_ratzeburg_adj: "of Ratzeburg"
+
+ # Duchy of Paderborn and House von Wilhesm
+ d_paderborn: "Paderborn"
+ d_paderborn_adj: "of Paderborn"
+ dynn_Wilhesm: "Wilhesm"
+ dynn_Arezzo: "Arezzo"
+ house_wilhesm: "House von Wilhesm"
+
+ # County of Paderborn (Wilhesm)
+ c_paderborn_wilhesm: "Paderborn"
+ c_paderborn_wilhesm_adj: "of Paderborn"
+
+ # County of Lippe (Wilhesm)
+ c_lippe_wilhesm: "Lippe"
+ c_riga: "Riga"
+ d_osel_wiek: "Ösel-Wiek"
+ c_telsiai: "Telšiai"
+ c_suvalkai: "Suvalkai"
+ k_prussia: "Prussia"
+
+ # ═══ Baltic _lal counties ═══
+ c_memel_lal: "Memel"
+ c_memel_lal_adj: "of Memel"
+ c_palanga_lal: "Palanga"
+ c_palanga_lal_adj: "of Palanga"
+ c_gumbinnen: "Gumbinnen"
+ c_gumbinnen_adj: "of Gumbinnen"
+ c_wormditt_lal: "Warmia"
+ c_wormditt_lal_adj: "of Warmia"
+ c_scalovia_lal: "Scalovia"
+ c_scalovia_lal_adj: "of Scalovia"
+ c_vanemane_lal: "Pilten"
+ c_vanemane_lal_adj: "of Pilten"
+ c_zemigalians_lal: "Zemgale"
+ c_zemigalians_lal_adj: "of Zemgale"
+ c_selpils_lal: "Selpils"
+ c_selpils_lal_adj: "of Selpils"
+ c_vidzeme_lal: "Vidzeme"
+ c_vidzeme_lal_adj: "of Vidzeme"
+ c_livs_lal: "Pernau"
+ c_livs_lal_adj: "of Pernau"
+ c_wiek_lal: "Wiek"
+ c_wiek_lal_adj: "of Wiek"
+ c_kokenois_lal: "Koknese"
+ c_kokenois_lal_adj: "of Koknese"
+ c_aluksne_lal: "Marienburg"
+ c_aluksne_lal_adj: "of Marienburg"
+ c_jersika_lal: "Jersika"
+ c_jersika_lal_adj: "of Jersika"
+ c_dunabourg: "Dünaburg"
+ c_dunabourg_adj: "of Dünaburg"
+
+ # Duchy of Riga
+ d_riga: "Riga"
+ d_riga_adj: "of Riga"
+
+ # Kingdom of Poland
+ k_poland_lal: "Poland"
+ k_poland_lal_adj: "de Poland"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # GROUP — The Century of Calamities
+ # ═══════════════════════════════════════════════════════════════════
+ bookmark_group_siecle_calamites: "The Century of Calamities"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # 1307 — The Fall of the Temple
+ # ═══════════════════════════════════════════════════════════════════
+ bm_chute_du_temple_1307: "The Fall of the Temple"
+ bm_chute_du_temple_1307_desc: "On Friday, October 13th, 1307, Philip IV of France orders the simultaneous arrest of all Templars in the realm. The Order of the Temple — guardian of faith and the finances of Christendom — collapses under accusations of heresy. Grand Master Jacques de Molay will burn at the stake in 1314, cursing king and pope alike. Europe stands on the edge of a new and turbulent age."
+
+ bm_char_philippe_iv: "Philip IV"
+ bm_char_philippe_iv_desc: "King of France since 1285, Philip the Fair is the most powerful ruler in Christendom. His struggle with the papacy, crowned by the transfer of the Holy See to Avignon, reshapes the balance between temporal and spiritual power. By ordering the arrest of the Templars on this ill-fated Friday the 13th, he reaches the height of his power — and perhaps the beginning of a curse promised by Jacques de Molay from his pyre.\n\nWill you bring the papacy to heel and break the Order of the Temple without drawing down the vengeance of heaven upon your line?"
+
+ bm_char_edward_ii: "Edward II"
+ bm_char_edward_ii_desc: "King of England since the death of his father Edward I in July 1307, Edward II inherits a realm at the height of its military expansion — but also a Scottish throne still contested by Robert Bruce, and an English nobility humiliated by the king's favourites. His reign promises to be a difficult one.\n\nWill you tame your barons and complete the conquest of Scotland where your father failed?"
+
+ bm_char_cangrande: "Cangrande"
+ bm_char_cangrande_desc: "Co-lord of Verona with his brother Alboino since 1308, Cangrande della Scala is already a feared war leader, commanding seasoned mercenary companies. His ambition is clear: make Verona the mistress of Northern Italy, crushing Padua, Treviso, and anyone who stands in his way.\n\nWill you build one of the great powers of the Italian peninsula from a single lordship?"
+
+ bm_char_siegfried: "Siegfried"
+ bm_char_siegfried_desc: "Grand Master of the Teutonic Order since 1303, Siegfried von Feuchtwangen has moved the Order's seat to Marienburg in Prussia, at the heart of his Baltic conquests. His mission: expand the monastic state along the coast and complete — willing or not — the conversion of the last Baltic peoples still faithful to their old gods.\n\nWill you make the Teutonic Order the foremost power of the Baltic, whatever the cost in pagan and knightly blood alike?"
+
+ bm_char_andronikos_ii: "Andronikos II"
+ bm_char_andronikos_ii_desc: "Byzantine Emperor since 1282, Andronikos II Palaiologos rules over a diminished empire, gnawed at by usurpations from within his own family, an uncontrollable Catalan Company, and growing Turkish pressure in Anatolia. Will his piety and learning be enough to preserve what remains of Roman greatness?\n\nCan you set Byzantium back on its feet before its last bastion collapses?"
+
+ bm_char_osman: "Osman I"
+ bm_char_osman_desc: "Leader of a small Turkmen principality on the Byzantine frontier of Anatolia, Osman has just seized Ephesus and unknowingly lays the foundations of what will become the Ottoman Empire. With a weakened, divided Byzantine Empire nearby, the moment is ripe for an ambitious emirate.\n\nWill you turn a mere frontier beylik into the seed of an empire destined to span three continents?"
+
+ bm_char_fernando_iv: "Fernando IV"
+ bm_char_fernando_iv_desc: "King of Castile since 1295, Fernando IV, called 'the Summoned', survived a turbulent minority dominated by regencies and noble revolts. His dark legend — two wrongly executed brothers said to have summoned him from their pyre to join them before God within thirty days — looms over a reign marked by the renewed Reconquista against Granada.\n\nWill you outwit the curse said to hang over you, or will your reign end exactly as the prophecy foretells?"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # 1348 — The Black Death
+ # ═══════════════════════════════════════════════════════════════════
+ bm_mort_noire_1348: "The Black Death"
+ bm_mort_noire_1348_desc: "Coming from the steppes of Central Asia, the great bubonic plague reaches Europe in 1347. By spring 1348, it devastates France and England. Between a third and half of the European population will die. Wars cease, roads empty, cemeteries overflow. The world before will never return."
+
+ bm_char_philippe_vi_1348: "Philip VI"
+ bm_char_philippe_vi_1348_desc: "The King of France signed the truce with England after the disasters of Crécy (1346) and Calais (1347). His military glory is tarnished, his treasury drained. For many of his subjects, the plague ravaging the kingdom is nothing less than divine punishment upon a defeated king.\n\nWill you raise France from its ashes, or will your reign only hasten its decline?"
+
+ bm_char_edward_iii_1348: "Edward III"
+ bm_char_edward_iii_1348_desc: "Victor at Crécy, master of Calais, Edward III stands at the height of his military glory. But the plague strikes England as hard as France, sparing no rank: his own daughter Joan will die of the disease before even reaching Castile, where she was to be married.\n\nWill you turn your military triumphs into a lasting crown, despite the scourge striking your realm as hard as your enemies'?"
+
+ bm_char_stefan_dusan: "Stefan Dušan"
+ bm_char_stefan_dusan_desc: "King of Serbia, Stefan Dušan is waging a lightning conquest at the expense of an exhausted Byzantine Empire. He dreams of a unified Serbo-Greek empire under his crown — and soon, of an imperial title to match his ambitions.\n\nWill you build the new empire of the Balkans upon the ruins of Byzantium?"
+
+ bm_char_louis_hongrie: "Louis I"
+ bm_char_louis_hongrie_desc: "Son of Charles I of Anjou, King of Hungary since 1342, Louis I inherits an already powerful and well-run realm. His ambition: turn it into one of Central Europe's great powers, even if it means intervening as far as Southern Italy to avenge his brother Andrew, murdered in Naples.\n\nWill you make Hungary the arbiter of Central Europe, or will your thirst for vengeance in Naples cost you your crown?"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # 1356 — Golden Bull
+ # ═══════════════════════════════════════════════════════════════════
+ bm_bulla_aurea_1356: "Bulla Aurea"
+ bm_bulla_aurea_1356_desc: "On September 19th, 1356, the Black Prince defeats the French army at Poitiers and captures King John II. France without its king plunges into crisis: the Dauphin Charles governs an exhausted, rebellious, ravaged country. In January of the same year, Charles IV promulgated the Golden Bull — the fundamental charter of the Holy Roman Empire. Two texts written in golden ink — one for a constitution, one for a ransom."
+
+ bm_char_charles_iv_1356: "Charles IV"
+ bm_char_charles_iv_1356_desc: "Having promulgated the Golden Bull in January 1356, Charles IV must now govern the Holy Roman Empire and secure the lasting dominance of the House of Luxembourg: lock down the electoral states of Bohemia and Brandenburg, and gather as many electoral votes as possible to make his own dynasty prosper against the Habsburgs and Wittelsbachs.\n\nWill the Golden Bull become the foundation of a stable Empire at last, or will the Electors one day turn against you?"
+
+ bm_char_albert_ii: "Albert II"
+ bm_char_albert_ii_desc: "Duke of Austria since 1330, Albert II of Habsburg, called 'the Wise' despite his infirmity, actively supported Charles IV of Luxembourg in his struggle against Emperor Louis IV of Bavaria, helping bring about his downfall in 1347. But imperial recognition has not followed: the Golden Bull of 1356, which has just fixed the list of the seven Electors for centuries to come, pointedly ignores the House of Habsburg. A bitter grudge simmers in Vienna.\n\nWill you make Charles IV pay for this affront, or will you forge new titles of your own to catch up with the Electors?"
+
+ bm_char_dauphin_charles: "The Dauphin Charles"
+ bm_char_dauphin_charles_desc: "Your father, John II the Good, languishes in English captivity, Paris seethes under Étienne Marcel, and the Jacquerie is stirring in the countryside. To rule without the title — governing so contested a regency may prove harder than ruling a kingdom at peace.\n\nWill you hold your realm with a firm hand until your captive father returns — or dies?"
+
+ bm_char_prince_noir: "Edward the Black Prince"
+ bm_char_prince_noir_desc: "Victor of Poitiers, the Black Prince holds the King of France captive in his hands. His challenge: complete the conquest of the realm and turn this dazzling triumph into a true Angevin empire, as enduring as that of his distant ancestors.\n\nWill you make France an English possession, or will your victory prove to have no future?"
+
+ bm_char_magnus_iv: "Magnus IV"
+ bm_char_magnus_iv_desc: "King of Sweden and Norway, Magnus IV must stand up to the Hanseatic League, which already controls Baltic trade, and to the Teutonic Order, which eyes the very same coveted shores.\n\nCan you forge your united Scandinavian realms into a maritime power able to rival the Hansa?"
+
+ bm_char_casimir_iii_1356: "Casimir III the Great"
+ bm_char_casimir_iii_1356_desc: "The only Polish king to earn the title of the Great, Casimir the Legislator has reformed the kingdom's laws, built dozens of castles, and doubled Polish territory. The kingdom has never been stronger — the question is whether it will survive the king's lack of a male heir.\n\nWill you secure the permanence of your work, or will Poland sink into a succession crisis upon your death?"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # Subheadings (title shown under the character's name in the bookmark
+ # picker) — bm_char_(name)_subheading key, previously missing.
+ # ═══════════════════════════════════════════════════════════════════
+ # 1307 — The Fall of the Temple
+ bm_char_philippe_iv_subheading: "King of France"
+ bm_char_edward_ii_subheading: "King of England"
+ bm_char_cangrande_subheading: "Lord of Verona"
+ bm_char_siegfried_subheading: "Grand Master of the Teutonic Order"
+ bm_char_andronikos_ii_subheading: "Byzantine Emperor"
+ bm_char_osman_subheading: "Ottoman Bey"
+ bm_char_fernando_iv_subheading: "King of Castile"
+
+ # 1337 — The Lily and the Lion
+ bm_char_edward_iii_subheading: "King of England"
+ bm_char_philippe_vi_subheading: "King of France"
+ bm_char_gediminas_subheading: "Grand Duke of Lithuania"
+ bm_char_orhan_subheading: "Ottoman Sultan"
+ bm_char_alphonse_xi_subheading: "King of Castile"
+ bm_char_robert_naples_subheading: "King of Naples"
+ bm_char_david_ii_subheading: "King of Scotland"
+
+ # 1348 — The Black Death
+ bm_char_philippe_vi_1348_subheading: "King of France"
+ bm_char_edward_iii_1348_subheading: "King of England"
+ bm_char_stefan_dusan_subheading: "King of Serbia"
+ bm_char_louis_hongrie_subheading: "King of Hungary"
+
+ # 1356 — Golden Bull
+ bm_char_charles_iv_1356_subheading: "Holy Roman Emperor"
+ bm_char_albert_ii_subheading: "Duke of Austria"
+ bm_char_dauphin_charles_subheading: "Dauphin of Viennois"
+ bm_char_prince_noir_subheading: "Prince of Wales"
+ bm_char_magnus_iv_subheading: "King of Sweden"
+ bm_char_casimir_iii_1356_subheading: "King of Poland"
+
+ # ═══════════════════════════════════════════════════════════════════
+ # GROUP NAME UPDATE — 1337
+ # ═══════════════════════════════════════════════════════════════════
+ bm_guerre_cent_ans_1337: "The Lily and the Lion"
+
+
+ # ═══════════════════════════════════════════════════════════════════
+ # v23.2 — Cloned titles (_lal): Anhalt, Meissen, Lausitz, Thuringia,
+ # Westphalia, Ostfalen — and new Saxe-Wittemberg / Eilenburg titles
+ # ═══════════════════════════════════════════════════════════════════
+ d_angria_lal: "Saxony"
+ c_arezzo_lal: "Arezzo"
+ c_strassburg_lal: "Strasbourg"
+ c_minden_lal: "Minden"
+ c_bremen_lal: "Bremen"
+ c_wolpe_lal: "Wölpe"
+ c_hannover_lal: "Hanover"
+ c_hildesheim_lal: "Hildesheim"
+ c_oldenburg_lal: "Oldenburg"
+ d_saxe-wittemberg: "Saxe-Wittenberg"
+ c_eilenburg: "Eilenburg"
+
+ d_anhalt_lal: "Anhalt"
+ c_dessau_lal: "Dessau"
+ c_halberstadt_lal: "Halberstadt"
+ c_magdeburg_lal: "Magdeburg"
+ c_blankenburg_lal: "Blankenburg"
+ c_mansfeld_lal: "Mansfeld"
+ c_mersenburg_lal: "Merseburg"
+
+ d_meissen_lal: "Meissen"
+ c_meissen_lal: "Meissen"
+ c_dresden_lal: "Dresden"
+ c_wolkenstein_lal: "Wolkenstein"
+ c_osterland_lal: "Osterland"
+ c_naumburg_lal: "Naumburg"
+ c_vogtland_lal: "Vogtland"
+ c_cottbus_lal: "Cottbus"
+
+ d_haute_lusace_lal: "Upper Lusatia"
+ c_gorlitz_lal: "Görlitz"
+
+ d_lausitz_lal: "Lusatia"
+ c_juterbog_lal: "Jüterbog"
+ c_wittenberg_lal: "Wittenberg"
+ c_brene_lal: "Brene"
+ c_spreewald_lal: "Spreewald"
+ c_naumberg_lal: "Naumberg"
+
+ d_thuringia_lal: "Thuringia"
+ c_schmalkalden_lal: "Schmalkalden"
+ c_gottingen_lal: "Göttingen"
+ c_gleichenstein_lal: "Gleichenstein"
+ c_orlamunde_lal: "Orlamünde"
+ c_lobdaburg_lal: "Lobdaburg"
+
+ d_westfalen_lal: "Westphalia"
+ c_osnabruck_lal: "Osnabrück"
+ c_tecklenburg_lal: "Tecklenburg"
+ c_munster_lal: "Münster"
+ c_waldeck_lal: "Waldeck"
+
+ d_ostfalen_lal: "Ostfalen"
+ c_luneburg_lal: "Luneburg"
+ c_brunswick_lal: "Brunswick"
+ c_hamburg_lal: "Hamburg"
+ c_dannenberg_lal: "Dannenberg"
+ c_stendal_lal: "Stendal"
+ d_oldenburg: "Oldenburg"
+ d_brunswick_luneburg: "Brunswick-Luneburg"
+ d_minden: "Minden"
+ d_treves: "Trier"
+ c_fyn_lal: "Fyn"
+
+ c_dyrrachion_lal: "Dyrrachion"
+
+ # Hybrid Germanic cultures (Ostsiedlung) — common/culture/cultures/00_lis_lion_cultures.txt
+ pomeranian_germanic: "Pomeranian-German"
+ prussian_germanic: "Prussian-German"
+ silesian: "Silesian"
+
+ # New trait — common/traits/00_lis_lion_traits.txt
+ trait_condottiere: "Condottiere"
+ condottiere_desc: "A seasoned warlord, this figure has built a reputation leading mercenary companies throughout Italy and beyond."

@@ -1,0 +1,142 @@
+﻿# Le Lis et le Lion — Comté titulaire c_dyrrachion_lal
+# Représente la prétention angevine (Royaume de Naples) sur Dyrrachion, distincte du
+# comté byzantin/épirote c_dyrrachion (landless = yes, aucune baronnie propre : cf.
+# common/landed_titles/00_landed_titles.txt pour l'explication — un renommage complet du
+# vrai titre a été essayé puis annulé, il casse le chargement de l'historique vanilla
+# environnant et plusieurs fichiers hors de portée du mod).
+#
+# Historique 330.1.1 -> 1332.1.1 : copie fidèle de l'historique vanilla de c_dyrrachion
+# (history/titles/k_epirus.txt), pour que ce titre titulaire porte la même lignée de
+# suzerains/titulaires que le vrai comté jusqu'à la prise en charge angevine. Les entrées
+# vanilla "change_development_level" ne sont pas reprises : elles modifient le développement
+# de la province réelle de Dyrrachion, que ce titre n'a jamais possédée.
+#
+# 2 janvier 1336 : divergence assumée par rapport au vanilla. Le vrai c_dyrrachion redevient
+# vassal (liege) de d_dyrrachion à cette date (réabsorption byzantine/épirote) ; on ne reprend
+# PAS ce changement de liege ici, puisque ce titre existe justement pour faire perdurer la
+# prétention angevine sous Naples. On ne copie donc que le changement de titulaire, avec l'ID
+# demandé (le vanilla porte 468500 à cette date ; substitué ici par 461723, Charles,
+# dynastie 81 - Anjou), le liege restant k_naples (fixé depuis le 1er janvier 1307).
+
+c_dyrrachion_lal = {
+	330.1.1 = {
+		liege = "d_dyrrachion"
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					empty_treasury_when_abandoning_landed_life_effect = yes
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	759.1.1 = {
+		holder = 145817
+	}
+	843.1.1 = {
+		liege = "e_byzantium"
+	}
+	865.1.1 = {
+		holder = 145124
+	}
+	989.1.1 = {
+		liege = "d_dyrrachion"
+	}
+	1005.1.1 = {
+		liege = "e_byzantium"
+	}
+	1018.2.1 = {
+		liege = "d_dyrrachion"
+	}
+	1060.1.1 = {
+		holder = komiskortes_of_dyrrachion
+	}
+	1066.1.1 = {
+		liege = "d_dyrrachion"
+	}
+	1081.10.18 = {
+		holder = 42014
+	}
+	1108.1.1 = {
+		holder = 34441
+	}
+	1143.1.1 = {
+		holder = 34442
+	}
+	1168.1.1 = {
+		holder = 34281
+	}
+	1178.1.1 = {
+		holder = doukas_2 # Konstantinos Doukas, dux of Dyrrachion and Dalmatia
+	}
+	1187.1.1 = {
+		holder = 215008
+	}
+	1200.1.1 = {
+		holder = 232538
+	}
+	1204.5.16 = {
+		holder = 167602 # Domenico Contarini
+	}
+	1215.1.1 = {
+		liege = "d_epirus"
+		holder = 215514
+	}
+	1230.3.9 = {
+		holder = 125715
+	}
+	1256.1.1 = {
+		liege = "e_byzantium"
+		holder = 34452
+	}
+	1257.1.1 = {
+		liege = "k_sicily"
+		holder = 34460
+	}
+	1259.1.1 = {
+		liege = "e_byzantium"
+		holder = 34449
+	}
+	1272.2.12 = {
+		liege = "k_sicily"
+		holder = 34461
+	}
+	1279.8.1 = {
+		holder = 34462
+	}
+	1282.8.30 = {
+		liege = "k_naples"
+		holder = 34602
+	}
+	1293.9.16 = {
+		holder = 32791
+	}
+	1307.1.1 = {
+		liege = k_naples
+		holder = 461712 # Philippe II de Tarente
+		government = feudal_government
+	}
+	1313.1.1 = {
+		holder = 31344 # Louis I
+	}
+	1316.8.2 = {
+		holder = 31343 # Mathilde de Hainaut
+	}
+	1318.1.1 = {
+		holder = 455910 # Eudes
+	}
+	1320.1.1 = {
+		holder = 455650 # Louis II
+	}
+	1322.1.1 = {
+		holder = 461721 # Jean I
+	}
+	1336.1.2 = {
+		holder = 461723 # Charles, dynastie 81 (Anjou) — substitué au vanilla 468500
+	}
+}

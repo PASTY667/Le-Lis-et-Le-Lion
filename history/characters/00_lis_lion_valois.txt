@@ -1,0 +1,126 @@
+# Le Lis et le Lion — Maison de Valois
+# On bascule Charles de Valois (455512) et toute sa descendance directe vers house_valois,
+# cadette des Robertiens (743), au lieu de dynasty = 101 (Valois autonome).
+# CORRECTION : le changement de maison est appliqué DANS un bloc de date (à la date de
+# naissance de chacun), conformément à la syntaxe attendue par le moteur pour patcher un
+# personnage déjà défini ailleurs (cf. exemples vanilla : tout changement d'attribut se
+# fait via une entrée datée, jamais en réécrivant un champ racine seul).
+
+455512 = { # Charles de Valois, fils de Philippe III le Hardi
+	1270.3.12 = {
+		dynasty_house = house_valois
+	}
+}
+
+455500 = { # Philippe VI, roi de France à partir de 1328
+	# CORRIGÉ (bug DNA) : un simple patch "dna=" isolé sur un personnage déjà entièrement
+	# défini par le vanilla n'est pas appliqué par le moteur (confirmé par comparaison avec
+	# Kazimierz III/471500, qui lui fonctionne car intégralement redéclaré). On redéclare donc
+	# ici les mêmes valeurs exactes que la fiche vanilla (name, dynasty, stats, naissance,
+	# mariage, mort), en y ajoutant dna= et le changement de maison vers house_valois.
+	name = "Philippe"
+	martial = 3
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 7
+	religion = "catholic"
+	culture = french
+	dna = lis_lion_philippe_vi_valois
+	1293.1.2 = {
+		birth = "1293.1.2"
+		dynasty_house = house_valois # RE-CORRIGÉ : la maison custom doit être posée via une
+		                              # entrée datée pour bien s'appliquer par-dessus le vanilla
+		                              # (contrairement à dna=, un dynasty_house= racine seul ne
+		                              # "prend" pas sur un personnage déjà défini par le vanilla).
+	}
+	1329.1.2 = {
+		add_spouse = 455532
+	}
+	1350.8.22 = {
+		death = "1350.8.22"
+	}
+}
+
+455510 = { # Isabelle de Valois
+	1292.1.2 = {
+		dynasty_house = house_valois
+	}
+}
+
+455501 = { # Jeanne de Valois, épouse de Guillaume de Hainaut
+	1294.1.2 = {
+		dynasty_house = house_valois
+	}
+}
+
+455511 = { # Marguerite de Valois
+	1295.1.2 = {
+		dynasty_house = house_valois
+	}
+}
+
+455513 = { # Charles, comte d'Alençon, frère de Philippe VI
+	1297.1.2 = {
+		dynasty_house = house_valois
+	}
+}
+
+461717 = { # Catherine de Valois
+	1303.1.1 = {
+		dynasty_house = house_valois
+	}
+}
+
+161900 = { # Jeanne de Valois
+	1304.1.2 = {
+		dynasty_house = house_valois
+	}
+}
+
+461702 = { # Marie de Valois
+	1309.1.2 = {
+		dynasty_house = house_valois
+	}
+}
+
+455506 = { # Isabelle de Valois (cadette)
+	1313.1.2 = {
+		dynasty_house = house_valois
+	}
+}
+
+455537 = { # Blanche de Valois
+	1317.1.1 = {
+		dynasty_house = house_valois
+	}
+}
+
+455502 = { # Jean, futur Jean II le Bon
+	1319.4.16 = {
+		dynasty_house = house_valois
+	}
+}
+
+455503 = { # Marie
+	1326.1.2 = {
+		dynasty_house = house_valois
+	}
+}
+
+455504 = { # Philippe d'Orléans
+	1336.7.1 = {
+		dynasty_house = house_valois
+	}
+}
+
+455499 = { # Charles (fils de Jean II le Bon, 455502) — né 1337.1.2
+	1337.1.2 = {
+		dynasty_house = house_valois
+	}
+}
+
+455514 = { # Charles (fils de Charles d'Alençon, 455513) — né 1337.2.2
+	1337.2.2 = {
+		dynasty_house = house_valois
+	}
+}

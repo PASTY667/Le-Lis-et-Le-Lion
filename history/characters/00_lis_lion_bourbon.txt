@@ -1,0 +1,109 @@
+﻿# Le Lis et le Lion — Maison de Bourbon
+# Robert de Clermont (455505), fils de Saint Louis, naît dans house_capet puis change de
+# DYNASTIE complète (vers 89, Clermont) en 1270 dans le vanilla, ce qui le déconnecte des
+# Robertiens. On le rattache à house_bourbon_capet (cadette des Robertiens, 743) DÈS SA
+# maison à la date 1270.5.25 (même date que le switch dynasty=89 vanilla), pour écraser
+# ce dernier correctement et en faire sans ambiguïté le fondateur de la maison. Tous ses descendants suivent la même maison, à leur date de
+# naissance.
+
+455505 = { # Robert de Clermont, fils de Saint Louis — fondateur de la maison de Bourbon
+	# Le vanilla applique dynasty = 89 (Clermont) à 1270.5.25. On utilise le lendemain (1270.5.26)
+	# pour garantir que notre dynasty_house s'applique APRÈS le switch vanilla, quel que soit
+	# l'ordre de chargement des fichiers à date égale.
+	1270.5.26 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+455650 = { # Louis Ier de Bourbon
+	1279.1.2 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+455651 = { # Pierre Ier de Bourbon
+	1311.1.2 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+455652 = { # Jeanne
+	1312.1.1 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+455653 = { # Marguerite
+	1313.1.2 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+455654 = { # Marie
+	1318.1.1 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+455655 = { # Philippa
+	1316.1.2 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+455656 = { # Jacques
+	1319.1.2 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+455657 = { # Béatrix, épouse de Jean Ier l'Aveugle de Bohême (462610) — mère : Marie de Hainaut (455615)
+	# CORRIGÉ : redéclaration complète (voir note dans 00_lis_lion_dna_patches_2.txt / cas Karl IV
+	# 462614), valeurs identiques à la fiche vanilla (french.txt), pour éviter que la redéclaration
+	# minimale (juste mother= + dynasty_house) ne soit purement et simplement écrasée par la fiche
+	# vanilla lors du merge/duplicate-id, ce qui était la vraie raison pour laquelle mother= ne
+	# s'appliquait pas en jeu.
+	name = "Beatrix"
+	female = yes
+	dynasty = 100146
+	martial = 8
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 5
+	religion = "catholic"
+	culture = french
+	trait = education_diplomacy_3
+	father = 455650
+	mother = 455615 #Marie, fille de Jean II d'Avesnes, comte de Hainaut — épouse de Louis Ier de Bourbon
+	1313.1.2 = {
+		birth = "1313.1.2"
+		dynasty_house = house_bourbon_capet
+	}
+	1363.1.2 = {
+		death = "1363.1.2"
+	}
+}
+
+91144 = { # Jean, frère de Louis Ier de Bourbon
+	1283.1.1 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+7472 = { # Blanche
+	1281.1.1 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+455725 = { # Béatrice, fille de Jean (91144)
+	1310.1.1 = {
+		dynasty_house = house_bourbon_capet
+	}
+}
+
+455658 = { # Louis II de Bourbon, fils de Pierre Ier (455651)
+	1337.1.2 = {
+		dynasty_house = house_bourbon_capet
+	}
+}

@@ -1,0 +1,125 @@
+# Le Lis et le Lion — Titres principaux forcés
+#
+# d_osterreich (duché d'Autriche / duché viennois) doit être le titre principal de
+# tous ceux qui l'ont possédé au cours de l'histoire (chaîne de titulaires vanilla,
+# k_bavaria.txt).
+
+10084 = {
+	976.1.1 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+7973 = {
+	994.1.1 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+10093 = {
+	1018.6.23 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+7200 = {
+	1055.5.26 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+212548 = {
+	1075.6.10 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+212546 = {
+	1095.10.12 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+7685 = {
+	1136.1.31 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+212540 = {
+	1141.10.18 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+212530 = {
+	1177.1.13 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+212532 = {
+	1194.12.31 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+212533 = {
+	1198.4.16 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+7698 = {
+	1230.7.28 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+96047 = {
+	1246.6.15 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+7520 = {
+	1247.1.3 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+7524 = {
+	1250.10.4 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+96001 = {
+	1251.1.1 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+462021 = {
+	1278.8.26 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+462023 = {
+	1282.1.1 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+462025 = {
+	1308.5.1 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}
+
+462020 = {
+	1330.2.14 = {
+		set_primary_title_to = title:d_osterreich
+	}
+}

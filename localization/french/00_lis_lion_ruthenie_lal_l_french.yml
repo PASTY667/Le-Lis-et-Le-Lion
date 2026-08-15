@@ -1,0 +1,48 @@
+﻿l_french:
+ # Le Lis et le Lion — Noms des comtés clonés (Ruthénie / Rus' occidentale)
+ # Repris à l'identique du fichier vanilla titles_l_french.yml
+
+ c_minsk_lal:0 "Minsk"
+ c_orsha_lal:0 "Orsha"
+ c_pinsk_lal:0 "Pinsk"
+ c_slutsk_lal:0 "Slutsk"
+ c_kletsk_lal:0 "Kletsk"
+ c_babruysk_lal:0 "Babruysk"
+ c_grodno_lal:0 "Grodno"
+ c_volkovysk_lal:0 "Volkovysk"
+ c_novogrudok_lal:0 "Navahroudak"
+ c_turov_lal:0 "Turov"
+ c_korosten_lal:0 "Korosten"
+ c_dubrovytsia_lal:0 "Dubrovytsia"
+ c_volodymyr_lal:0 "Volodymyr"
+ c_peresopnytsia_lal:0 "Peresopnytsia"
+ c_berestye_lal:0 "Berestye"
+ c_dorohychyn_lal:0 "Dorohychyn"
+ c_kiev_lal:0 "Kiev"
+ c_zhytomyr_lal:0 "Zhytomyr"
+ c_zvyahel_lal:0 "Zvyahel"
+ c_chornobyl_lal:0 "Chornobyl"
+ c_ushytsia_lal:0 "Ushytsia"
+ c_korsun_lal:0 "Korsoun"
+ c_pereyaslavl_lal:0 "Pereïaslavl"
+ c_hradyzk_lal:0 "Hradyzk"
+ c_romen_lal:0 "Romen"
+ c_voin_lal:0 "Voin’"
+ c_halych_lal:0 "Halych"
+ c_lviv_lal:0 "Lviv"
+ c_terebovl_lal:0 "Terebovlia"
+ c_zaslavl_lal:0 "Zaslavl"
+ c_cherven_lal:0 "Cherven"
+ c_belz_lal:0 "Belz"
+ c_peremyshl_lal:0 "Peremyshl"
+ c_sebezh_lal:0 "Sebej"
+
+ # Nouveau comté de Mazyr (ex-baronies de c_korosten)
+ c_mazyr_lal:0 "Mazyr"
+
+ # Titres de duché clonés
+ d_volhynia_lal:0 "Volhynie"
+ d_kiev_lal:0 "Kiev"
+ d_pereyaslavl_lal:0 "Pereïaslavl"
+ d_halych_lal:0 "Halych"
+ d_cherven_cities_lal:0 "Villes de Cherven"

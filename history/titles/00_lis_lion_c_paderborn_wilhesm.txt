@@ -1,0 +1,81 @@
+# Le Lis et le Lion — Comté de Paderborn (c_paderborn_wilhesm)
+#
+# Ce comté regroupe les baronies b_paderborn, b_brakel, b_wiedenbruck et b_lippstadt,
+# précédemment sous c_paderborn (vanilla, d_westfalen). Il est de jure dans d_paderborn
+# (le duché custom Wilhesm du mod) et relève de l'Empereur du Saint-Empire (e_hre).
+#
+# Historique :
+#   - Période vanilla pré-1020 : suit l'historique du c_paderborn vanilla (évêché/théocratie
+#     selon la progression vanilla, liege = d_westfalen).
+#   - Période Wilhesm (1020+) : féodal, liege = d_paderborn, puis e_hre direct.
+
+c_paderborn_wilhesm = {
+	# ---- PÉRIODE VANILLA (pré-1020) ----
+	761.1.1 = {
+		holder = 190463        # Amelung
+		liege = d_westfalen_lal
+		government = feudal_government
+		de_jure_liege = d_paderborn
+	}
+	844.1.1 = {
+		holder = 167757
+	}
+	889.1.1 = {
+		holder = 7908
+	}
+	912.11.12 = {
+		holder = 1280
+	}
+	936.7.2 = {
+		holder = 1282
+	}
+	961.1.1 = {
+		holder = 1410
+	}
+	963.3.27 = {
+		holder = 1412
+	}
+	1011.2.9 = {
+		holder = 1414
+	}
+
+	# ---- PÉRIODE WILHESM (post-1020) ----
+	1020.11.20 = {
+		holder = 91500100    # Otto von Wilhesm
+		liege = d_paderborn
+		government = feudal_government
+	}
+	1048.1.1 = {
+		holder = 91500106    # Heinrich
+	}
+	1105.1.1 = {
+		holder = 91500107    # Wilbrand
+	}
+	1127.1.1 = {
+		holder = 91500108    # Bernhard
+	}
+	1147.1.1 = {
+		holder = 91500109    # Johann
+	}
+	1210.1.1 = {
+		holder = 91500110    # Johann (fils)
+	}
+	1247.1.1 = {
+		holder = 91500111    # Leopold
+	}
+	1277.1.1 = {
+		holder = 91500112    # Simon
+	}
+	1278.1.1 = {
+		holder = 91500113    # Othon
+	}
+	1304.3.3 = {
+		holder = 91500114    # Bernard II — hérite avec le duché
+	}
+	1321.1.1 = {
+		holder = 91500118    # Bernard III
+	}
+	1341.1.1 = {
+		holder = 91500119    # Henri
+	}
+}

@@ -1,0 +1,173 @@
+﻿# Le Lis et le Lion — Duché de Paderborn et titres associés
+#
+# RÉSUMÉ DES CORRECTIONS :
+#   - d_paderborn : de_jure_liege = k_east_francia (Germanie, pas k_saxony)
+#   - Comté de Paderborn : suit exactement d_paderborn (les Wilhesm de 1020 à 1066, puis le vanilla reprend)
+#   - c_lippe_wilhesm : lippe_1 (Herman II) dès 1158.2.4, puis ses successeurs vanilla, vassaux des Wilhesm
+#   - c_bartenstein + c_wormditt : acquis 1260 par Leopold, partagés en 1304 (Othon garde / Bernard hérite du duché)
+#   - c_memel : donné à Othon à partir de 1304.3.3, puis Karl en 1324
+
+# ---- DUCHÉ DE PADERBORN ----
+d_paderborn = {
+	1020.11.20 = {
+		holder = 91500100	# Otto von Wilhesm
+		liege = e_hre
+		de_jure_liege = k_east_francia
+		government = feudal_government
+	}
+	1048.1.1 = {
+		holder = 91500106	# Heinrich
+	}
+	1105.1.1 = {
+		holder = 91500107	# Wilbrand
+	}
+	1127.1.1 = {
+		holder = 91500108	# Bernhard
+	}
+	1147.1.1 = {
+		holder = 91500109	# Johann
+	}
+	1210.1.1 = {
+		holder = 91500110	# Johann (fils)
+	}
+	1247.1.1 = {
+		holder = 91500111	# Leopold
+	}
+	1277.1.1 = {
+		holder = 91500112	# Simon
+	}
+	1278.1.1 = {
+		holder = 91500113	# Othon
+	}
+	1304.3.3 = {
+		holder = 91500114	# Bernard II — hérite du duché
+	}
+	1321.1.1 = {
+		holder = 91500118	# Bernard III
+	}
+	1341.1.1 = {
+		holder = 91500119	# Henri
+	}
+}
+
+# ---- COMTÉ DE PADERBORN WILHESM ----
+# Supprimé de ce fichier — l'historique est maintenant dans
+# 00_lis_lion_c_paderborn_wilhesm.txt (créé séparément).
+# Le de_jure_liege de c_paderborn_wilhesm vers d_paderborn est posé dans ce nouveau fichier.
+#c_paderborn_wilhesm MOVED TO SEPARATE FILE
+
+# ---- COMTÉ DE LIPPE WILHESM (c_lippe_wilhesm) ----
+# Titre féodal distinct du c_lippe vanilla.
+# De jure : d_paderborn (via common/landed_titles/00_landed_titles.txt).
+# Baronies : b_lippe (2844, capitale), b_schwalenberg (2909), b_everstein (2910).
+# Historique :
+#   1020.11.20 : intégré au duché von Wilhesm — liege = d_paderborn
+#   1158.2.4   : lippe_1 (Herman II de Lippe) reçoit c_lippe_wilhesm en fief des Wilhesm
+#                Sa maison (dynasty 12462) reste distincte, mais il est vassal d_paderborn.
+#   1167.1.1   : 30324 (Bernhard de Lippe), fils de lippe_1
+#   1224.1.1   : 30323 (Hermann de Lippe), fils de 30324
+#   1229.4.25  : 144210 (Simon de Lippe), fils de 30323
+#   1277.6.6   : 144223 (Simon de Lippe), successeur de 144210
+#   La lignée Lippe reste vassale des Wilhesm tout au long.
+c_lippe_wilhesm = {
+	1020.11.20 = {
+		holder = 91500100
+		liege = d_paderborn
+		government = feudal_government
+	}
+	1048.1.1 = {
+		holder = 91500106
+	}
+	1105.1.1 = {
+		holder = 91500107
+	}
+	1127.1.1 = {
+		holder = 91500108
+	}
+	1147.1.1 = {
+		holder = 91500109
+	}
+	1158.2.4 = {
+		holder = lippe_1	# Herman II de Lippe — vassal des Wilhesm
+		liege = d_paderborn
+	}
+	1167.1.1 = {
+		holder = 30324		# Bernhard de Lippe
+	}
+	1224.1.1 = {
+		holder = 30323		# Hermann de Lippe
+	}
+	1229.4.25 = {
+		holder = 144210		# Simon Ier de Lippe
+	}
+	1277.6.6 = {
+		holder = 144223		# Simon II de Lippe
+	}
+}
+
+# ---- COMTÉ DE BARTENSTEIN (c_bartenstein) ----
+# Reçu par Leopold (91500111) en 1260.
+# Simon (91500112) et Othon (91500113) l'héritent ensuite.
+# En 1304.3.3 : Othon perd d_paderborn mais garde c_bartenstein.
+# Karl (91500115) hérite à la mort d'Othon en 1324.
+c_bartenstein = {
+	1260.1.1 = {
+		holder = 91500111	# Leopold von Wilhesm
+		liege = d_prussia
+		government = feudal_government
+	}
+	1277.1.1 = {
+		holder = 91500112	# Simon
+	}
+	1278.1.1 = {
+		holder = 91500113	# Othon
+	}
+	# 1304.3.3 : Othon perd d_paderborn mais conserve c_bartenstein (aucun changement de holder)
+	1324.1.1 = {
+		holder = 91500115	# Karl (fils d'Othon)
+	}
+	1393.1.1 = {
+		holder = 0			# Fin de la ligne Karl — le jeu prend le relais
+	}
+}
+
+# ---- COMTÉ DE WORMDITT (c_wormditt) ----
+# Même chronologie que c_bartenstein.
+c_wormditt = {
+	1260.1.1 = {
+		holder = 91500111
+		liege = d_prussia 
+		government = feudal_government
+	}
+	1277.1.1 = {
+		holder = 91500112
+	}
+	1278.1.1 = {
+		holder = 91500113
+	}
+	1324.1.1 = {
+		holder = 91500115	# Karl
+	}
+	1393.1.1 = {
+		holder = 0
+	}
+}
+
+# ---- COMTÉ DE MEMEL (c_memel) ----
+# Pris sur l'Ordre Teutonique par Othon à partir du 3 mars 1304.
+# En vanilla, la chronologie lituanienne/Teutonique continue jusqu'en 1304 — notre entrée
+# écrase simplement le holder à partir de cette date.
+# Karl hérite à la mort d'Othon en 1324, puis le comté suit la lignée Karl.
+c_memel = {
+	1304.3.3 = {
+		holder = 91500113	# Othon von Wilhesm
+		liege = d_prussia
+		government = feudal_government
+	}
+	1324.1.1 = {
+		holder = 91500115	# Karl (fils d'Othon)
+	}
+	1393.1.1 = {
+		holder = 0
+	}
+}

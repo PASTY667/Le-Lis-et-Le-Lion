@@ -1,0 +1,13 @@
+# Le Lis et le Lion — Duché d'Autriche (d_osterreich / duché viennois)
+#
+# Le vanilla (k_bavaria.txt) crée d_osterreich le 976.1.1 comme vassal de
+# k_east_francia, et ne le rattache au Saint-Empire (liege = e_hre) qu'au 1024.7.13.
+# On avance ce rattachement au 996.10.18, faisant du duché viennois un vassal direct
+# de e_hre dès cette date et sans discontinuer (l'entrée vanilla de 1024 redevient
+# simplement redondante mais harmless).
+
+d_osterreich = {
+	996.10.18 = {
+		liege = e_hre
+	}
+}

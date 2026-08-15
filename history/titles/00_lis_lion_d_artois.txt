@@ -1,0 +1,203 @@
+﻿# Le Lis et le Lion — Duché d'Artois & Comté d'Arras
+#
+# STRUCTURE DE JURE (définie dans common/landed_titles) :
+#   b_aire (id 2134) → c_arras (nouveau comté, créé par le mod, capitale du duché)
+#   b_saint_omer (id 2133) → c_arras
+#   b_peronne (id 2186) → c_arras
+#   b_grevelines (id 2129) → c_arras
+#   c_arras → d_artois
+#   d_artois → k_france (de_jure_liege explicite ci-dessous)
+#
+# NOTE : c_guines (id 7254) et c_boulogne (id 7262) sont désormais de_jure dans le
+# duché de Picardie (cf. 00_lis_lion_d_picardie.txt), pas dans Artois.
+#
+# NOMS AFFICHÉS : d_artois s'affiche "Artois" (pas "Duché d'Artois") et c_arras s'affiche
+# "Arras" (pas "Comté d'Arras") — voir localization/*.yml.
+#
+# CHRONOLOGIE DES TITULAIRES :
+#   1190.3.15 — Philippe II Auguste (205506), créateur du comté/duché
+#   1223.7.14 — Louis VIII (455402), à sa mort hérite de son père
+#   1226.11.8 — Robert IV de France (455405), à la mort de Louis VIII (3ème fils)
+#   1250.2.8  — Robert V de Lille (455546), fils du précédent
+#   1302.7.11 — Mahaut de Lille (91147), fille de Robert V
+#   1329.10.28 — Jeanne II d'Artois (455741), fille de Mahaut
+#   1330.1.21  — Jeanne III (455913), fille de Jeanne II
+
+# ---- DUCHÉ D'ARTOIS ----
+d_artois = {
+	1190.3.15 = {
+		holder = 205506 # Philippe II Auguste
+		liege = k_france
+		de_jure_liege = k_france
+		government = feudal_government
+	}
+	1223.7.14 = {
+		holder = 455402 # Louis VIII le Lion
+	}
+	1226.11.8 = {
+		holder = 455405 # Robert IV de France (Robert Ier d'Artois historique)
+	}
+	1250.2.8 = {
+		holder = 455546 # Robert V de Lille (Robert II d'Artois historique)
+	}
+	1302.7.11 = {
+		holder = 91147  # Mahaut d'Artois
+	}
+	1329.10.28 = {
+		holder = 455741 # Jeanne II d'Artois (fille de Mahaut)
+	}
+	1330.1.21 = {
+		holder = 455913 # Jeanne III (petite-fille de Mahaut, fille de Jeanne II)
+	}
+}
+
+# ---- COMTÉ D'ARRAS (nouveau) ----
+# Ce comté est entièrement créé par le mod : il regroupe b_aire (id 2134, capitale),
+# b_saint_omer (id 2133), b_peronne (id 2186) et b_grevelines (id 2129). Ces baronies
+# étaient précédemment rattachées aux comtés de Lille (id 7258) et de Guînes (id 7254)
+# dans le vanilla — elles en sont détachées via la définition de landed_titles du mod
+# (common/landed_titles/00_lis_lion_lt.txt).
+# Le titulaire suit celui du duché d'Artois : le comte d'Artois est également comte d'Arras.
+
+c_arras = {
+	1190.3.15 = {
+		holder = 205506 # Philippe II Auguste
+		liege = d_artois
+		government = feudal_government
+	}
+	1223.7.14 = {
+		holder = 455402 # Louis VIII le Lion
+	}
+	1226.11.8 = {
+		holder = 455405 # Robert IV de France
+	}
+	1250.2.8 = {
+		holder = 455546 # Robert V de Lille
+	}
+	1302.7.11 = {
+		holder = 91147  # Mahaut d'Artois
+	}
+	1329.10.28 = {
+		holder = 455741 # Jeanne II d'Artois
+	}
+	1330.1.21 = {
+		holder = 455913 # Jeanne III
+	}
+}
+
+# ---- BARONIES DE C_ARRAS — historique explicite des titulaires ----
+# Sans historique propre, CK3 peut générer un titulaire fantôme (personnage créé
+# dynamiquement par le moteur) pour une baronie recâblée vers un nouveau comté, au lieu de
+# la faire suivre automatiquement le comte. On force donc ici la même chronologie que
+# c_arras pour chacune des 4 baronies, afin que b_aire (et les autres) reviennent bien au
+# comte/à la comtesse d'Artois en titre (Jeanne III en 1337, via 1330.1.21).
+# IMPORTANT : une baronie n'accepte QUE l'attribut holder= dans son historique — jamais
+# liege= (qui est implicitement celui du comté parent ; le définir ici fait planter le
+# jeu avec l'erreur "Title history tries to change its defacto liege despite it being a
+# barony").
+
+b_aire = {
+	1190.3.15 = {
+		holder = 205506 # Philippe II Auguste
+	}
+	1223.7.14 = {
+		holder = 455402 # Louis VIII le Lion
+	}
+	1226.11.8 = {
+		holder = 455405 # Robert IV de France
+	}
+	1250.2.8 = {
+		holder = 455546 # Robert V de Lille
+	}
+	1302.7.11 = {
+		holder = 91147  # Mahaut d'Artois
+	}
+	1329.10.28 = {
+		holder = 455741 # Jeanne II d'Artois
+	}
+	1330.1.21 = {
+		holder = 455913 # Jeanne III
+	}
+}
+
+b_saint_omer = {
+	1190.3.15 = {
+		holder = 205506
+	}
+	1223.7.14 = {
+		holder = 455402
+	}
+	1226.11.8 = {
+		holder = 455405
+	}
+	1250.2.8 = {
+		holder = 455546
+	}
+	1302.7.11 = {
+		holder = 91147
+	}
+	1329.10.28 = {
+		holder = 455741
+	}
+	1330.1.21 = {
+		holder = 455913
+	}
+}
+
+b_peronne = {
+	1190.3.15 = {
+		holder = 205506
+	}
+	1223.7.14 = {
+		holder = 455402
+	}
+	1226.11.8 = {
+		holder = 455405
+	}
+	1250.2.8 = {
+		holder = 455546
+	}
+	1302.7.11 = {
+		holder = 91147
+	}
+	1329.10.28 = {
+		holder = 455741
+	}
+	1330.1.21 = {
+		holder = 455913
+	}
+}
+
+b_grevelines = {
+	1190.3.15 = {
+		holder = 205506
+	}
+	1223.7.14 = {
+		holder = 455402
+	}
+	1226.11.8 = {
+		holder = 455405
+	}
+	1250.2.8 = {
+		holder = 455546
+	}
+	1302.7.11 = {
+		holder = 91147
+	}
+	1329.10.28 = {
+		holder = 455741
+	}
+	1330.1.21 = {
+		holder = 455913
+	}
+}
+
+# ---- RECÂBLAGE DE_JURE DES BARONIES ----
+# b_aire (province 2134) : vanilla dans c_lille → transféré dans c_arras.
+# b_saint_omer (province 2133) : vanilla dans c_guines → transféré dans c_arras.
+# b_peronne (province 2186) : vanilla dans c_amiens → transféré dans c_arras.
+# b_grevelines (province 2129) : vanilla dans c_guines → transféré dans c_arras.
+# En CK3, le de_jure d'une baronie se définit via le landed_titles, pas via history/titles
+# directement. Ces recâblages sont donc gérés dans common/landed_titles/00_lis_lion_lt.txt
+# (où c_arras déclare ces baronies comme ses enfants), ce qui prend le dessus sur le vanilla.
+

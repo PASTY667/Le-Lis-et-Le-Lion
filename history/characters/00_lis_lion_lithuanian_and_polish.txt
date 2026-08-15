@@ -1,0 +1,273 @@
+# Le Lis et le Lion — Personnages lituaniens et polonais
+# Fichier fourni par toi (fusion 00+01), avec correction des collisions d'ID vanilla :
+#   - 473514, 473515, 473517 entraient en collision avec des personnages vanilla
+#     DÉJÀ existants et référencés ailleurs dans le vanilla lui-même :
+#       473514 = "Dmitriy" (fils d'Algirdas et Maria-473512, vanilla)
+#       473515 = "Konstantin" (fils d'Algirdas et Maria-473512, vanilla)
+#       473517 = "Yefimia" (femme, dynastie de Tver, ÉPOUSE DE LIUBARTAS/473510
+#                 dans le vanilla dès 1325 — écraser cet ID aurait cassé ce mariage)
+#   - Renumérotés vers des ID libres : 473520 (Skirgaila), 473521 (Teodoras),
+#     473522 (Vladimir).
+#   - mother= corrigé : le fichier fourni pointait par erreur vers 473502 (Olga,
+#     épouse de GEDIMINAS, donc arrière-grand-mère) au lieu d'Uliana de Tver /
+#     Maria de Vitebsk comme l'indiquent tes propres commentaires.
+# Gediminas, Kazimierz, Olga : identiques au vanilla, conservés tels quels
+# (redondants avec le vanilla mais sans risque, à ta demande).
+
+473500 = {
+	name = "Gediminas" # Gediminas de Lituanie
+	dna = gediminas_of_lithuania
+	dynasty = 11
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 10
+	religion = "baltic_pagan"
+	culture = "lithuanian"
+	trait = ambitious
+	trait = brave
+	trait = diligent
+	trait = education_martial_4
+	1270.1.2 = {
+		birth = "1270.1.2"
+	}
+	1287.1.2 = {
+		add_spouse = 473501
+	}
+	1295.1.2 = {
+		add_spouse = 473502
+	}
+	1341.5.2 = {
+		death = "1341.5.2"
+	}
+}
+
+473502 = {
+	name = "Olga" # femme de Gediminas de Lituanie
+	dna = olga_of_lithuania
+	female = yes
+	religion = "orthodox"
+	culture = "russian"
+	1275.1.2 = {
+		birth = "1275.1.2"
+	}
+	1344.1.2 = {
+		death = "1344.1.2"
+	}
+}
+
+471500 = {
+	name = "Kazimierz" # Kazimierz III de Pologne
+	dna = lis_lion_casimir_iii_le_grand
+	dynasty = 699
+	martial = 7
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 9
+	religion = "catholic"
+	culture = "polish"
+	trait = brave
+	trait = just
+	trait = patient
+	trait = intellect_good_3
+	trait = education_stewardship_4
+	1310.4.30 = {
+		birth = "1310.4.30"
+		give_nickname = "nick_the_great"
+	}
+	1325.1.2 = {
+		add_spouse = 471503
+	}
+	1370.11.5 = {
+		death = "1370.11.5"
+	}
+}
+
+# ═══ Épouses d'Algirdas (ID libres, pas de collision vanilla) ═══
+
+473518 = {
+	# Uliana de Tver, seconde épouse d'Algirdas — mère de Skirgaila. Lui succède à Vitebsk (infobox en.wikipedia "Successor: Uliana Alexandrovna of Tver").
+	name = "Uliana"
+	dynasty = 0
+	religion = "orthodox"
+	culture = "russian"
+	female = yes
+	1330.1.1 = {
+		birth = "1330.1.1"
+	}
+	1391.1.1 = {
+		death = "1391.1.1"
+	}
+}
+
+473519 = {
+	# Maria de Vitebsk, première épouse d'Algirdas — mère de Vladimir.
+	name = "Maria"
+	dynasty = 0
+	religion = "orthodox"
+	culture = "russian"
+	female = yes
+	1300.1.1 = {
+		birth = "1300.1.1"
+	}
+	1346.1.1 = {
+		death = "1346.1.1"
+	}
+}
+
+# ═══ Fils d'Algirdas / Karijotas (renumérotés pour éviter la collision vanilla) ═══
+
+473520 = {
+	# Skirgaila (Casimir), fils d'Algirdas et d'Uliana de Tver — prend Polotsk à Andrei en 1387, régent de Lituanie 1386-1392, prince de Kiev 1395-1397. Converti orthodoxe après la mort de son père (1377). Mort le 11 janvier 1397 à Kiev (en.wikipedia — l'infobox indique par erreur "8 janvier", le corps de l'article précise "11 janvier", retenu ici).
+	# ID original du fichier fourni : 473514 (collision vanilla avec "Dmitriy", fils d'Algirdas+Maria-473512) — renuméroté 473520.
+	name = "Skirgaila"
+	dynasty = 11
+	father = 473506
+	mother = 473518 #Uliana de Tver — corrigé (le fichier fourni indiquait par erreur 473502, l'épouse de Gediminas et non celle d'Algirdas)
+	martial = 6
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 5
+	religion = "baltic_pagan"
+	culture = "lithuanian"
+	trait = ambitious
+	1354.1.1 = {
+		birth = "1354.1.1"
+	}
+	1377.1.1 = {
+		religion = "catholic"
+	}
+	1397.1.11 = {
+		death = "1397.1.11"
+	}
+}
+
+473521 = {
+	# Teodoras Karijotaitis (Fedir/Theodor Koriatovych), fils de Karijotas — hérite de Navahrudak à la mort de son père (~1358-1363), plus tard prince de toute la Podolie, puis de Mukachevo (Hongrie) après 1392. Religion non documentée avec certitude, orthodoxe retenu par hypothèse (contexte ruthène). Naissance ~1339 (familypedia), mort 1414 (bien documentée).
+	# ID original du fichier fourni : 473515 (collision vanilla avec "Konstantin", fils d'Algirdas+Maria-473512) — renuméroté 473521.
+	name = "Teodoras"
+	dynasty = 11
+	father = 473509
+	martial = 6
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 5
+	religion = "orthodox"
+	culture = "lithuanian"
+	1339.1.1 = {
+		birth = "1339.1.1"
+	}
+	1414.1.1 = {
+		death = "1414.1.1"
+	}
+}
+
+473522 = {
+	# Vladimir Olgerdovich, fils d'Algirdas et de Maria de Vitebsk — prince de Kiev 1362-1395 (perd Kiev au profit de Skirgaila en 1395), puis prince de Slutsk et Kopyl. Ancêtre des princes Olelkovich-Slutski. Mort après octobre 1398 (geni.com/Grand Dukes of Lithuania project) — fixée ici au 1398.10.1 par convention, à ajuster si tu as une date précise. Naissance non documentée, ~1340 est une estimation.
+	# ID original du fichier fourni : 473517 (collision vanilla avec "Yefimia", épouse de Liubartas/473510 dès 1325 dans le vanilla) — renuméroté 473522.
+	name = "Vladimir"
+	dynasty = 11
+	father = 473506
+	mother = 473519 #Maria de Vitebsk — corrigé (le fichier fourni indiquait par erreur 473502, l'épouse de Gediminas et non celle d'Algirdas)
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 6
+	religion = "orthodox"
+	culture = "lithuanian"
+	trait = zealous
+	1340.1.1 = {
+		birth = "1340.1.1"
+	}
+	1398.10.1 = {
+		death = "1398.10.1"
+	}
+}
+
+# ═══ Petit-fils de Gediminas, sans équivalent vanilla ═══
+
+473523 = {
+	# Mikhail Narimantaitis, fils de Narimantas/Gleb (473504, personnage vanilla) et de Maria
+	# (473511, épouse vanilla de Narimantas, mariage documenté en 1332) — "prince de Turov et
+	# Pinsk" (Nobility of Medieval Lithuania), succède à son père à Pinsk en 1348. Aucune date de
+	# naissance ou de mort précise trouvée dans les sources consultées ; naissance estimée à 1333
+	# (juste après le mariage documenté de ses parents), ce qui en fait un héritier de 15 ans en
+	# 1348 — plausible mais à corriger si tu as une source plus précise. Pas de date de mort
+	# documentée : à compléter.
+	name = "Mikhail"
+	dynasty = 11
+	father = 473504
+	mother = 473511
+	martial = 5
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 5
+	religion = "orthodox"
+	culture = "lithuanian"
+	1333.1.1 = {
+		birth = "1333.1.1"
+	}
+}
+
+# ═══════════════════════════════════════════════════════════════
+# LIGNÉE DES PRINCES DE PINSK (maison de Turov-Pinsk, branche des
+# Iziaslavitchi) — succession d'après la liste princière de Pinsk
+# (familypedia.fandom.com/wiki/Principality_of_Pinsk, elle-même sourcée sur
+# les généalogies rurikides) :
+#   Yaroslav Yuryevich (v.1184, = 125033, déjà vanilla, premier prince
+#   attesté de Pinsk dès 1174) -> Vladimir (v.1228) -> ... -> Dimitri
+#   Vladimirovich (attesté 1292) -> Yuri Dmitrievich, dernier prince
+#   rurikide de Pinsk avant l'arrivée lituanienne. La source date la prise
+#   de Pinsk par Gediminas de 1320 ; ce pack l'avance à 1306 sur demande
+#   explicite du concepteur — Yuri Dmitrievich reste titulaire local, simple
+#   vassal du Grand-duché à partir de cette date, jusqu'à ce que Jaunutis
+#   (473507, fils de Gediminas, né 1315) lui succède en 1335 (à sa majorité).
+# Personnages collatéraux listés par la source mais non modélisés ici
+# (Rostislav Vladimirovitch, Fiodor Vladimirovitch v.1262, un second Yuri
+# Vladimirovitch v.1292, une seconde Yaroslav Yuryevich après 1292) : ce
+# sont des branches parallèles sans rôle dans la lignée directe menant à
+# Yuri Dmitrievich, non nécessaires pour cette succession.
+# ═══════════════════════════════════════════════════════════════
+
+1227800 = {
+	name = "Vladimir"
+	dynasty_house = house_rurikid_iziaslavich
+	religion = "orthodox"
+	culture = "russian"
+	father = 125033 #Yaroslav Yuryevich, premier prince attesté de Pinsk (1174-1189), personnage vanilla
+	1175.1.2 = {
+		birth = "1175.1.2"
+	}
+	1250.1.2 = {
+		death = "1250.1.2"
+	}
+}
+
+1227801 = {
+	name = "Dimitri"
+	dynasty_house = house_rurikid_iziaslavich
+	religion = "orthodox"
+	culture = "russian"
+	father = 1227800 #Vladimir, prince de Pinsk (attesté v.1228)
+	1235.1.2 = {
+		birth = "1235.1.2"
+	}
+	1300.1.2 = {
+		death = "1300.1.2"
+	}
+}
+
+1227802 = {
+	name = "Yuri"
+	dynasty_house = house_rurikid_iziaslavich
+	religion = "orthodox"
+	culture = "russian"
+	father = 1227801 #Dimitri Vladimirovitch, prince de Pinsk (attesté 1292)
+	1270.1.2 = {
+		birth = "1270.1.2"
+	}
+	1335.4.12 = {
+		death = "1335.4.12" #mort/déposition marquant la passation du duché à Jaunutis (473507),
+		                     # voir d_pinsk dans 00_lis_lion_lithuania.txt
+	}
+}

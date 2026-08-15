@@ -1,0 +1,117 @@
+﻿# Le Lis et le Lion — Palatinat du Rhin (d_palatinate_rhin)
+#
+# Nouveau duché créé le 3 juin 1085 par le personnage 168240.
+# Titre "Palatin" (Pfalzgraf) via le flag duchy_palatinate_flag sur le titre.
+# Capital : b_speyer (via c_speyer).
+# Comtés de jure : c_saarbrucken, c_kaiserslautern, c_speyer, c_worms,
+#                  c_vaihingen, c_durne, c_klingenberg.
+#
+# Succession identique à c_klingenberg à partir de 1085, avec 168240 comme
+# premier titulaire au moment de la création du titre, puis 7586 reprend
+# au 1085.9.20 (même date que dans c_klingenberg).
+#
+# De jure : rattaché au royaume de Germanie (k_east_francia, id 1002), lui-même
+# de jure sous e_hre (Saint-Empire) — hiérarchie correcte, cohérent avec les comtés.
+
+d_palatinate_rhin = {
+	1085.6.3 = {
+		holder = 168240
+		liege = e_hre
+		de_jure_liege = k_east_francia
+		government = feudal_government
+		add_title_flag = duchy_palatinate_flag
+	}
+	1085.9.20 = {
+		holder = 7586
+	}
+	1095.4.27 = {
+		holder = 7587
+	}
+	1113.9.3 = {
+		holder = 7592
+	}
+	1131.2.6 = {
+		holder = 7588
+	}
+	1140.2.13 = {
+		holder = 212540
+	}
+	1141.10.18 = {
+		holder = 7599
+	}
+	1156.10.2 = {
+		holder = 212490
+	}
+	1171.8.11 = {
+		holder = 206800
+	}
+	1195.11.8 = {
+		holder = 212605
+	}
+	1212.1.1 = {
+		holder = 7401
+	}
+	1214.4.25 = {
+		holder = 212950
+	}
+	1231.9.15 = {
+		holder = 462756
+	}
+	1253.11.29 = {
+		holder = 462750
+	}
+	1294.2.2 = {
+		holder = 462736
+	}
+	1317.1.1 = {
+		holder = 462740
+	}
+	1323.8.1 = {
+		holder = 462749
+	}
+}
+
+# ── De jure : les 7 comtés passent sous d_palatinate_rhin ────────────────────────
+# (libérés de d_west_franconia et d_upper_lorraine à la date de création du Palatinat)
+
+c_saarbrucken = {
+	1085.6.3 = {
+		de_jure_liege = d_palatinate_rhin
+	}
+}
+
+c_kaiserslautern = {
+	1085.6.3 = {
+		de_jure_liege = d_palatinate_rhin
+	}
+}
+
+c_speyer = {
+	1085.6.3 = {
+		de_jure_liege = d_palatinate_rhin
+	}
+}
+
+c_worms = {
+	1085.6.3 = {
+		de_jure_liege = d_palatinate_rhin
+	}
+}
+
+c_vaihingen = {
+	1085.6.3 = {
+		de_jure_liege = d_palatinate_rhin
+	}
+}
+
+c_durne = {
+	1085.6.3 = {
+		de_jure_liege = d_palatinate_rhin
+	}
+}
+
+c_klingenberg = {
+	1085.6.3 = {
+		de_jure_liege = d_palatinate_rhin
+	}
+}

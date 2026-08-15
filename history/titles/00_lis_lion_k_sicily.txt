@@ -1,0 +1,98 @@
+﻿# Le Lis et le Lion — Royaume de Sicile (k_sicily)
+# En vanilla, k_sicily.txt fixe holder = 0 au 1302.8.31 (Traité de Caltabellotta), détruisant
+# de fait le titre royal de l'île au profit du seul k_trinacria — un titre que l'on considère
+# comme une aberration et qu'on n'utilise pas ici. On annule cette destruction : le royaume de
+# Sicile insulaire continue d'exister sous la maison d'Aragon-Sicile, conquis par Jaume II
+# (1302), puis son fils Federigo II (1327), puis son petit-fils Petru II (1337).
+#
+# IMPORTANT : on utilise 1302.9.1 (le lendemain du holder=0 vanilla, daté 1302.8.31) plutôt
+# que la même date exacte, pour éviter tout état transitoire ambigu ("personnage fantôme"
+# avant le rattachement) selon l'ordre de traitement des deux fichiers à date strictement
+# égale.
+#
+# CORRECTION STRUCTURELLE : dans landed_titles, k_trinacria est physiquement imbriqué sous
+# e_byzantium — c'est ce qui fait remonter le duché et les comtés de l'île vers l'empereur
+# byzantin par de_jure. On recâble le de_jure du duché et de tous ses comtés vers k_sicily
+# (qui, lui, a déjà nativement de_jure_liege = e_italy — donc la chaîne demandée
+# d_sicily → k_sicily → e_italy est respectée), et on retire toute référence à k_trinacria.
+
+k_sicily = {
+	1302.9.1 = {
+		holder = 460560 # Jaume (II), conquérant du royaume après le traité de Caltabellotta
+		government = feudal_government
+		effect = {
+			holder = {
+				change_government = feudal_government
+			}
+			# Le blason dynamique (k_sicily_barcelona, cf. dynamic_definitions) dépend de
+			# current_date >= 1302.9.1. Le jeu ne réévalue les blasons dynamiques que sur des
+			# évènements structurels (changement de titulaire, de culture, de foi) — jamais
+			# sur le simple passage du temps. Si la partie démarre avant cette date, rien ne
+			# déclencherait la bascule au moment où elle est franchie en cours de jeu ; on
+			# l'appelle donc explicitement ici, exécuté en direct quand l'historique atteint
+			# cette date (que ce soit en rejouant l'historique au lancement ou en cours de
+			# partie si le bookmark démarre avant 1302.9.1).
+			update_dynamic_coa = yes
+		}
+	}
+	1327.11.5 = {
+		holder = 461500 # Federigo II
+		effect = {
+			holder = {
+				change_government = feudal_government
+			}
+		}
+	}
+	1337.6.25 = {
+		holder = 461502 # Petru (II)
+		effect = {
+			holder = {
+				change_government = feudal_government
+			}
+		}
+	}
+}
+
+d_sicily = {
+	1302.9.1 = {
+		de_jure_liege = k_sicily
+		holder = 460560
+		liege = k_sicily
+		government = feudal_government
+	}
+}
+
+c_palermo = {
+	1302.9.1 = {
+		liege = k_sicily
+		government = feudal_government
+	}
+}
+
+c_siracusa = {
+	1302.9.1 = {
+		liege = k_sicily
+		government = feudal_government
+	}
+}
+
+c_malta = {
+	1302.9.1 = {
+		liege = k_sicily
+		government = feudal_government
+	}
+}
+
+c_agrigento = {
+	1302.9.1 = {
+		liege = k_sicily
+		government = feudal_government
+	}
+}
+
+c_messina = {
+	1302.9.1 = {
+		liege = k_sicily
+		government = feudal_government
+	}
+}
