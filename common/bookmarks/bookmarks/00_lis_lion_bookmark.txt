@@ -1,0 +1,610 @@
+﻿# Le Lis et le Lion — Nouveaux bookmarks du "Siècle des calamités"
+#
+# Ce fichier définit trois nouveaux points d'entrée dans la même catégorie que le
+# bookmark 1337 (bm_guerre_cent_ans_1337). Tous partagent le groupe :
+#   group = bookmark_group_siecle_calamites
+#
+# Le bookmark 1337 a été mis à jour pour pointer vers ce même groupe.
+#
+# ═══════════════════════════════════════════════════════════════════════════════
+# 1307 — LA CHUTE DU TEMPLE
+# ═══════════════════════════════════════════════════════════════════════════════
+# Le 13 octobre 1307, Philippe IV le Bel fait arrêter tous les Templiers de France
+# simultanément. En quelques années, il obtiendra la dissolution de l'Ordre (1312)
+# et l'exécution de son Grand Maître Jacques de Molay (1314).
+# Personnages jouables : Philippe IV de France (roi), Édouard II d'Angleterre,
+#   Clément V (pape à Avignon), Ferdinand IV de Castille.
+
+bm_chute_du_temple_1307 = {
+	group = bookmark_group_siecle_calamites
+	start_date = 1307.10.13
+	is_playable = yes
+	recommended = no
+
+	desc = bm_chute_du_temple_1307_desc
+
+	weight = { value = 80 }
+
+	# Philippe IV le Bel — Roi de France
+	# History_id 455526 (vanilla) : né 1268, roi depuis 1285.
+	character = {
+		name = "bm_char_philippe_iv"
+		dynasty = 743              # Robertine/Capet (maison directe)
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 455526
+		birth = 1268.6.8           # CORRIGÉ : coquille, fiche vanilla = 1268.6.8 (pas 1268.4.8)
+		title = k_france
+		government = feudal_government
+		culture = french
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 200 360 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_philippe_iv_desc
+	}
+
+	# Édouard II d'Angleterre
+	# History_id 454524 (vanilla) : né 1284, roi depuis 1307.
+	character = {
+		name = "bm_char_edward_ii"
+		dynasty_house = house_plantagenet   # Plantagenêt
+		dynasty_splendor_level = 3
+		type = male
+		history_id = 454510        # CORRIGÉ : 454524 pointait vers "Blanche" (perso féminin français) ;
+		                            # 454510 est le vrai Édouard II (né 1284.4.25, père d'Édouard III/454500)
+		birth = 1284.4.25
+		title = k_england
+		government = feudal_government
+		culture = english
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 450 195 }
+
+		animation = thinking
+
+		ruler_desc = bm_char_edward_ii_desc
+	}
+
+	# Cangrande I della Scala — Seigneur de Vérone (co-règne avec son frère Alboino
+	# dès 1308, seul maître de la ville à partir de 1311)
+	# History_id 70805 (vanilla) : né 1285 (vanilla ; naissance réelle le 9 mars 1291
+	# selon les sources historiques), mort le 22.7.1329 — dates cohérentes avec la
+	# fiche vanilla. Déjà actif comme condottiere au service de son frère dès 1306
+	# (prise de Ficarolo et Bergantino), d'où le trait ci-dessous.
+	character = {
+		name = "bm_char_cangrande"
+		dynasty = 13032           # della Scala (Scaligeri)
+		dynasty_splendor_level = 1
+		type = male
+		history_id = 70805
+		birth = 1285.1.1
+		title = d_verona
+		government = feudal_government
+		culture = italian
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 660 360 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_cangrande_desc
+	}
+
+	# Siegfried von Feuchtwangen — Grand Maître de l'Ordre Teutonique
+	# History_id 30414 (vanilla) : né 1266, Grand Maître depuis 1303, mort le 3.5.1311.
+	character = {
+		name = "bm_char_siegfried"
+		dynasty = 7144              # von Feuchtwangen
+		dynasty_splendor_level = 1
+		type = male
+		history_id = 30414
+		birth = 1266.1.1
+		title = d_teutonic_order
+		government = theocracy_government
+		culture = franconian
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 880 170 }
+
+		animation = thinking
+
+		ruler_desc = bm_char_siegfried_desc
+	}
+
+	# Andronikos II Palaiologos — Empereur byzantin
+	# History_id 465521 (vanilla) : né 1259, empereur depuis 1282, mort 1332.
+	character = {
+		name = "bm_char_andronikos_ii"
+		dynasty = 48                # Palaiologos
+		dynasty_splendor_level = 3
+		type = male
+		history_id = 465521
+		birth = 1259.3.25
+		title = e_byzantium
+		government = feudal_government
+		culture = greek
+		religion = orthodox
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 595 760 }
+
+		animation = personality_cautious
+
+		ruler_desc = bm_char_andronikos_ii_desc
+	}
+
+	# Osman Ier — Fondateur de la dynastie ottomane
+	# History_id 476501 (vanilla) : né 1258, mort 1324.
+	character = {
+		name = "bm_char_osman"
+		dynasty = 7                 # Ottoman
+		dynasty_splendor_level = 1
+		type = male
+		history_id = 476501
+		birth = 1258.1.1
+		title = k_nikaea
+		government = feudal_government
+		culture = turkish
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 1140 560 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_osman_desc
+	}
+
+	# Fernando IV de Castille, dit « el Emplazado » — Roi de Castille
+	# History_id 457520 (vanilla) : né 1285, roi depuis 1295, mort 1312.
+	# NOTE : la fiche vanilla porte le nom "Fernando" (AKA Fernando IV) ; le titre
+	# de Castille lui appartient dès 1295, donc valide pour l'entrée en jeu 1307.
+	character = {
+		name = "bm_char_fernando_iv"
+		dynasty = 681                # même dynastie que son fils Alphonse XI (bm_char_alphonse_xi)
+		dynasty_splendor_level = 2
+		type = male
+		history_id = 457520
+		birth = 1285.12.6
+		title = k_castille
+		government = feudal_government
+		culture = castilian
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 100 604 }
+
+		animation = personality_cautious
+
+		ruler_desc = bm_char_fernando_iv_desc
+	}
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 1337 — LE LYS ET LE LION
+# ═══════════════════════════════════════════════════════════════════════════════
+
+
+bm_guerre_cent_ans_1337 = {
+	group = bookmark_group_siecle_calamites
+	start_date = 1337.11.1
+	is_playable = yes
+	recommended = yes
+
+	desc = bm_guerre_cent_ans_1337_desc
+
+	weight = { value = 100 }
+
+	# Édouard III d'Angleterre - ID vanilla: 454500
+	character = {
+		name = "bm_char_edward_iii"
+		dynasty_house = house_plantagenet # Plantagenêt
+		dynasty_splendor_level = 3
+		type = male
+		history_id = 454500
+		birth = 1312.11.13
+		title = k_england
+		government = feudal_government
+		culture = english
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 450 195 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_edward_iii_desc
+	}
+
+	# Philippe VI de France - ID vanilla: 455500
+	# CORRIGÉ : utilise dynasty_house = house_valois (cadette des Robertiens, 743) au lieu de
+	# dynasty = 101, qui entrait en contradiction avec l'historique du personnage
+	# (history/characters/00_lis_lion_valois.txt l'assigne à house_valois).
+	character = {
+		name = "bm_char_philippe_vi"
+		dynasty_house = house_valois
+		dynasty_splendor_level = 3
+		type = male
+		history_id = 455500
+		birth = 1293.1.2
+		title = k_france
+		government = feudal_government
+		culture = french
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 200 360 }
+
+		animation = war_over_win
+
+		ruler_desc = bm_char_philippe_vi_desc
+	}
+
+	# Gediminas — Grand-duc de Lituanie
+	# History_id 473500 (vanilla) : né 1270, mort 1341.
+	character = {
+		name = "bm_char_gediminas"
+		dynasty = 11                # Gediminaičiai
+		dynasty_splendor_level = 2
+		type = male
+		history_id = 473500
+		birth = 1270.1.2
+		title = k_lithuania
+		government = feudal_government
+		culture = lithuanian
+		religion = baltic_pagan
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 980 190 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_gediminas_desc
+	}
+
+	# Orhan — Sultan ottoman
+	# History_id 476500 (vanilla) : né 1281, mort 1361.
+	character = {
+		name = "bm_char_orhan"
+		dynasty = 7                 # Ottoman
+		dynasty_splendor_level = 2
+		type = male
+		history_id = 476500
+		birth = 1281.1.1
+		title = k_nikaea
+		government = feudal_government
+		culture = turkish
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 1140 560 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_orhan_desc
+	}
+
+	# Alphonse XI de Castille - ID vanilla: 457500
+	character = {
+		name = "bm_char_alphonse_xi"
+		dynasty = 681 # Note : ce numéro pointe bien sur le personnage vanilla Alfonso XI ;
+		              # son nom de dynastie affiché viendra de la localisation dynn_Ivrea du
+		              # jeu de base (à corriger plus tard si besoin, voir héraldique).
+		dynasty_splendor_level = 2
+		type = male
+		history_id = 457500
+		birth = 1311.8.13
+		title = k_castille
+		government = feudal_government
+		culture = castilian
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 100 604 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_alphonse_xi_desc
+	}
+
+	# Robert d'Anjou, roi de Naples - ID vanilla: 461700
+	# CORRIGÉ : utilise dynasty_house = house_anjou_capet (cadette des Robertiens, 743) au lieu
+	# de dynasty = 81, qui entrait en contradiction avec l'historique du personnage
+	# (history/characters/00_lis_lion_anjou.txt l'assigne à house_anjou_capet).
+	character = {
+		name = "bm_char_robert_naples"
+		dynasty_house = house_anjou_capet
+		dynasty_splendor_level = 3
+		type = male
+		history_id = 461700
+		birth = 1277.1.2
+		title = k_naples
+		government = feudal_government
+		culture = french
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 500 710 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_robert_naples_desc
+	}
+
+	# David II — Roi d'Écosse
+	# History_id 453500 (vanilla) : né 1324, roi depuis 1329.
+	character = {
+		name = "bm_char_david_ii"
+		dynasty = 3123               # Bruce
+		dynasty_splendor_level = 1
+		type = male
+		history_id = 453500
+		birth = 1324.1.2
+		title = k_scotland
+		government = feudal_government
+		culture = scottish
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 380 90 }
+
+		animation = personality_cautious
+
+		ruler_desc = bm_char_david_ii_desc
+	}
+}
+
+
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 1348 — LA MORT NOIRE
+# ═══════════════════════════════════════════════════════════════════════════════
+# La Peste Noire atteint la France et l'Angleterre au printemps 1348, après avoir
+# ravagé l'Italie et la Provence fin 1347. Elle emportera entre un tiers et la
+# moitié de la population européenne. La Guerre de Cent Ans marque une pause.
+# Personnages jouables : Philippe VI de France (encore roi, †1350),
+#   Édouard III d'Angleterre, Casimir III de Pologne (dit le Grand),
+#   Charles IV de Luxembourg (roi de Bohême depuis 1346, futur Empereur).
+
+bm_mort_noire_1348 = {
+	group = bookmark_group_siecle_calamites
+	start_date = 1348.4.1
+	is_playable = yes
+	recommended = no
+
+	desc = bm_mort_noire_1348_desc
+
+	weight = { value = 75 }
+
+	# Philippe VI de Valois — Roi de France
+	# Même personnage que dans bm_guerre_cent_ans_1337.
+	character = {
+		name = "bm_char_philippe_vi_1348"
+		dynasty_house = house_valois
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 455500
+		birth = 1293.1.2
+		title = k_france
+		government = feudal_government
+		culture = french
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 200 554 }
+
+		animation = personality_cautious
+
+		ruler_desc = bm_char_philippe_vi_1348_desc
+	}
+
+	# Édouard III d'Angleterre
+	character = {
+		name = "bm_char_edward_iii_1348"
+		dynasty_house = house_plantagenet
+		dynasty_splendor_level = 3
+		type = male
+		history_id = 454500
+		birth = 1312.11.13
+		title = k_england
+		government = feudal_government
+		culture = english
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 470 180 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_edward_iii_1348_desc
+	}
+
+	# Stefan Uroš IV Dušan — Roi (puis Empereur des Serbes et des Grecs) de Serbie
+	# History_id 468500 (vanilla) : né 1308, mort 1355.
+	character = {
+		name = "bm_char_stefan_dusan"
+		dynasty = 184                # Nemanjić
+		dynasty_splendor_level = 2
+		type = male
+		history_id = 468500
+		birth = 1308.1.1
+		title = k_serbia
+		government = feudal_government
+		culture = serbian
+		religion = orthodox
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 850 640 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_stefan_dusan_desc
+	}
+
+	# Louis Ier d'Anjou — Roi de Hongrie
+	# History_id 469510 (vanilla) : né 1326, roi depuis 1342.
+	character = {
+		name = "bm_char_louis_hongrie"
+		dynasty_house = house_anjou_capet        # Anjou
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 469510
+		birth = 1326.1.2
+		title = k_hungary
+		government = feudal_government
+		culture = french
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 880 250 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_louis_hongrie_desc
+	}
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 1356 — BULLA AUREA
+# ═══════════════════════════════════════════════════════════════════════════════
+# Double événement fondateur de 1356 :
+# — 19 septembre : Bataille de Poitiers. Le Prince Noir capture Jean II de France.
+#   La Guerre de Cent Ans reprend de plus belle ; la France plonge dans la crise.
+# — Janvier 1356 : Charles IV promulgue la Bulle d'Or, charte constitutionnelle
+#   du Saint-Empire, qui fixe les droits des sept Électeurs pour des siècles.
+# Personnages jouables : Jean II de France (capturé, mais titre toujours actif),
+#   Édouard III d'Angleterre, Charles IV (maintenant Empereur), Pierre Ier de Castille.
+
+bm_bulla_aurea_1356 = {
+	group = bookmark_group_siecle_calamites
+	start_date = 1356.9.19
+	is_playable = yes
+	recommended = no
+	desc = bm_bulla_aurea_1356_desc
+
+	weight = { value = 90 }
+
+	# Charles IV — Empereur du Saint-Empire, Roi de Bohême
+	# Couronné Empereur en 1355. Promulgue la Bulle d'Or en 1356.
+	character = {
+		name = "bm_char_charles_iv_1356"
+		dynasty_house = house_luxemburg  # CORRIGÉ : dynasty 108 = maison islandaise "Island" en vanilla,
+		                                  # pas Luxembourg. house_luxemburg est la maison réellement
+		                                  # utilisée par la fiche vanilla 462614 elle-même.
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 462614
+		birth = 1316.5.14
+		title = e_hre
+		government = feudal_government
+		culture = franconian
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 440 250 }
+
+		animation = thinking
+
+		ruler_desc = bm_char_charles_iv_1356_desc
+	}
+
+	# Albert II de Habsbourg — Duc d'Autriche
+	# CORRIGÉ : remplace Rodolphe IV (son fils), qui n'hérite du duché qu'en 1358 —
+	# deux ans après le point de départ de ce bookmark (1356.9.19). Albert II est le
+	# duc d'Autriche historiquement en exercice à cette date.
+	# History_id 462020 (vanilla) : né 1298, mort 1358.
+	character = {
+		name = "bm_char_albert_ii"
+		dynasty_house = house_habsburg
+		dynasty_splendor_level = 3
+		type = male
+		history_id = 462020
+		birth = 1298.12.12
+		title = d_osterreich
+		government = feudal_government
+		culture = swabian
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 720 450 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_albert_ii_desc
+	}
+
+	# Le dauphin Charles — futur Charles V, régent du royaume
+	# History_id 455499 (vanilla) : né 1337, dauphin de Viennois. Joue sans le
+	# titre de roi (Jean II est capturé mais reste théoriquement roi) : le
+	# titre de départ est donc le Dauphiné, pas la couronne de France.
+	character = {
+		name = "bm_char_dauphin_charles"
+		dynasty_house = house_valois
+		dynasty_splendor_level = 4
+		type = male
+		history_id = 455499
+		birth = 1337.1.2
+		title = d_dauphine
+		government = feudal_government
+		culture = french
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 340 630 }
+
+		animation = personality_cautious
+
+		ruler_desc = bm_char_dauphin_charles_desc
+	}
+
+	# Édouard, le Prince Noir — Prince de Galles, vainqueur de Poitiers
+	# History_id 454501 (vanilla) : né 1330, mort 1376.
+	character = {
+		name = "bm_char_prince_noir"
+		dynasty_house = house_plantagenet
+		dynasty_splendor_level = 3
+		type = male
+		history_id = 454501
+		birth = 1330.6.15
+		title = k_wales
+		government = feudal_government
+		culture = english
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 60 470 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_prince_noir_desc
+	}
+
+	# Magnus IV Eriksson — Roi de Suède (et de Norvège)
+	# History_id 450500 (vanilla) : né 1316, mort 1374.
+	character = {
+		name = "bm_char_magnus_iv"
+		dynasty = 155                # Bjälbo
+		dynasty_splendor_level = 2
+		type = male
+		history_id = 450500
+		birth = 1316.4.20
+		title = k_sweden
+		government = feudal_government
+		culture = swedish
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 610 100 }
+
+		animation = thinking
+
+		ruler_desc = bm_char_magnus_iv_desc
+	}
+
+	# Casimir III le Grand — Roi de Pologne (déplacé du bookmark 1348)
+	# History_id 471500 (vanilla) : né 1310, roi depuis 1333.
+	character = {
+		name = "bm_char_casimir_iii_1356"
+		dynasty = 699              # CORRIGÉ : dynasty 155 = maison suédoise Bjälbo en vanilla, pas Piast.
+		                            # 699 est la vraie dynastie Piast (utilisée par la fiche 471500 elle-même)
+		dynasty_splendor_level = 3
+		type = male
+		history_id = 471500
+		birth = 1310.4.30
+		title = k_poland_lal
+		government = feudal_government
+		culture = polish
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 880 180 }
+
+		animation = personality_bold
+
+		ruler_desc = bm_char_casimir_iii_1356_desc
+	}
+}

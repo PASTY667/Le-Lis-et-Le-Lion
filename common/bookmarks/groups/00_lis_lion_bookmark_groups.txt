@@ -1,0 +1,4 @@
+﻿bookmark_group_siecle_calamites = {
+	default_start_date = 1337.11.1     # Bookmark principal : Le Lys et le Lion
+}
+

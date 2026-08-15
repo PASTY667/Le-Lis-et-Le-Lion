@@ -1,0 +1,62 @@
+﻿# Le Lis et le Lion — Hooks de lancement de partie
+#
+# ATTENTION : ne JAMAIS mettre "effect = {}" directement dans on_game_start ou
+# on_game_start_after_lobby ici. common/on_action/game_start.txt (vanilla) gère bien plus
+# que de simples filets de sécurité : c'est aussi lui qui génère les artéfacts de départ
+# (couronnes, régalia). Le champ "effect" d'un on_action n'est pas fusionné entre
+# fichiers : un seul survit (le dernier chargé), donc écraser "effect" ici écraserait TOUT
+# le contenu de game_start.txt, couronnes de départ comprises (confirmé empiriquement).
+#
+# Deux méthodes documentées par Paradox pour ajouter du contenu à un on_action existant
+# sans l'écraser :
+#   1. "events = {}"      -> testé, ne s'est pas déclenché automatiquement chez nous
+#      malgré une chaîne d'évènements validée manuellement à la console (v23_3_6/3_7).
+#   2. "on_actions = {}"  -> liste d'AUTRES on_actions à appeler en plus, mécanisme
+#      différent de "events". C'est celui qu'on utilise ici : notre propre on_action, à
+#      nous, sans aucun risque de collision (donc sans conflit LIOS possible sur SON
+#      "effect" à lui), simplement ajouté à la liste de on_game_start/
+#      on_game_start_after_lobby.
+on_game_start = {
+	on_actions = {
+		lis_lion_on_game_start
+	}
+}
+
+on_game_start_after_lobby = {
+	on_actions = {
+		lis_lion_on_game_start_after_lobby
+	}
+}
+
+# Notre propre on_action, indépendant : aucun autre fichier (vanilla ou mod) ne définit
+# cette clé, donc pas de conflit LIOS possible sur son "effect".
+lis_lion_on_game_start = {
+	effect = {
+		lis_lion_game_start_effect = yes
+	}
+}
+
+lis_lion_on_game_start_after_lobby = {
+	effect = {
+		lis_lion_dynamic_coa_effect = yes
+
+		# Filet de sécurité supplémentaire : d_brittany_dreux et k_england_france_lal
+		# peuvent être écrasés par une passe interne du moteur qui suit l'appel
+		# ci-dessus pendant la mise en place de la partie (cf. commentaires détaillés
+		# dans events/00_lis_lion_coa_refresh_events.txt). On reforce donc la mise à
+		# jour une seconde fois, quelques jours plus tard, une fois la partie
+		# effectivement lancée.
+		if = {
+			limit = { exists = title:d_brittany.holder }
+			title:d_brittany.holder = {
+				trigger_event = { id = lis_lion_coa.0001 days = 3 }
+			}
+		}
+		if = {
+			limit = { exists = title:k_england.holder }
+			title:k_england.holder = {
+				trigger_event = { id = lis_lion_coa.0002 days = 3 }
+			}
+		}
+	}
+}

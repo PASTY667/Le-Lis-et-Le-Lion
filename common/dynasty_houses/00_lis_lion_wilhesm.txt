@@ -1,0 +1,10 @@
+﻿# Le Lis et le Lion — Maison Wilhesm
+# Préfixe dynnp_von : le jeu affiche automatiquement "von Wilhesm"
+# (comme house_wittelsbach → "von Wittelsbach", house_habsburg → "von Habsburg").
+# La maison s'appelle juste "Wilhesm" en interne, le "von" est géré par le prefix.
+
+house_wilhesm = {
+	prefix = "dynnp_von"
+	name = "dynn_Wilhesm"
+	dynasty = wilhesm_dynasty
+}

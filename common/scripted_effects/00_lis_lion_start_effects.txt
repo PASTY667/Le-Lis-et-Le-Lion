@@ -1,0 +1,130 @@
+﻿# Le Lis et le Lion — Effects de lancement de partie, isolés en scripted_effect nommés.
+#
+# Intérêt : chacun de ces effects peut être testé INDÉPENDAMMENT du reste de la chaîne
+# (on_action -> events -> immediate) directement depuis la console en jeu (mode debug) :
+#
+#     effect lis_lion_game_start_effect = yes
+#     effect lis_lion_dynamic_coa_effect = yes
+#
+# Si l'appel console fonctionne mais pas le déclenchement automatique, le problème est
+# dans la chaîne de déclenchement (on_action / events / on_game_start_after_lobby), pas
+# dans l'effect lui-même. Si l'appel console échoue aussi, le problème est ici.
+
+lis_lion_game_start_effect = {
+	if = {
+		limit = {
+			exists = title:k_france.holder
+			exists = title:k_navarra.holder
+			title:k_france.holder != title:k_navarra.holder
+		}
+		start_tributary_interaction_effect = {
+			TRIBUTARY = title:k_navarra.holder
+			SUZERAIN = title:k_france.holder
+		}
+	}
+	if = {
+		limit = {
+			exists = title:k_france.holder
+			exists = title:d_brittany.holder
+			title:k_france.holder != title:d_brittany.holder
+		}
+		start_tributary_interaction_effect = {
+			TRIBUTARY = title:d_brittany.holder
+			SUZERAIN = title:k_france.holder
+		}
+	}
+	# Filet de sécurité : gouvernement féodal pour la Sicile.
+	if = {
+		limit = { exists = title:k_sicily.holder }
+		title:k_sicily.holder = { change_government = feudal_government }
+	}
+	# Filet de sécurité : gouvernement administratif pour Byzance.
+	if = {
+		limit = { exists = title:e_byzantium.holder }
+		title:e_byzantium.holder = { change_government = administrative_government }
+	}
+	# Filet de sécurité : gouvernement administratif pour Thessalonique, Abydos,
+	# Éphèse et Paphlagonie.
+	if = {
+		limit = { exists = title:d_thessalonika.holder }
+		title:d_thessalonika.holder = { change_government = administrative_government }
+	}
+	if = {
+		limit = { exists = title:c_abydos.holder }
+		title:c_abydos.holder = { change_government = administrative_government }
+	}
+	if = {
+		limit = { exists = title:d_ephese.holder }
+		title:d_ephese.holder = { change_government = administrative_government }
+	}
+	if = {
+		limit = { exists = title:c_paphlagonia.holder }
+		title:c_paphlagonia.holder = { change_government = administrative_government }
+	}
+	# Filet de sécurité : modificateur backwater sur le clone titulaire de Dyrrachion.
+	if = {
+		limit = { exists = title:c_dyrrachion_lal }
+		title:c_dyrrachion_lal = { add_county_modifier = backwater_county_modifier }
+	}
+
+	# Réforme de la loi électorale du Saint-Empire (Loi d'Or / Princely Elective) :
+	# le vanilla peuple hre_elector_list au tout début de son propre "effect" dans
+	# game_start.txt (c_cologne, c_mainz, c_trier, d_bohemia, d_east_franconia,
+	# d_ostmark, d_angria), qui tourne AVANT ce bloc-ci (chaîné via on_actions,
+	# cf. 00_lis_lion_on_actions.txt).
+	# NB : d_angria n'existe plus du tout dans nos landed_titles (remplacé partout
+	# par d_angria_lal), donc son add_to_global_variable_list vanilla échoue déjà
+	# tout seul au chargement ("Failed to fetch a valid landed title 'd_angria'") —
+	# inutile (et invalide, ça ferait planter le chargement) de tenter de le retirer
+	# ici, il n'a jamais rejoint la liste. On se contente donc de retirer
+	# d_east_franconia (qui existe bien, lui) et d'ajouter nos deux remplaçants :
+	# d_palatinate_rhin (Palatinat du Rhin) et d_angria_lal (Saxe).
+	# On vide ensuite le cache hre_elector_1..7 (utilisé par la customizable_localization
+	# get_hre_elector_1..7 pour la description de la loi) et on le refait générer par
+	# hre_elector_list_save_effect (vanilla) avec la liste corrigée, pour que la tooltip
+	# affiche directement "Palatinat du Rhin" et "Saxe" au lieu de "Franconie Orientale"
+	# et "Ostfalen".
+	if = {
+		limit = { exists = title:e_hre.holder }
+		remove_list_global_variable = {
+			name = hre_elector_list
+			target = title:d_east_franconia
+		}
+		add_to_global_variable_list = {
+			name = hre_elector_list
+			target = title:d_palatinate_rhin
+		}
+		add_to_global_variable_list = {
+			name = hre_elector_list
+			target = title:d_angria_lal
+		}
+		title:e_hre = {
+			remove_variable = hre_elector_1
+			remove_variable = hre_elector_2
+			remove_variable = hre_elector_3
+			remove_variable = hre_elector_4
+			remove_variable = hre_elector_5
+			remove_variable = hre_elector_6
+			remove_variable = hre_elector_7
+		}
+		hre_elector_list_save_effect = yes
+	}
+}
+
+lis_lion_dynamic_coa_effect = {
+	if = {
+		limit = { exists = title:d_brittany.holder }
+		title:d_brittany = { update_dynamic_coa = yes }
+	}
+	if = {
+		limit = { exists = title:k_sicily.holder }
+		title:k_sicily = { update_dynamic_coa = yes }
+	}
+	if = {
+		limit = {
+			exists = title:k_england.holder
+			current_date >= 1337.10.1
+		}
+		title:k_england = { update_dynamic_coa = yes }
+	}
+}

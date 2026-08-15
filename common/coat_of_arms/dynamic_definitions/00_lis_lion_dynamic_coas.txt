@@ -1,0 +1,70 @@
+﻿# Le Lis et le Lion — blasons dynamiques
+# root = le titre (cf. _dynamic_definitions.info : "root = the title")
+# Syntaxes vérifiées dans les fichiers vanilla :
+#   - house ?= { this = house:X }  pour tester la maison d'un character
+#   - this.dynasty = dynasty:X     pour tester la dynasty d'un character
+#   - current_date >= AAAA.M.J     pour un trigger basé sur une date (valide, cf. vanilla
+#     casus_belli_types/00_event_war.txt, script_values/00_building_values.txt, etc.)
+#
+# IMPORTANT — un trigger de date seul NE SUFFIT PAS. Le jeu ne réévalue les blasons dynamiques
+# (update_dynamic_coa) que sur des évènements structurels précis (vanilla : changement de
+# titulaire, changement de culture, changement de foi — cf. common/on_action/title_on_actions.txt,
+# culture_on_actions.txt, religion_on_actions.txt), jamais sur le simple passage du temps. Si la
+# partie démarre avant la date seuil, rien ne déclenche la bascule au moment où elle est
+# franchie en cours de jeu. Pour tout blason à condition de date, il faut donc EN PLUS appeler
+# update_dynamic_coa = yes explicitement, dans un effect = {} placé dans l'historique du titre
+# à la date seuil elle-même (cf. history/titles/00_lis_lion_k_sicily.txt, entrée 1302.9.1) —
+# cet effect s'exécute en direct quand le calendrier atteint cette date, que ce soit en rejouant
+# l'historique au lancement (si la date est déjà passée) ou en cours de partie (si elle ne l'est
+# pas encore). Pour un blason qui revient à la normale à une seconde date, ajouter une entrée
+# d'historique équivalente à cette seconde date (le calcul retombera alors automatiquement sur
+# le blason par défaut du titre si plus aucun item ne correspond).
+#
+# update_dynamic_coa est aussi appelé au lancement dans 00_lis_lion_on_actions.txt, en filet
+# de sécurité pour les bookmarks qui démarrent après la date seuil.
+#
+# d_brittany (étendu) : blason des Dreux du 1.1.1221 au 27.8.1312, puis armoiries du royaume
+# de Bretagne à partir du 27.8.1312 — cf. history/titles/00_lis_lion_d_brittany.txt pour
+# l'appel update_dynamic_coa à cette seconde date.
+# k_england : bascule vers k_england_france (blason vanilla) au 1.11.1337, date où Édouard III
+# revendique le trône de France — cf. history/titles/00_lis_lion_k_england.txt.
+
+d_brittany = {
+	# Blason des Dreux : du 1er janvier 1221 (accession de Pierre Ier Mauclerc) au
+	# 27 août 1312 inclus.
+	item = {
+		trigger = {
+			current_date >= 1221.1.1
+			current_date < 1312.8.27
+		}
+		coat_of_arms = d_brittany_dreux
+	}
+	# À partir du 27 août 1312 : armoiries identiques à celles du royaume de Bretagne.
+
+	item = {
+		trigger = {
+			current_date >= 1312.8.27
+		}
+		coat_of_arms = d_brittany_dreux_2
+	}
+}
+
+k_england = {
+	# Bascule du blason au 1er novembre 1337, date où Édouard III revendique le trône
+	# de France.
+	item = {
+		trigger = {
+			current_date >= 1337.10.1
+		}
+		coat_of_arms = k_england_france_lal
+	}
+}
+
+k_sicily = {
+	item = {
+		trigger = {
+			current_date >= 1302.9.1
+		}
+		coat_of_arms = k_sicily_barcelona
+	}
+}

@@ -1,0 +1,61 @@
+﻿# Le Lis et le Lion — Maisons cadettes capétiennes (toutes rattachées à dynasty = 743, Robertine)
+
+# --- Valois ---
+# Charles de Valois (455512) et sa descendance, dont Philippe VI (455500).
+# dynn_Valois est déjà le nom de la dynastie vanilla 101 ; on réutilise la même localisation
+# pour la maison, mais avec une clé technique différente pour ne pas entrer en conflit.
+house_valois = {
+	prefix = "dynnp_de"
+	name = "dynn_Valois"
+	dynasty = 743 # Robertine / Capet
+}
+
+# --- Évreux-Capétien ---
+# ATTENTION : house_evreux existe déjà nativement et appartient aux cadets normands (dynasty 752).
+# On crée donc une maison distincte pour la branche capétienne d'Évreux
+# (Louis d'Évreux 455811, fils de Philippe III, et son fils Philippe III de Navarre 455810).
+house_evreux_capet = {
+	prefix = "dynnp_d_"
+	name = "dynn_Evreux_Capet"
+	dynasty = 743 # Robertine / Capet
+}
+
+# --- Anjou-Capet ---
+# Charles Ier de Sicile/Naples (455406) et toute sa descendance : Naples (Robert, Charles II,
+# Charles de Calabre, Jeanne...) et Hongrie (Charles Robert, Louis le Grand).
+house_anjou_capet = {
+	prefix = "dynnp_d_"
+	name = "dynn_Anjou_Capet"
+	dynasty = 743 # Robertine / Capet
+}
+
+# --- Bourbon ---
+# Robert de Clermont (455505) et sa descendance directe (Louis Ier de Bourbon 455650, etc.)
+# Remplace l'ancien passage par dynasty=89 (Clermont) puis dynasty=100146 (Bourbon),
+# qui rompait le lien avec les Robertiens.
+house_bourbon_capet = {
+	prefix = "dynnp_de"
+	name = "dynn_Bourbon"
+	dynasty = 743 # Robertine / Capet
+}
+
+# --- Trastamare ---
+# Enrique Alfonsez (457510), fils bâtard d'Alphonse XI, fondateur de la maison de Trastamare
+# (qui régnera plus tard sur la Castille et l'Aragon). Cadette de la maison royale castillane
+# réelle, la dynastie d'Ivrea (681) — et non plus une dynastie 774 (Trastamare) autonome et
+# déconnectée.
+house_trastamara = {
+	prefix = "dynnp_de"
+	name = "dynn_Trastamara"
+	dynasty = 681 # Ivrea
+}
+
+# --- Artois ---
+# Robert IV d'Artois (455405), Robert V de Lille (455546) et Mahaut de Lille (91147).
+# La dynasty 100 (dynn_Artois) est indépendante en vanilla ; on en fait une maison cadette
+# des Robertiens (743) pour relier cette branche capétienne à la souche commune.
+house_artois_capet = {
+	prefix = "dynnp_d_"
+	name = "dynn_Artois_Capet"
+	dynasty = 743 # Robertine / Capet
+}

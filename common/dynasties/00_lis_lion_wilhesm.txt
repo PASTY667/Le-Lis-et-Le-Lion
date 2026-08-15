@@ -1,0 +1,8 @@
+﻿# Le Lis et le Lion — Dynastie Wilhesm
+# Fondée par Otto von Wilhesm (91500100), 1er duc de Paderborn.
+# Le "von" est affiché via le prefix de house_wilhesm, pas dans le nom de la dynastie.
+
+wilhesm_dynasty = {
+	name = "dynn_Wilhesm"
+	culture = saxon
+}

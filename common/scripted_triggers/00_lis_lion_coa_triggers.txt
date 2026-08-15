@@ -1,0 +1,13 @@
+﻿# Le Lis et le Lion — triggers pour les blasons dynamiques
+
+lis_lion_brittany_dreux_trigger = {
+	holder = {
+		house = house:house_dreux
+	}
+}
+
+lis_lion_sicily_barcelona_trigger = {
+	holder = {
+		dynasty = dynasty:100204 # Barcelone
+	}
+}

@@ -1,0 +1,8 @@
+﻿# Le Lis et le Lion — Dynastie fictive comblant la vacance des seigneurs d'Arezzo
+# entre la mort de Philipp de Souabe (1208, dernier titulaire vanilla) et le
+# rattachement du comté à e_hre (1337.5.24). Voir 00_lis_lion_arezzo.txt.
+
+arezzo_dynasty = {
+	name = "dynn_Arezzo"
+	culture = italian
+}
